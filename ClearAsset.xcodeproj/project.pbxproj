@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83C2F597257F6774008FC305 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2F596257F6774008FC305 /* Utility.swift */; };
+		83E895E2257E4A6100D66424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E895E1257E4A6100D66424 /* AppDelegate.swift */; };
+		83E895E4257E4A6100D66424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E895E3257E4A6100D66424 /* SceneDelegate.swift */; };
+		83E895E6257E4A6100D66424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E895E5257E4A6100D66424 /* ViewController.swift */; };
+		83E895E9257E4A6200D66424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E895E7257E4A6200D66424 /* Main.storyboard */; };
+		83E895EB257E4A6200D66424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E895EA257E4A6200D66424 /* Assets.xcassets */; };
+		83E895EE257E4A6200D66424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E895EC257E4A6200D66424 /* LaunchScreen.storyboard */; };
+		83E895FA257E543300D66424 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E895F9257E543300D66424 /* Start.storyboard */; };
+		83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89604257E61A800D66424 /* Republiko_PersonalUse.otf */; };
+		83E89617257E61E700D66424 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89609257E61E700D66424 /* Nunito-BoldItalic.ttf */; };
+		83E89618257E61E700D66424 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E8960A257E61E700D66424 /* Nunito-SemiBold.ttf */; };
+		83E89619257E61E700D66424 /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E8960B257E61E700D66424 /* Nunito-SemiBoldItalic.ttf */; };
+		83E8961A257E61E700D66424 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E8960C257E61E700D66424 /* Nunito-Regular.ttf */; };
+		83E8961B257E61E700D66424 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E8960D257E61E700D66424 /* Nunito-Bold.ttf */; };
+		83E8961C257E61E700D66424 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E8960E257E61E700D66424 /* Nunito-ExtraBold.ttf */; };
+		83E8961D257E61E700D66424 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E8960F257E61E700D66424 /* Nunito-Black.ttf */; };
+		83E8961E257E61E700D66424 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89610257E61E700D66424 /* Nunito-LightItalic.ttf */; };
+		83E8961F257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89611257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf */; };
+		83E89620257E61E700D66424 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89612257E61E700D66424 /* Nunito-ExtraLight.ttf */; };
+		83E89621257E61E700D66424 /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89613257E61E700D66424 /* Nunito-ExtraLightItalic.ttf */; };
+		83E89622257E61E700D66424 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89614257E61E700D66424 /* Nunito-Light.ttf */; };
+		83E89623257E61E700D66424 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89615257E61E700D66424 /* Nunito-BlackItalic.ttf */; };
+		83E89624257E61E700D66424 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89616257E61E700D66424 /* Nunito-Italic.ttf */; };
+		83E89627257E671C00D66424 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E89626257E671C00D66424 /* StartViewController.swift */; };
+		83E8962D257E6D9200D66424 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8962C257E6D9200D66424 /* UIView.swift */; };
+		898E40ACE0B21B4E7D04DB1B /* Pods_ClearAsset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2ED65B334B3AE0D1784B588E /* Pods-ClearAsset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.release.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.release.xcconfig"; sourceTree = "<group>"; };
+		83C2F596257F6774008FC305 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		83E895DE257E4A6100D66424 /* ClearAsset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearAsset.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E895E1257E4A6100D66424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83E895E3257E4A6100D66424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83E895E5257E4A6100D66424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83E895E8257E4A6200D66424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83E895EA257E4A6200D66424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83E895ED257E4A6200D66424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83E895EF257E4A6200D66424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E895F9257E543300D66424 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		83E89604257E61A800D66424 /* Republiko_PersonalUse.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Republiko_PersonalUse.otf; sourceTree = "<group>"; };
+		83E89609257E61E700D66424 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		83E8960A257E61E700D66424 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		83E8960B257E61E700D66424 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		83E8960C257E61E700D66424 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		83E8960D257E61E700D66424 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		83E8960E257E61E700D66424 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		83E8960F257E61E700D66424 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		83E89610257E61E700D66424 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		83E89611257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		83E89612257E61E700D66424 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		83E89613257E61E700D66424 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		83E89614257E61E700D66424 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		83E89615257E61E700D66424 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		83E89616257E61E700D66424 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		83E89626257E671C00D66424 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		83E8962C257E6D9200D66424 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearAsset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA0B017A6D009BF4F1B5B00 /* Pods-ClearAsset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.debug.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83E895DB257E4A6100D66424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898E40ACE0B21B4E7D04DB1B /* Pods_ClearAsset.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A4F2A19D9E13639C957C09D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83C2F595257F675E008FC305 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				83C2F596257F6774008FC305 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		83E895D5257E4A6100D66424 = {
+			isa = PBXGroup;
+			children = (
+				83E895E0257E4A6100D66424 /* ClearAsset */,
+				83E895DF257E4A6100D66424 /* Products */,
+				C8F5CA6003B2594DA32017C6 /* Pods */,
+				6A4F2A19D9E13639C957C09D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83E895DF257E4A6100D66424 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83E895DE257E4A6100D66424 /* ClearAsset.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83E895E0257E4A6100D66424 /* ClearAsset */ = {
+			isa = PBXGroup;
+			children = (
+				83C2F595257F675E008FC305 /* Utility */,
+				83E8962B257E6D8300D66424 /* Extensions */,
+				83E89601257E613200D66424 /* Assets */,
+				83E895FC257E558600D66424 /* StartPage */,
+				83E895E1257E4A6100D66424 /* AppDelegate.swift */,
+				83E895E3257E4A6100D66424 /* SceneDelegate.swift */,
+				83E895E5257E4A6100D66424 /* ViewController.swift */,
+				83E895E7257E4A6200D66424 /* Main.storyboard */,
+				83E895EA257E4A6200D66424 /* Assets.xcassets */,
+				83E895EC257E4A6200D66424 /* LaunchScreen.storyboard */,
+				83E895EF257E4A6200D66424 /* Info.plist */,
+			);
+			path = ClearAsset;
+			sourceTree = "<group>";
+		};
+		83E895FC257E558600D66424 /* StartPage */ = {
+			isa = PBXGroup;
+			children = (
+				83E895F9257E543300D66424 /* Start.storyboard */,
+				83E89626257E671C00D66424 /* StartViewController.swift */,
+			);
+			path = StartPage;
+			sourceTree = "<group>";
+		};
+		83E89601257E613200D66424 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				83E89602257E614800D66424 /* Custom-Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		83E89602257E614800D66424 /* Custom-Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83E89608257E61C200D66424 /* Nunito */,
+				83E89603257E615200D66424 /* Repubiko */,
+			);
+			path = "Custom-Fonts";
+			sourceTree = "<group>";
+		};
+		83E89603257E615200D66424 /* Repubiko */ = {
+			isa = PBXGroup;
+			children = (
+				83E89604257E61A800D66424 /* Republiko_PersonalUse.otf */,
+			);
+			path = Repubiko;
+			sourceTree = "<group>";
+		};
+		83E89608257E61C200D66424 /* Nunito */ = {
+			isa = PBXGroup;
+			children = (
+				83E8960F257E61E700D66424 /* Nunito-Black.ttf */,
+				83E89615257E61E700D66424 /* Nunito-BlackItalic.ttf */,
+				83E8960D257E61E700D66424 /* Nunito-Bold.ttf */,
+				83E89609257E61E700D66424 /* Nunito-BoldItalic.ttf */,
+				83E8960E257E61E700D66424 /* Nunito-ExtraBold.ttf */,
+				83E89611257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf */,
+				83E89612257E61E700D66424 /* Nunito-ExtraLight.ttf */,
+				83E89613257E61E700D66424 /* Nunito-ExtraLightItalic.ttf */,
+				83E89616257E61E700D66424 /* Nunito-Italic.ttf */,
+				83E89614257E61E700D66424 /* Nunito-Light.ttf */,
+				83E89610257E61E700D66424 /* Nunito-LightItalic.ttf */,
+				83E8960C257E61E700D66424 /* Nunito-Regular.ttf */,
+				83E8960A257E61E700D66424 /* Nunito-SemiBold.ttf */,
+				83E8960B257E61E700D66424 /* Nunito-SemiBoldItalic.ttf */,
+			);
+			path = Nunito;
+			sourceTree = "<group>";
+		};
+		83E8962B257E6D8300D66424 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83E8962C257E6D9200D66424 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8F5CA6003B2594DA32017C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBA0B017A6D009BF4F1B5B00 /* Pods-ClearAsset.debug.xcconfig */,
+				2ED65B334B3AE0D1784B588E /* Pods-ClearAsset.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83E895DD257E4A6100D66424 /* ClearAsset */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E895F2257E4A6200D66424 /* Build configuration list for PBXNativeTarget "ClearAsset" */;
+			buildPhases = (
+				91401E3C96872F230AB96A1D /* [CP] Check Pods Manifest.lock */,
+				83E895DA257E4A6100D66424 /* Sources */,
+				83E895DB257E4A6100D66424 /* Frameworks */,
+				83E895DC257E4A6100D66424 /* Resources */,
+				4BD9750B2863035C4340D6D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClearAsset;
+			productName = ClearAsset;
+			productReference = 83E895DE257E4A6100D66424 /* ClearAsset.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83E895D6257E4A6100D66424 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					83E895DD257E4A6100D66424 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 83E895D9257E4A6100D66424 /* Build configuration list for PBXProject "ClearAsset" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83E895D5257E4A6100D66424;
+			productRefGroup = 83E895DF257E4A6100D66424 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83E895DD257E4A6100D66424 /* ClearAsset */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83E895DC257E4A6100D66424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E89621257E61E700D66424 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				83E89624257E61E700D66424 /* Nunito-Italic.ttf in Resources */,
+				83E8961A257E61E700D66424 /* Nunito-Regular.ttf in Resources */,
+				83E89622257E61E700D66424 /* Nunito-Light.ttf in Resources */,
+				83E89618257E61E700D66424 /* Nunito-SemiBold.ttf in Resources */,
+				83E895EE257E4A6200D66424 /* LaunchScreen.storyboard in Resources */,
+				83E8961C257E61E700D66424 /* Nunito-ExtraBold.ttf in Resources */,
+				83E8961E257E61E700D66424 /* Nunito-LightItalic.ttf in Resources */,
+				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
+				83E89623257E61E700D66424 /* Nunito-BlackItalic.ttf in Resources */,
+				83E89619257E61E700D66424 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				83E89620257E61E700D66424 /* Nunito-ExtraLight.ttf in Resources */,
+				83E89617257E61E700D66424 /* Nunito-BoldItalic.ttf in Resources */,
+				83E8961B257E61E700D66424 /* Nunito-Bold.ttf in Resources */,
+				83E895EB257E4A6200D66424 /* Assets.xcassets in Resources */,
+				83E8961D257E61E700D66424 /* Nunito-Black.ttf in Resources */,
+				83E8961F257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				83E895FA257E543300D66424 /* Start.storyboard in Resources */,
+				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BD9750B2863035C4340D6D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClearAsset/Pods-ClearAsset-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClearAsset/Pods-ClearAsset-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClearAsset/Pods-ClearAsset-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91401E3C96872F230AB96A1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClearAsset-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83E895DA257E4A6100D66424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
+				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
+				83C2F597257F6774008FC305 /* Utility.swift in Sources */,
+				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
+				83E895E2257E4A6100D66424 /* AppDelegate.swift in Sources */,
+				83E895E4257E4A6100D66424 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83E895E7257E4A6200D66424 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83E895E8257E4A6200D66424 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83E895EC257E4A6200D66424 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83E895ED257E4A6200D66424 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83E895F0257E4A6200D66424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83E895F1257E4A6200D66424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83E895F3257E4A6200D66424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA0B017A6D009BF4F1B5B00 /* Pods-ClearAsset.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 282TY8Z664;
+				INFOPLIST_FILE = ClearAsset/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Peyk.ClearAsset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		83E895F4257E4A6200D66424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED65B334B3AE0D1784B588E /* Pods-ClearAsset.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 282TY8Z664;
+				INFOPLIST_FILE = ClearAsset/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Peyk.ClearAsset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83E895D9257E4A6100D66424 /* Build configuration list for PBXProject "ClearAsset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E895F0257E4A6200D66424 /* Debug */,
+				83E895F1257E4A6200D66424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E895F2257E4A6200D66424 /* Build configuration list for PBXNativeTarget "ClearAsset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E895F3257E4A6200D66424 /* Debug */,
+				83E895F4257E4A6200D66424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83E895D6257E4A6100D66424 /* Project object */;
+}
