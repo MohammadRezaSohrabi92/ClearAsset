@@ -15,8 +15,8 @@ class CustomButton : UIButton {
         get {
             return false
         } set {
-            if newValue {
-                self.backgroundColor = UIColor.appOrangeColor
+            if newValue {                
+                setupOrangeButton()
             } else {
                 self.backgroundColor = UIColor.appBlueColor
             }
@@ -25,7 +25,7 @@ class CustomButton : UIButton {
     
     @IBInspectable var fontSize : CGFloat {
         get {
-            return 30
+            return self.titleLabel?.font.pointSize ?? 18
         } set {
             self.titleLabel?.font = UIFont(name: Utility.appFont.boldFont, size: newValue)
         }
@@ -44,13 +44,13 @@ class CustomButton : UIButton {
     fileprivate func setup() {
         self.cornerRadius = 8.0
         self.titleLabel?.font = UIFont(name: Utility.appFont.boldFont, size: fontSize)
-        print(fontSize)
         self.setTitleColor(.white, for: .normal)
         self.setTitleColor(.white, for: .selected)
     }
     
-    fileprivate func setOrangeButton() {
+    fileprivate func setupOrangeButton() {
         self.backgroundColor = UIColor.appOrangeColor
+        addShadow(shadowColor: UIColor.appOrangeColor!.cgColor, shadowOffset: CGSize(width: 1, height: 1), shadowOpacity: 1, shadowRadius: 8, cornerRadius: 8)
     }
     
 }

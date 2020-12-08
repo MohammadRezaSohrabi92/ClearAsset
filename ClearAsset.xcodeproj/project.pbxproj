@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8351C5A7257FB90A0034FA65 /* Login.storyboard */; };
+		83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83812E3A257FBEE500D217AE /* LoginViewController.swift */; };
 		839BEB31257F86F500B24C76 /* CustomButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BEB30257F86F500B24C76 /* CustomButtom.swift */; };
 		839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BEB33257F8FC300B24C76 /* UIColor.swift */; };
 		83C2F597257F6774008FC305 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2F596257F6774008FC305 /* Utility.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		2ED65B334B3AE0D1784B588E /* Pods-ClearAsset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.release.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.release.xcconfig"; sourceTree = "<group>"; };
+		8351C5A7257FB90A0034FA65 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		83812E3A257FBEE500D217AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		839BEB30257F86F500B24C76 /* CustomButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtom.swift; sourceTree = "<group>"; };
 		839BEB33257F8FC300B24C76 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		83C2F596257F6774008FC305 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -92,6 +96,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8351C5A5257FB8A80034FA65 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8351C5A7257FB90A0034FA65 /* Login.storyboard */,
+				83812E3A257FBEE500D217AE /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8351C5A6257FB8B60034FA65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83E895FC257E558600D66424 /* StartPage */,
+				8351C5A5257FB8A80034FA65 /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		839BEB2D257F86A800B24C76 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,11 +159,11 @@
 		83E895E0257E4A6100D66424 /* ClearAsset */ = {
 			isa = PBXGroup;
 			children = (
-				839BEB2D257F86A800B24C76 /* UI */,
 				83C2F595257F675E008FC305 /* Utility */,
 				83E8962B257E6D8300D66424 /* Extensions */,
 				83E89601257E613200D66424 /* Assets */,
-				83E895FC257E558600D66424 /* StartPage */,
+				839BEB2D257F86A800B24C76 /* UI */,
+				8351C5A6257FB8B60034FA65 /* Controllers */,
 				83E895E1257E4A6100D66424 /* AppDelegate.swift */,
 				83E895E3257E4A6100D66424 /* SceneDelegate.swift */,
 				83E895E5257E4A6100D66424 /* ViewController.swift */,
@@ -293,6 +315,7 @@
 				83E895EE257E4A6200D66424 /* LaunchScreen.storyboard in Resources */,
 				83E8961C257E61E700D66424 /* Nunito-ExtraBold.ttf in Resources */,
 				83E8961E257E61E700D66424 /* Nunito-LightItalic.ttf in Resources */,
+				8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */,
 				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
 				83E89623257E61E700D66424 /* Nunito-BlackItalic.ttf in Resources */,
 				83E89619257E61E700D66424 /* Nunito-SemiBoldItalic.ttf in Resources */,
@@ -356,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
 				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
 				83C2F597257F6774008FC305 /* Utility.swift in Sources */,
