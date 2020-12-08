@@ -11,6 +11,11 @@ import PKHUD
 
 class Utility {
     
+    struct appFont {
+        static let regularFont = "Nunito-Regular"
+        static let boldFont = "Nunito-Bold"
+    }
+    
 }
 
 

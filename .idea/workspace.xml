@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="858f1dba-3e44-4c3a-88f5-f918c31d5153" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_08_12_2020__12_16__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset.xcodeproj/xcuserdata/peykoffice.xcuserdatad/xcschemes/ClearAsset.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset.xcodeproj/xcuserdata/peykoffice.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset.xcodeproj/xcuserdata/peykoffice.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClearAsset.xcworkspace/xcuserdata/peykoffice.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset.xcworkspace/xcuserdata/peykoffice.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Utility/Utility.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Utility/Utility.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +64,7 @@
       <workItem from="1607358983112" duration="5000" />
       <workItem from="1607414223819" duration="12000" />
       <workItem from="1607414267075" duration="236000" />
-      <workItem from="1607417895837" duration="157000" />
+      <workItem from="1607417895837" duration="615000" />
     </task>
     <servers />
   </component>

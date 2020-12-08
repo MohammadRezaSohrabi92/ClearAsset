@@ -4,16 +4,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Nunito-Bold.ttf">
-            <string>Nunito-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Start View Controller-->
         <scene sceneID="oyX-az-Ehp">
@@ -60,43 +54,26 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-xt-wMx" userLabel="bottomView">
                                 <rect key="frame" x="0.0" y="626.5" width="414" height="235.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwZ-fa-mbv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJs-ys-gXd" customClass="CustomButton" customModule="ClearAsset" customModuleProvider="target">
                                         <rect key="frame" x="8" y="8" width="398" height="65"/>
-                                        <color key="backgroundColor" name="appOrange"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="4P3-JE-q1K"/>
+                                            <constraint firstAttribute="height" constant="65" id="r1t-Sa-V3T"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
-                                        <state key="normal" title="LET'S GET STARTED">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="LET'S GET STARTED"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="1" height="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" name="appOrange"/>
-                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOrangeColor" value="YES"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="btnGetStartedAction:" destination="mng-Uj-ZdL" eventType="touchUpInside" id="zfG-JF-Ktw"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="bwZ-fa-mbv" secondAttribute="trailing" constant="8" id="BgW-TO-ct7"/>
-                                    <constraint firstItem="bwZ-fa-mbv" firstAttribute="leading" secondItem="5xB-xt-wMx" secondAttribute="leading" constant="8" id="CsV-uK-c4M"/>
-                                    <constraint firstItem="bwZ-fa-mbv" firstAttribute="top" secondItem="5xB-xt-wMx" secondAttribute="top" constant="8" id="byq-5Y-twm"/>
+                                    <constraint firstItem="RJs-ys-gXd" firstAttribute="top" secondItem="5xB-xt-wMx" secondAttribute="top" constant="8" id="4J6-2X-l6y"/>
+                                    <constraint firstItem="RJs-ys-gXd" firstAttribute="leading" secondItem="5xB-xt-wMx" secondAttribute="leading" constant="8" id="Hia-3D-jug"/>
+                                    <constraint firstAttribute="trailing" secondItem="RJs-ys-gXd" secondAttribute="trailing" constant="8" id="h97-Vt-558"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -121,21 +98,20 @@
                             <constraint firstItem="biO-gM-Gw0" firstAttribute="trailing" secondItem="5xB-xt-wMx" secondAttribute="trailing" id="qFc-Lk-RiM"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="btnGetStarted" destination="bwZ-fa-mbv" id="ksJ-2X-OQh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K89-CT-kcV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="640.57971014492762" y="190.84821428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="RJs-ys-gXd">
+            <size key="intrinsicContentSize" width="291" height="53"/>
+        </designable>
+    </designables>
     <resources>
         <image name="appLogo" width="603" height="439"/>
         <image name="startLogo" width="703" height="342"/>
-        <namedColor name="appOrange">
-            <color red="0.95686274509803926" green="0.34901960784313724" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
