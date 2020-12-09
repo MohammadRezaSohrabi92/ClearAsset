@@ -1,26 +1,21 @@
 //
-//  StartViewController.swift
+//  LoginViewController.swift
 //  ClearAsset
 //
-//  Created by Peyk Office on 07/12/2020.
+//  Created by Peyk Office on 08/12/2020.
 //
 
 import UIKit
 
-class StartViewController: UIViewController {
-    
-    @IBOutlet weak var btnGetStarted: UIButton!
-    
+class LoginViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnGetStartedAction(_ sender: Any) {
-        //code
-    }
-    
+
     /*
     // MARK: - Navigation
 
