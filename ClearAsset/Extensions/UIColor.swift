@@ -10,5 +10,5 @@ import UIKit
 
 extension UIColor {
     static let appOrangeColor = UIColor(named: "appOrange")
-    static let appBlueColor = UIColor(named: "appBlue")
+    static let appBlueColor = UIColor(named: "appDarkBlue")
 }
