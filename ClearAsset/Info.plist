@@ -34,7 +34,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Start</string>
+					<string>Register</string>
 				</dict>
 			</array>
 		</dict>
@@ -61,6 +61,7 @@
 		<string>Nunito-Regular.ttf</string>
 		<string>Nunito-BoldItalic.ttf</string>
 		<string>Nunito-Italic.ttf</string>
+		<string>Nunito-SemiBold.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

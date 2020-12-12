@@ -14,12 +14,13 @@ class Utility {
     struct appFont {
         static let regularFont = "Nunito-Regular"
         static let boldFont = "Nunito-Bold"
+        static let semiBold = "Nunito-SemiBold"
     }
     
 }
 
 enum AppStoryboard: String {
-    case Start, Login
+    case Start, Login, Register
     var instance: UIStoryboard {
       return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
     }
