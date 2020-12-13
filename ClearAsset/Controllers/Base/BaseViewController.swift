@@ -15,6 +15,12 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupNavigationView()
         setupBackButton()
+        initView()
+    }
+    
+    fileprivate func initView() {
+        hideKeyboardWhenTappedAround()
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
     
     fileprivate func setupNavigationView() {
@@ -26,8 +32,6 @@ class BaseViewController: UIViewController {
     
     fileprivate func setupBackButton() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(onTapBackButton(_:)))
-        
-        //navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(onTapBackButton(_:)))
     }
     
     @objc fileprivate func onTapBackButton(_ sender: UITapGestureRecognizer) {
@@ -39,5 +43,19 @@ class BaseViewController: UIViewController {
         navigationController?.navigationItem.title = title
     }
     
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
+}
+
+extension BaseViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }        
 }

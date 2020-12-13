@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import DropDown
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,10 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = true
+        
         let sb = UIStoryboard(name: "Start", bundle: nil)
         let startVC = sb.instantiateInitialViewController()
         window?.rootViewController = startVC
         window?.makeKeyAndVisible()
+        
+        /// for handling drop down menu and keybaord
+        DropDown.startListeningToKeyboard()
         
         return true
     }

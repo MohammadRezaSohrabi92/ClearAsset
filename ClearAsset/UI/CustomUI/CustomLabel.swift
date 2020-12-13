@@ -49,7 +49,7 @@ class CustomLabel: UILabel {
         self.textColor = UIColor.appBlueColor
     }
     
-    fileprivate func setupTitleAttribute() {
+    func setupTitleAttribute() {
         self.font = UIFont(name: Utility.appFont.boldFont, size: titleFontSize)
     }
     
