@@ -34,7 +34,7 @@ class BaseViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(onTapBackButton(_:)))
     }
     
-    @objc fileprivate func onTapBackButton(_ sender: UITapGestureRecognizer) {
+    @objc func onTapBackButton(_ sender: UITapGestureRecognizer) {
         self.navigationController?.popViewController(animated: true)
     }
     

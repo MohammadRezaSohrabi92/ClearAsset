@@ -17,6 +17,7 @@ class RegisterMailingInfoViewController: BaseViewController {
     @IBOutlet weak var countryLabel: CustomLabel!
     @IBOutlet weak var interestedLabel: CustomLabel!
     @IBOutlet weak var industryLabel: CustomLabel!
+    @IBOutlet private var nextBtn: CustomButton!
     
     // MARK:- init var
     let countryMenu = DropDown()
@@ -47,6 +48,7 @@ class RegisterMailingInfoViewController: BaseViewController {
         countryMenu.dataSource = dataSource
         interestedMenu.dataSource = dataSource
         industryMenu.dataSource = dataSource
+        nextBtn.setOnClick(onClick: #selector(onTapNextButton(_:)))
     }
     
     @objc fileprivate func didTapOnMenu(_ sender: UITapGestureRecognizer) {
@@ -65,15 +67,8 @@ class RegisterMailingInfoViewController: BaseViewController {
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc fileprivate func onTapNextButton(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.pushViewController(AppStoryboard.Register.viewController(viewControllerClass: RegisterCheckEmailViewController.self), animated: true)
     }
-    */
 
 }

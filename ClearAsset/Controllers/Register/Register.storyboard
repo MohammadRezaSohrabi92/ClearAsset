@@ -784,6 +784,7 @@ Lorem Ipsum has </string>
                         <outlet property="industryLabel" destination="gjc-4L-tTz" id="Mbe-aw-PMb"/>
                         <outlet property="industryView" destination="iai-iu-ig9" id="aGe-VE-eil"/>
                         <outlet property="interestedView" destination="wD7-DN-GrF" id="eyP-YO-gsv"/>
+                        <outlet property="nextBtn" destination="b9W-t7-OKF" id="UNz-ys-Hg7"/>
                         <segue destination="pO5-5P-LtI" kind="show" id="5nL-mW-C90"/>
                     </connections>
                 </viewController>
@@ -791,15 +792,85 @@ Lorem Ipsum has </string>
             </objects>
             <point key="canvasLocation" x="2662.3188405797105" y="180.80357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Check Email View Controller-->
         <scene sceneID="R9g-9w-PgZ">
             <objects>
-                <viewController id="pO5-5P-LtI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterCheckEmailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pO5-5P-LtI" customClass="RegisterCheckEmailViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jgL-mW-1v7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AY9-5v-jGw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="444.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" translatesAutoresizingMaskIntoConstraints="NO" id="Hxf-Cr-pob">
+                                        <rect key="frame" x="0.0" y="109" width="414" height="266.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Hxf-Cr-pob" firstAttribute="width" secondItem="AY9-5v-jGw" secondAttribute="width" id="A5T-Kh-vi2"/>
+                                    <constraint firstItem="Hxf-Cr-pob" firstAttribute="height" secondItem="AY9-5v-jGw" secondAttribute="height" multiplier="0.6" id="bhE-vk-bg9"/>
+                                    <constraint firstItem="Hxf-Cr-pob" firstAttribute="centerX" secondItem="AY9-5v-jGw" secondAttribute="centerX" id="gmd-oD-Z9i"/>
+                                    <constraint firstItem="Hxf-Cr-pob" firstAttribute="centerY" secondItem="AY9-5v-jGw" secondAttribute="centerY" constant="20" id="z8M-Gr-4vM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDn-cx-JME">
+                                <rect key="frame" x="0.0" y="444.5" width="414" height="329.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check your email now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH8-7W-9ez" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
+                                        <rect key="frame" x="123.5" y="8" width="167" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDD-Cy-fVt">
+                                        <rect key="frame" x="12" y="53" width="390" height="87.5"/>
+                                        <string key="text">Please click on the confirmation link on the email we sent to Clearasset@gmail.com to activate your account.
+If you don't receive an email, please make sure to check your Spam or Junk folder. If you need further help please contact us for assistance.</string>
+                                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="15"/>
+                                        <color key="textColor" name="appTextBlue"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCB-cU-Etv">
+                                        <rect key="frame" x="189" y="284.5" width="36" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="18"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" name="appDarkBlue"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mCB-cU-Etv" firstAttribute="centerX" secondItem="HDn-cx-JME" secondAttribute="centerX" id="Iqu-s5-rE1"/>
+                                    <constraint firstItem="aH8-7W-9ez" firstAttribute="centerX" secondItem="HDn-cx-JME" secondAttribute="centerX" id="JX4-zj-Yev"/>
+                                    <constraint firstItem="YDD-Cy-fVt" firstAttribute="leading" secondItem="HDn-cx-JME" secondAttribute="leading" constant="12" id="NUV-TV-95w"/>
+                                    <constraint firstAttribute="bottom" secondItem="mCB-cU-Etv" secondAttribute="bottom" constant="12" id="NuP-OG-VCR"/>
+                                    <constraint firstAttribute="trailing" secondItem="YDD-Cy-fVt" secondAttribute="trailing" constant="12" id="Oif-La-P2L"/>
+                                    <constraint firstItem="aH8-7W-9ez" firstAttribute="top" secondItem="HDn-cx-JME" secondAttribute="top" constant="8" id="R4U-jM-QrM"/>
+                                    <constraint firstItem="YDD-Cy-fVt" firstAttribute="centerX" secondItem="HDn-cx-JME" secondAttribute="centerX" id="vga-en-b4p"/>
+                                    <constraint firstItem="YDD-Cy-fVt" firstAttribute="top" secondItem="aH8-7W-9ez" secondAttribute="bottom" constant="24" id="yyp-wB-quC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uao-GY-WoU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uao-GY-WoU" firstAttribute="trailing" secondItem="AY9-5v-jGw" secondAttribute="trailing" id="9AI-KU-FQd"/>
+                            <constraint firstItem="AY9-5v-jGw" firstAttribute="height" secondItem="jgL-mW-1v7" secondAttribute="height" multiplier="0.55" id="AXw-5w-jBs"/>
+                            <constraint firstItem="AY9-5v-jGw" firstAttribute="leading" secondItem="uao-GY-WoU" secondAttribute="leading" id="Nd0-jY-Hnb"/>
+                            <constraint firstItem="uao-GY-WoU" firstAttribute="trailing" secondItem="HDn-cx-JME" secondAttribute="trailing" id="TcV-1D-bwt"/>
+                            <constraint firstItem="uao-GY-WoU" firstAttribute="bottom" secondItem="HDn-cx-JME" secondAttribute="bottom" id="TdN-48-OKR"/>
+                            <constraint firstItem="AY9-5v-jGw" firstAttribute="top" secondItem="uao-GY-WoU" secondAttribute="top" id="dLa-CT-U8P"/>
+                            <constraint firstItem="HDn-cx-JME" firstAttribute="leading" secondItem="uao-GY-WoU" secondAttribute="leading" id="kwb-ge-X0l"/>
+                            <constraint firstItem="HDn-cx-JME" firstAttribute="top" secondItem="AY9-5v-jGw" secondAttribute="bottom" id="vll-Hw-s0V"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MUs-QI-U2I"/>
                 </viewController>
@@ -839,12 +910,16 @@ Lorem Ipsum has </string>
     </designables>
     <resources>
         <image name="appLogo" width="603" height="439"/>
+        <image name="mail" width="303" height="261"/>
         <image name="visible" width="759" height="506"/>
         <namedColor name="appBorder">
             <color red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="0.52999997138977051" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="appDarkBlue">
             <color red="0.16078431372549021" green="0.20392156862745098" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appTextBlue">
+            <color red="0.16078431372549021" green="0.20392156862745098" blue="0.3843137254901961" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="appTextfieldBG">
             <color red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="0.56999999284744263" colorSpace="custom" customColorSpace="sRGB"/>
