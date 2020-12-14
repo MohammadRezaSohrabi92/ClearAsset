@@ -9,6 +9,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Register Email Pass View Controller-->
         <scene sceneID="HnE-sG-UC0">
@@ -103,11 +108,42 @@ Lorem Ipsum has </string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CF6-gL-PkB" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0q-hs-yUN">
                                         <rect key="frame" x="16" y="144" width="382" height="61.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="password"/>
-                                    </textField>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visible" translatesAutoresizingMaskIntoConstraints="NO" id="bpW-Gq-tGw">
+                                                <rect key="frame" x="347.5" y="0.0" width="26.5" height="61.5"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CF6-gL-PkB" customClass="LeftPadedTextField" customModule="ClearAsset" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="324.5" height="61.5"/>
+                                                <color key="textColor" name="appDarkBlue"/>
+                                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" name="appTextfieldBG"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="bpW-Gq-tGw" secondAttribute="bottom" id="8CH-QC-Xs1"/>
+                                            <constraint firstAttribute="bottom" secondItem="CF6-gL-PkB" secondAttribute="bottom" id="DNB-Sz-2fQ"/>
+                                            <constraint firstItem="bpW-Gq-tGw" firstAttribute="top" secondItem="Y0q-hs-yUN" secondAttribute="top" id="HIL-bI-f68"/>
+                                            <constraint firstItem="bpW-Gq-tGw" firstAttribute="width" secondItem="Y0q-hs-yUN" secondAttribute="width" multiplier="0.07" id="SZf-Eb-0za"/>
+                                            <constraint firstItem="CF6-gL-PkB" firstAttribute="width" secondItem="Y0q-hs-yUN" secondAttribute="width" multiplier="0.85" id="VzS-w1-n9R"/>
+                                            <constraint firstItem="CF6-gL-PkB" firstAttribute="top" secondItem="Y0q-hs-yUN" secondAttribute="top" id="dMg-Jh-In2"/>
+                                            <constraint firstAttribute="trailing" secondItem="bpW-Gq-tGw" secondAttribute="trailing" constant="8" id="nKx-ga-hLM"/>
+                                            <constraint firstItem="CF6-gL-PkB" firstAttribute="leading" secondItem="Y0q-hs-yUN" secondAttribute="leading" id="vdt-K4-6vS"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="appBorder"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re- Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cX-pQ-68e" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
                                         <rect key="frame" x="24" y="221.5" width="105" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -117,11 +153,43 @@ Lorem Ipsum has </string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yte-Nk-fcd" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yrs-CF-OQU">
                                         <rect key="frame" x="16" y="250.5" width="382" height="62"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="password"/>
-                                    </textField>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visible" translatesAutoresizingMaskIntoConstraints="NO" id="Q5O-3X-br4">
+                                                <rect key="frame" x="347.5" y="0.0" width="26.5" height="62"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yte-Nk-fcd" customClass="LeftPadedTextField" customModule="ClearAsset" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="324.5" height="62"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="appDarkBlue"/>
+                                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" name="appTextfieldBG"/>
+                                        <constraints>
+                                            <constraint firstItem="Q5O-3X-br4" firstAttribute="width" secondItem="Yrs-CF-OQU" secondAttribute="width" multiplier="0.07" id="2ES-4A-G18"/>
+                                            <constraint firstAttribute="bottom" secondItem="Q5O-3X-br4" secondAttribute="bottom" id="BVe-3y-GtM"/>
+                                            <constraint firstAttribute="bottom" secondItem="yte-Nk-fcd" secondAttribute="bottom" id="CBw-Cq-CkW"/>
+                                            <constraint firstAttribute="trailing" secondItem="Q5O-3X-br4" secondAttribute="trailing" constant="8" id="Ua4-oe-4yc"/>
+                                            <constraint firstItem="yte-Nk-fcd" firstAttribute="width" secondItem="Yrs-CF-OQU" secondAttribute="width" multiplier="0.85" id="hy1-Gq-1ka"/>
+                                            <constraint firstItem="yte-Nk-fcd" firstAttribute="top" secondItem="Yrs-CF-OQU" secondAttribute="top" id="sbT-2w-vZP"/>
+                                            <constraint firstItem="Q5O-3X-br4" firstAttribute="top" secondItem="Yrs-CF-OQU" secondAttribute="top" id="vE4-t9-kVa"/>
+                                            <constraint firstItem="yte-Nk-fcd" firstAttribute="leading" secondItem="Yrs-CF-OQU" secondAttribute="leading" id="xRn-It-Qdh"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="appBorder"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0Y-v2-67B" customClass="CustomButton" customModule="ClearAsset" customModuleProvider="target">
                                         <rect key="frame" x="16" y="372.5" width="382" height="62"/>
                                         <state key="normal" title="Next"/>
@@ -135,28 +203,28 @@ Lorem Ipsum has </string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="6cX-pQ-68e" firstAttribute="top" secondItem="Y0q-hs-yUN" secondAttribute="bottom" constant="16" id="2Jf-0o-FKv"/>
+                                    <constraint firstItem="Yrs-CF-OQU" firstAttribute="top" secondItem="6cX-pQ-68e" secondAttribute="bottom" constant="8" id="69u-EY-hOU"/>
                                     <constraint firstItem="GhR-zH-WYN" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="16" id="82M-Ar-dUT"/>
-                                    <constraint firstAttribute="trailing" secondItem="CF6-gL-PkB" secondAttribute="trailing" constant="16" id="9JK-Y7-Pd8"/>
+                                    <constraint firstItem="Yrs-CF-OQU" firstAttribute="height" secondItem="Y0q-hs-yUN" secondAttribute="height" id="9Xs-ce-iSw"/>
                                     <constraint firstItem="v0Y-v2-67B" firstAttribute="height" secondItem="b5q-Ad-ToO" secondAttribute="height" multiplier="0.14" id="9k5-KM-WRb"/>
                                     <constraint firstItem="XAN-Tn-zRg" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="24" id="B3e-uG-3M3"/>
                                     <constraint firstItem="v0Y-v2-67B" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="16" id="EKs-Yi-znQ"/>
-                                    <constraint firstItem="CF6-gL-PkB" firstAttribute="height" secondItem="GhR-zH-WYN" secondAttribute="height" id="HfV-yW-LFI"/>
-                                    <constraint firstItem="6cX-pQ-68e" firstAttribute="top" secondItem="CF6-gL-PkB" secondAttribute="bottom" constant="16" id="JX2-uI-cGc"/>
                                     <constraint firstAttribute="trailing" secondItem="GhR-zH-WYN" secondAttribute="trailing" constant="16" id="Lma-X4-fUb"/>
-                                    <constraint firstItem="yte-Nk-fcd" firstAttribute="height" secondItem="CF6-gL-PkB" secondAttribute="height" id="MAu-FY-787"/>
+                                    <constraint firstItem="Yrs-CF-OQU" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="16" id="NT8-om-54i"/>
                                     <constraint firstItem="eK3-NW-ija" firstAttribute="top" secondItem="b5q-Ad-ToO" secondAttribute="top" constant="8" id="NZ8-4I-cMI"/>
                                     <constraint firstItem="GhR-zH-WYN" firstAttribute="height" secondItem="b5q-Ad-ToO" secondAttribute="height" multiplier="0.14" id="V2r-Su-QSa"/>
-                                    <constraint firstItem="yte-Nk-fcd" firstAttribute="top" secondItem="6cX-pQ-68e" secondAttribute="bottom" constant="8" id="Wzt-He-7i9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y0q-hs-yUN" secondAttribute="trailing" constant="16" id="ZEs-5m-LW3"/>
                                     <constraint firstItem="6cX-pQ-68e" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="24" id="cKu-pp-jzO"/>
                                     <constraint firstAttribute="trailing" secondItem="v0Y-v2-67B" secondAttribute="trailing" constant="16" id="cbk-CC-79f"/>
                                     <constraint firstItem="eK3-NW-ija" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="24" id="g80-cq-8qZ"/>
                                     <constraint firstAttribute="bottom" secondItem="v0Y-v2-67B" secondAttribute="bottom" constant="8" id="ivf-Fd-LCj"/>
                                     <constraint firstItem="XAN-Tn-zRg" firstAttribute="top" secondItem="GhR-zH-WYN" secondAttribute="bottom" constant="16" id="kfD-ht-qyS"/>
-                                    <constraint firstItem="CF6-gL-PkB" firstAttribute="top" secondItem="XAN-Tn-zRg" secondAttribute="bottom" constant="8" id="o1e-Ku-Sbe"/>
-                                    <constraint firstItem="CF6-gL-PkB" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="16" id="pMq-rR-41q"/>
-                                    <constraint firstItem="yte-Nk-fcd" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="16" id="qUz-4q-aN3"/>
+                                    <constraint firstItem="Y0q-hs-yUN" firstAttribute="leading" secondItem="b5q-Ad-ToO" secondAttribute="leading" constant="16" id="kna-H8-eOD"/>
+                                    <constraint firstItem="Y0q-hs-yUN" firstAttribute="top" secondItem="XAN-Tn-zRg" secondAttribute="bottom" constant="8" id="loJ-eq-1Lv"/>
+                                    <constraint firstItem="Y0q-hs-yUN" firstAttribute="height" secondItem="GhR-zH-WYN" secondAttribute="height" id="lvC-LR-pCP"/>
                                     <constraint firstItem="GhR-zH-WYN" firstAttribute="top" secondItem="eK3-NW-ija" secondAttribute="bottom" constant="8" id="qyX-HZ-iJX"/>
-                                    <constraint firstAttribute="trailing" secondItem="yte-Nk-fcd" secondAttribute="trailing" constant="16" id="sTt-fH-9kd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yrs-CF-OQU" secondAttribute="trailing" constant="16" id="tJh-Zr-3gt"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -179,15 +247,18 @@ Lorem Ipsum has </string>
                     </view>
                     <navigationItem key="navigationItem" id="2Al-hI-Owv"/>
                     <connections>
+                        <outlet property="emailTF" destination="GhR-zH-WYN" id="H5h-y8-GnD"/>
                         <outlet property="nextButton" destination="v0Y-v2-67B" id="ApH-GL-1Kb"/>
                         <outlet property="passwordTF" destination="CF6-gL-PkB" id="nrr-2p-rjX"/>
                         <outlet property="rePasswordTF" destination="yte-Nk-fcd" id="ekj-Ao-Oqw"/>
+                        <outlet property="visiblePassword" destination="bpW-Gq-tGw" id="NDv-Jg-W3b"/>
+                        <outlet property="visibleRePassword" destination="Q5O-3X-br4" id="55t-gi-wlh"/>
                         <segue destination="Wrt-d0-S4w" kind="show" id="4M4-42-KeF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSK-58-HtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="181"/>
+            <point key="canvasLocation" x="1060.8695652173915" y="180.80357142857142"/>
         </scene>
         <!--Register About Yourself View Controller-->
         <scene sceneID="RFb-Pj-iN4">
@@ -261,11 +332,6 @@ Lorem Ipsum has </string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="10/10/2000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agV-bH-fib" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="371.5" width="382" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrM-pS-09e" customClass="CustomDropDownMenu" customModule="ClearAsset" customModuleProvider="target">
                                         <rect key="frame" x="16" y="79" width="382" height="56.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -274,38 +340,68 @@ Lorem Ipsum has </string>
                                         <rect key="frame" x="16" y="180.5" width="382" height="56.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8N8-A0-NSH">
+                                        <rect key="frame" x="16" y="371.5" width="382" height="56.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cST-en-CSY" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
+                                                <rect key="frame" x="12" y="18" width="46" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="appTextfieldBG"/>
+                                        <constraints>
+                                            <constraint firstItem="cST-en-CSY" firstAttribute="leading" secondItem="8N8-A0-NSH" secondAttribute="leading" constant="12" id="AsB-nr-Buc"/>
+                                            <constraint firstItem="cST-en-CSY" firstAttribute="centerY" secondItem="8N8-A0-NSH" secondAttribute="centerY" id="P05-c0-31Y"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="appBorder"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="lZb-O4-GCa" firstAttribute="height" secondItem="L2p-CZ-Vo6" secondAttribute="height" id="1G6-dG-MnK"/>
                                     <constraint firstItem="vrM-pS-09e" firstAttribute="top" secondItem="d6x-N2-ihI" secondAttribute="bottom" constant="8" id="23N-z9-fJr"/>
-                                    <constraint firstAttribute="trailing" secondItem="agV-bH-fib" secondAttribute="trailing" constant="16" id="29u-md-gk3"/>
                                     <constraint firstItem="yzE-V5-nhL" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="10" id="4CO-87-p2r"/>
                                     <constraint firstAttribute="trailing" secondItem="L2p-CZ-Vo6" secondAttribute="trailing" constant="16" id="6dx-pP-45r"/>
                                     <constraint firstItem="lZb-O4-GCa" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="16" id="Aa3-sn-gYf"/>
                                     <constraint firstItem="THL-Sf-aMt" firstAttribute="top" secondItem="vrM-pS-09e" secondAttribute="bottom" constant="12" id="EVm-DN-GUN"/>
                                     <constraint firstItem="4a6-e1-k3v" firstAttribute="top" secondItem="L2p-CZ-Vo6" secondAttribute="bottom" constant="8" symbolic="YES" id="FAY-ei-3Hz"/>
-                                    <constraint firstItem="agV-bH-fib" firstAttribute="height" secondItem="lZb-O4-GCa" secondAttribute="height" id="GTv-eA-5fu"/>
                                     <constraint firstItem="lZb-O4-GCa" firstAttribute="top" secondItem="4a6-e1-k3v" secondAttribute="bottom" constant="8" id="IjX-sJ-LFk"/>
                                     <constraint firstItem="vrM-pS-09e" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="16" id="Jq2-a6-gyE"/>
+                                    <constraint firstItem="8N8-A0-NSH" firstAttribute="height" secondItem="L2p-CZ-Vo6" secondAttribute="height" id="Km0-g8-Bgh"/>
                                     <constraint firstAttribute="trailing" secondItem="lZb-O4-GCa" secondAttribute="trailing" constant="16" id="NfG-Vd-eYT"/>
                                     <constraint firstItem="L2p-CZ-Vo6" firstAttribute="top" secondItem="THL-Sf-aMt" secondAttribute="bottom" constant="12" id="PmM-YE-zuo"/>
                                     <constraint firstItem="d6x-N2-ihI" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="24" id="RFE-DY-n8m"/>
                                     <constraint firstItem="vrM-pS-09e" firstAttribute="height" secondItem="fnd-jX-fAh" secondAttribute="height" multiplier="0.1" id="VGg-9J-eqp"/>
                                     <constraint firstItem="rFO-9T-dQl" firstAttribute="top" secondItem="yzE-V5-nhL" secondAttribute="bottom" constant="8" id="Wos-NW-0lE"/>
                                     <constraint firstItem="L2p-CZ-Vo6" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="16" id="ZAZ-1U-RkA"/>
+                                    <constraint firstAttribute="trailing" secondItem="8N8-A0-NSH" secondAttribute="trailing" constant="16" id="aIV-hG-jJZ"/>
                                     <constraint firstItem="SdW-Og-f1w" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="24" id="ahE-RS-E3Q"/>
-                                    <constraint firstItem="agV-bH-fib" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="16" id="bhc-FS-7is"/>
                                     <constraint firstItem="yzE-V5-nhL" firstAttribute="top" secondItem="fnd-jX-fAh" secondAttribute="top" constant="8" id="cmo-4X-Q31"/>
                                     <constraint firstItem="THL-Sf-aMt" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="24" id="ezo-kz-XUv"/>
                                     <constraint firstItem="L2p-CZ-Vo6" firstAttribute="height" secondItem="vrM-pS-09e" secondAttribute="height" id="ii3-Ub-pu4"/>
                                     <constraint firstItem="rFO-9T-dQl" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" id="jeU-WS-8Pz"/>
+                                    <constraint firstItem="8N8-A0-NSH" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="16" id="oMb-Mm-QeH"/>
                                     <constraint firstItem="SdW-Og-f1w" firstAttribute="top" secondItem="lZb-O4-GCa" secondAttribute="bottom" constant="12" id="oRC-Dm-94j"/>
                                     <constraint firstItem="4a6-e1-k3v" firstAttribute="leading" secondItem="fnd-jX-fAh" secondAttribute="leading" constant="24" id="p2q-7c-fbh"/>
                                     <constraint firstAttribute="trailing" secondItem="vrM-pS-09e" secondAttribute="trailing" constant="16" id="pVj-NW-iah"/>
                                     <constraint firstItem="d6x-N2-ihI" firstAttribute="top" secondItem="rFO-9T-dQl" secondAttribute="bottom" constant="10" id="vpG-Nw-R4u"/>
                                     <constraint firstAttribute="trailing" secondItem="rFO-9T-dQl" secondAttribute="trailing" id="xUX-FH-Co1"/>
-                                    <constraint firstItem="agV-bH-fib" firstAttribute="top" secondItem="SdW-Og-f1w" secondAttribute="bottom" constant="8" symbolic="YES" id="z1F-PE-NzP"/>
+                                    <constraint firstItem="8N8-A0-NSH" firstAttribute="top" secondItem="SdW-Og-f1w" secondAttribute="bottom" constant="8" id="yeB-pm-zSB"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XS-Nn-s8z" userLabel="bottomView">
@@ -350,7 +446,12 @@ Lorem Ipsum has </string>
                     </view>
                     <navigationItem key="navigationItem" id="L0s-sM-UfN"/>
                     <connections>
+                        <outlet property="accountType" destination="vrM-pS-09e" id="EXI-dW-2g3"/>
+                        <outlet property="currencyType" destination="L2p-CZ-Vo6" id="ZvI-uM-b66"/>
+                        <outlet property="lbSelectBirthdate" destination="cST-en-CSY" id="QH5-js-BWN"/>
+                        <outlet property="name" destination="lZb-O4-GCa" id="e0v-8O-YiM"/>
                         <outlet property="nextButton" destination="pVA-cQ-OsA" id="aJq-89-zeI"/>
+                        <outlet property="selectBirthdate" destination="8N8-A0-NSH" id="FTk-Ra-wUU"/>
                         <segue destination="Dpf-cP-Qwa" kind="show" id="umu-dL-oWf"/>
                     </connections>
                 </viewController>
@@ -372,8 +473,12 @@ Lorem Ipsum has </string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-i1-pcm" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1220"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-1f-PRy" userLabel="topView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="36.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mailing information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHE-L7-AQr" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="57" width="145" height="21"/>
+                                                <rect key="frame" x="24" y="44.5" width="145" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -382,14 +487,14 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bI-YJ-PIO">
-                                                <rect key="frame" x="0.0" y="86" width="414" height="3"/>
+                                                <rect key="frame" x="0.0" y="73.5" width="414" height="3"/>
                                                 <color key="backgroundColor" name="appBorder"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="3" id="0j8-PC-lqC"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbJ-5V-7XD" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="97" width="61" height="21"/>
+                                                <rect key="frame" x="24" y="84.5" width="61" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -397,12 +502,8 @@ Lorem Ipsum has </string>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-1f-PRy" userLabel="topView">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBQ-vp-RWm" customClass="CustomDropDownMenu" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="126" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="113.5" width="382" height="70"/>
                                                 <color key="backgroundColor" name="appTextfieldBG"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="Ddu-PB-HpM"/>
@@ -420,7 +521,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCF-Z3-i3d" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="208" width="111.5" height="21"/>
+                                                <rect key="frame" x="24" y="195.5" width="111.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -429,7 +530,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+1 123 15662 5 2651" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxW-G8-BJJ" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="237" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="224.5" width="382" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="q6X-id-tHP"/>
                                                 </constraints>
@@ -437,7 +538,7 @@ Lorem Ipsum has </string>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address line 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpI-nb-9t5" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="319" width="105" height="21"/>
+                                                <rect key="frame" x="24" y="306.5" width="105" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -446,7 +547,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address line 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81O-vP-nKr" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="348" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="335.5" width="382" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="Bns-JQ-mF1"/>
                                                 </constraints>
@@ -454,7 +555,7 @@ Lorem Ipsum has </string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address line 2 (optonal)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAL-0I-DRf" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="430" width="181" height="21"/>
+                                                <rect key="frame" x="24" y="417.5" width="181" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -463,7 +564,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address line 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YU7-M3-BOC" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="459" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="446.5" width="382" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="z5P-nF-8fi"/>
                                                 </constraints>
@@ -471,7 +572,7 @@ Lorem Ipsum has </string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdj-Mu-OL1" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="541" width="31" height="20.5"/>
+                                                <rect key="frame" x="24" y="528.5" width="31" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -480,7 +581,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New York" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0kt-cz-jbe" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="569.5" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="557" width="382" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="3L6-82-lzn"/>
                                                 </constraints>
@@ -488,7 +589,7 @@ Lorem Ipsum has </string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrE-bZ-YJx" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="651.5" width="40" height="20.5"/>
+                                                <rect key="frame" x="24" y="639" width="40" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -496,8 +597,16 @@ Lorem Ipsum has </string>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E New York Ave" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7g-lQ-IFC" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="667.5" width="382" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="orX-Ub-0Ql"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip/Postal code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-jx-D6A" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="762" width="118.5" height="21"/>
+                                                <rect key="frame" x="24" y="749.5" width="118.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -506,7 +615,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="45sf86s8" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRP-p4-UPV" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="791" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="778.5" width="382" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="LA1-rp-Nrn"/>
                                                 </constraints>
@@ -514,7 +623,7 @@ Lorem Ipsum has </string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am interested in ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-pB-ecc" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="873" width="148.5" height="21"/>
+                                                <rect key="frame" x="24" y="860.5" width="148.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -523,7 +632,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wD7-DN-GrF" customClass="CustomDropDownMenu" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="902" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="889.5" width="382" height="70"/>
                                                 <color key="backgroundColor" name="appTextfieldBG"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="9Vi-2j-8xf"/>
@@ -540,16 +649,8 @@ Lorem Ipsum has </string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E New York Ave" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7g-lQ-IFC" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="680" width="382" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="orX-Ub-0Ql"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary Industry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjc-4L-tTz" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="984" width="125" height="21"/>
+                                                <rect key="frame" x="24" y="971.5" width="125" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -558,7 +659,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iai-iu-ig9" customClass="CustomDropDownMenu" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="1013" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="1000.5" width="382" height="70"/>
                                                 <color key="backgroundColor" name="appTextfieldBG"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="WvB-EK-37J"/>
@@ -577,7 +678,7 @@ Lorem Ipsum has </string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9W-t7-OKF" customClass="CustomButton" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="1107" width="382" height="70"/>
+                                                <rect key="frame" x="16" y="1094.5" width="382" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="6zz-yX-DEL"/>
                                                 </constraints>
@@ -644,7 +745,7 @@ Lorem Ipsum has </string>
                                             <constraint firstItem="UpI-nb-9t5" firstAttribute="leading" secondItem="isQ-i1-pcm" secondAttribute="leading" constant="24" id="rqT-Gn-fXE"/>
                                             <constraint firstAttribute="trailing" secondItem="0kt-cz-jbe" secondAttribute="trailing" constant="16" id="tqd-v2-Lja"/>
                                             <constraint firstAttribute="trailing" secondItem="YU7-M3-BOC" secondAttribute="trailing" constant="16" id="txS-ZE-Xr5"/>
-                                            <constraint firstItem="fYh-1f-PRy" firstAttribute="height" secondItem="isQ-i1-pcm" secondAttribute="height" multiplier="0.04" id="uKk-cg-GRB"/>
+                                            <constraint firstItem="fYh-1f-PRy" firstAttribute="height" secondItem="isQ-i1-pcm" secondAttribute="height" multiplier="0.03" id="uKk-cg-GRB"/>
                                             <constraint firstItem="eCF-Z3-i3d" firstAttribute="top" secondItem="UBQ-vp-RWm" secondAttribute="bottom" constant="12" id="w4b-AQ-67i"/>
                                             <constraint firstItem="qFA-pB-ecc" firstAttribute="top" secondItem="eRP-p4-UPV" secondAttribute="bottom" constant="12" id="x2x-hZ-Jtj"/>
                                             <constraint firstItem="hrE-bZ-YJx" firstAttribute="top" secondItem="0kt-cz-jbe" secondAttribute="bottom" constant="12" id="xyi-Tk-bMk"/>
@@ -683,11 +784,28 @@ Lorem Ipsum has </string>
                         <outlet property="industryLabel" destination="gjc-4L-tTz" id="Mbe-aw-PMb"/>
                         <outlet property="industryView" destination="iai-iu-ig9" id="aGe-VE-eil"/>
                         <outlet property="interestedView" destination="wD7-DN-GrF" id="eyP-YO-gsv"/>
+                        <segue destination="pO5-5P-LtI" kind="show" id="5nL-mW-C90"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pF2-gC-fb3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2662.3188405797105" y="180.80357142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="R9g-9w-PgZ">
+            <objects>
+                <viewController id="pO5-5P-LtI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jgL-mW-1v7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uao-GY-WoU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MUs-QI-U2I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMz-K7-okr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3525" y="181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ayV-lF-IP8">
@@ -721,8 +839,12 @@ Lorem Ipsum has </string>
     </designables>
     <resources>
         <image name="appLogo" width="603" height="439"/>
+        <image name="visible" width="759" height="506"/>
         <namedColor name="appBorder">
             <color red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="0.52999997138977051" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appDarkBlue">
+            <color red="0.16078431372549021" green="0.20392156862745098" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="appTextfieldBG">
             <color red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="0.56999999284744263" colorSpace="custom" customColorSpace="sRGB"/>

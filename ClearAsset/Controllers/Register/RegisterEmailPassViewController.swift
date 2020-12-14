@@ -9,41 +9,52 @@ import UIKit
 
 class RegisterEmailPassViewController: BaseViewController {
     
+    //MARK:- views
+    @IBOutlet private var emailTF: CustomTextField!
     @IBOutlet private var nextButton: CustomButton!
-    @IBOutlet weak var passwordTF: CustomTextField!
-    @IBOutlet weak var rePasswordTF: CustomTextField!
+    @IBOutlet private var passwordTF: CustomTextField!
+    @IBOutlet private var rePasswordTF: CustomTextField!
+    @IBOutlet private var visiblePassword: UIImageView!
+    @IBOutlet private var visibleRePassword: UIImageView!
     
-    //init var
-    var iconClick = true
+    ///init var
+    var visibleClick = false
     
+    //MARK:- LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.    
-        setTitle(title: "Register")
+        // Do any additional setup after loading the view.
         initView()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        setTitle(title: "Register")
+        
     }
     
+    //MARK:- Other methods
     fileprivate func initView() {
         nextButton.setOnClick(onClick: #selector(onTapNextButton(_:)))
-        passwordTF.setupViews()
-        rePasswordTF.setupViews()
-        passwordTF.visibleImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnVisibleImageView(_:))))
+        [passwordTF, rePasswordTF].forEach { (tf) in
+            tf?.isSecureTextEntry = true
+        }
+        [visiblePassword, visibleRePassword].forEach { (iv) in
+            iv.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnVisibleImageView(_:))))
+        }
     }
     
     @objc fileprivate func didTapOnVisibleImageView(_ sender: UITapGestureRecognizer) {
-        print("helooooooo")
-        if(iconClick == true) {
-            passwordTF.isSecureTextEntry = false
+        if(visibleClick == true) {
+            [passwordTF, rePasswordTF].forEach { (tf) in
+                tf?.togglePasswordVisibility()
+            }
         } else {
-            passwordTF.isSecureTextEntry = true
+            [passwordTF, rePasswordTF].forEach { (tf) in
+                tf?.togglePasswordVisibility()
+            }
         }        
-        iconClick = !iconClick
+        visibleClick = !visibleClick
     }
     
     @objc fileprivate func onTapNextButton(_ sender: UITapGestureRecognizer) {
