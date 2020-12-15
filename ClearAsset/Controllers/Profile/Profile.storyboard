@@ -38,9 +38,10 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Fi-9f-ccV">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Fi-9f-ccV">
                                 <rect key="frame" x="8" y="336" width="398" height="510"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="dGk-3L-j8l" id="RAc-UG-DJC"/>
                                     <outlet property="delegate" destination="dGk-3L-j8l" id="na7-aS-HFj"/>
@@ -125,6 +126,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fn2-Cx-tJX"/>
+                    <connections>
+                        <outlet property="email" destination="PuS-h0-WWu" id="5O3-Bo-ven"/>
+                        <outlet property="imageContainer" destination="6dV-aT-2Lc" id="h5f-RS-5vQ"/>
+                        <outlet property="mainTable" destination="9Fi-9f-ccV" id="dEO-FI-ijL"/>
+                        <outlet property="name" destination="EoM-cC-Tco" id="Lw3-4j-2tp"/>
+                        <outlet property="profileImage" destination="c0J-w4-Fnr" id="O41-bq-KUE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpE-b7-pCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

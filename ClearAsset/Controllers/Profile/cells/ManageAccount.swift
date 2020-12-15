@@ -9,6 +9,12 @@ import UIKit
 
 class ManageAccount: UITableViewCell {
 
+    @IBOutlet weak var bottomView: UIView!{
+        didSet {
+            bottomView.isHidden = true
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
