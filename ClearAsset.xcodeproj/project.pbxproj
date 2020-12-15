@@ -9,9 +9,28 @@
 /* Begin PBXBuildFile section */
 		8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8351C5A7257FB90A0034FA65 /* Login.storyboard */; };
 		83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83812E3A257FBEE500D217AE /* LoginViewController.swift */; };
+		8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */; };
+		8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FB9A258749C400FD3C16 /* UITextField.swift */; };
+		8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FBB1258786C400FD3C16 /* RegisterCheckEmailViewController.swift */; };
+		8396FBB62587917300FD3C16 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FBB52587917300FD3C16 /* ProfileViewController.swift */; };
+		8396FBBA2587918B00FD3C16 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8396FBB92587918B00FD3C16 /* Profile.storyboard */; };
+		839A2F94258621DC009BBFA1 /* CustomDropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A2F93258621DC009BBFA1 /* CustomDropDownMenu.swift */; };
 		839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BCA3D25820643008F3DAE /* UIViewController.swift */; };
 		839BEB31257F86F500B24C76 /* CustomButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BEB30257F86F500B24C76 /* CustomButtom.swift */; };
 		839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BEB33257F8FC300B24C76 /* UIColor.swift */; };
+		83B476C625849FA3009DD837 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B476C525849FA3009DD837 /* Register.storyboard */; };
+		83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B476C82584A40A009DD837 /* CustomLabel.swift */; };
+		83B477002584A953009DD837 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B476FF2584A953009DD837 /* BaseViewController.swift */; };
+		83B477042584AE70009DD837 /* RegisterEmailPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B477032584AE70009DD837 /* RegisterEmailPassViewController.swift */; };
+		83B477072584BB5A009DD837 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B477062584BB5A009DD837 /* CustomTextField.swift */; };
+		83B4770A2584DB27009DD837 /* RegisterAboutYourselfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B477092584DB27009DD837 /* RegisterAboutYourselfViewController.swift */; };
+		83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4770C2584FF6D009DD837 /* RegisterMailingInfoViewController.swift */; };
+		83B779AB2587ACC300018EBA /* MyAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B779A92587ACC300018EBA /* MyAccountCell.swift */; };
+		83B779AC2587ACC300018EBA /* MyAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B779AA2587ACC300018EBA /* MyAccountCell.xib */; };
+		83B779B12587ACE100018EBA /* SignInInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B779AF2587ACE100018EBA /* SignInInfoCell.swift */; };
+		83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B779B02587ACE100018EBA /* SignInInfoCell.xib */; };
+		83B779B62587ACFA00018EBA /* ManageAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B779B42587ACFA00018EBA /* ManageAccount.swift */; };
+		83B779B72587ACFA00018EBA /* ManageAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B779B52587ACFA00018EBA /* ManageAccount.xib */; };
 		83C2F597257F6774008FC305 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2F596257F6774008FC305 /* Utility.swift */; };
 		83E895E2257E4A6100D66424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E895E1257E4A6100D66424 /* AppDelegate.swift */; };
 		83E895E4257E4A6100D66424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E895E3257E4A6100D66424 /* SceneDelegate.swift */; };
@@ -44,9 +63,28 @@
 		2ED65B334B3AE0D1784B588E /* Pods-ClearAsset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.release.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.release.xcconfig"; sourceTree = "<group>"; };
 		8351C5A7257FB90A0034FA65 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		83812E3A257FBEE500D217AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPadedTextField.swift; sourceTree = "<group>"; };
+		8396FB9A258749C400FD3C16 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		8396FBB1258786C400FD3C16 /* RegisterCheckEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCheckEmailViewController.swift; sourceTree = "<group>"; };
+		8396FBB52587917300FD3C16 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8396FBB92587918B00FD3C16 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		839A2F93258621DC009BBFA1 /* CustomDropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropDownMenu.swift; sourceTree = "<group>"; };
 		839BCA3D25820643008F3DAE /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		839BEB30257F86F500B24C76 /* CustomButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtom.swift; sourceTree = "<group>"; };
 		839BEB33257F8FC300B24C76 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		83B476C525849FA3009DD837 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		83B476C82584A40A009DD837 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		83B476FF2584A953009DD837 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		83B477032584AE70009DD837 /* RegisterEmailPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailPassViewController.swift; sourceTree = "<group>"; };
+		83B477062584BB5A009DD837 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		83B477092584DB27009DD837 /* RegisterAboutYourselfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAboutYourselfViewController.swift; sourceTree = "<group>"; };
+		83B4770C2584FF6D009DD837 /* RegisterMailingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMailingInfoViewController.swift; sourceTree = "<group>"; };
+		83B779A92587ACC300018EBA /* MyAccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountCell.swift; sourceTree = "<group>"; };
+		83B779AA2587ACC300018EBA /* MyAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountCell.xib; sourceTree = "<group>"; };
+		83B779AF2587ACE100018EBA /* SignInInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInfoCell.swift; sourceTree = "<group>"; };
+		83B779B02587ACE100018EBA /* SignInInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInInfoCell.xib; sourceTree = "<group>"; };
+		83B779B42587ACFA00018EBA /* ManageAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccount.swift; sourceTree = "<group>"; };
+		83B779B52587ACFA00018EBA /* ManageAccount.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageAccount.xib; sourceTree = "<group>"; };
 		83C2F596257F6774008FC305 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		83E895DE257E4A6100D66424 /* ClearAsset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearAsset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E895E1257E4A6100D66424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,10 +148,23 @@
 		8351C5A6257FB8B60034FA65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8396FBB42587914900FD3C16 /* Profile */,
+				83B476FE2584A938009DD837 /* Base */,
+				83B476C425849F71009DD837 /* Register */,
 				83E895FC257E558600D66424 /* StartPage */,
 				8351C5A5257FB8A80034FA65 /* Login */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8396FBB42587914900FD3C16 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				83B779A82587AC8400018EBA /* cells */,
+				8396FBB52587917300FD3C16 /* ProfileViewController.swift */,
+				8396FBB92587918B00FD3C16 /* Profile.storyboard */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		839BEB2D257F86A800B24C76 /* UI */ = {
@@ -128,8 +179,45 @@
 			isa = PBXGroup;
 			children = (
 				839BEB30257F86F500B24C76 /* CustomButtom.swift */,
+				83B476C82584A40A009DD837 /* CustomLabel.swift */,
+				83B477062584BB5A009DD837 /* CustomTextField.swift */,
+				839A2F93258621DC009BBFA1 /* CustomDropDownMenu.swift */,
+				8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		83B476C425849F71009DD837 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				83B476C525849FA3009DD837 /* Register.storyboard */,
+				83B477032584AE70009DD837 /* RegisterEmailPassViewController.swift */,
+				83B477092584DB27009DD837 /* RegisterAboutYourselfViewController.swift */,
+				83B4770C2584FF6D009DD837 /* RegisterMailingInfoViewController.swift */,
+				8396FBB1258786C400FD3C16 /* RegisterCheckEmailViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		83B476FE2584A938009DD837 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				83B476FF2584A953009DD837 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		83B779A82587AC8400018EBA /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				83B779A92587ACC300018EBA /* MyAccountCell.swift */,
+				83B779AA2587ACC300018EBA /* MyAccountCell.xib */,
+				83B779AF2587ACE100018EBA /* SignInInfoCell.swift */,
+				83B779B02587ACE100018EBA /* SignInInfoCell.xib */,
+				83B779B42587ACFA00018EBA /* ManageAccount.swift */,
+				83B779B52587ACFA00018EBA /* ManageAccount.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		83C2F595257F675E008FC305 /* Utility */ = {
@@ -238,6 +326,7 @@
 				83E8962C257E6D9200D66424 /* UIView.swift */,
 				839BEB33257F8FC300B24C76 /* UIColor.swift */,
 				839BCA3D25820643008F3DAE /* UIViewController.swift */,
+				8396FB9A258749C400FD3C16 /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,7 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E89621257E61E700D66424 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				83B779AC2587ACC300018EBA /* MyAccountCell.xib in Resources */,
 				83E89624257E61E700D66424 /* Nunito-Italic.ttf in Resources */,
+				83B476C625849FA3009DD837 /* Register.storyboard in Resources */,
 				83E8961A257E61E700D66424 /* Nunito-Regular.ttf in Resources */,
 				83E89622257E61E700D66424 /* Nunito-Light.ttf in Resources */,
 				83E89618257E61E700D66424 /* Nunito-SemiBold.ttf in Resources */,
@@ -321,7 +412,9 @@
 				8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */,
 				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
 				83E89623257E61E700D66424 /* Nunito-BlackItalic.ttf in Resources */,
+				8396FBBA2587918B00FD3C16 /* Profile.storyboard in Resources */,
 				83E89619257E61E700D66424 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				83B779B72587ACFA00018EBA /* ManageAccount.xib in Resources */,
 				83E89620257E61E700D66424 /* Nunito-ExtraLight.ttf in Resources */,
 				83E89617257E61E700D66424 /* Nunito-BoldItalic.ttf in Resources */,
 				83E8961B257E61E700D66424 /* Nunito-Bold.ttf in Resources */,
@@ -330,6 +423,7 @@
 				83E8961F257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf in Resources */,
 				83E895FA257E543300D66424 /* Start.storyboard in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
+				83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,14 +476,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B477072584BB5A009DD837 /* CustomTextField.swift in Sources */,
 				83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
+				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
+				83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */,
 				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
 				83C2F597257F6774008FC305 /* Utility.swift in Sources */,
+				83B477002584A953009DD837 /* BaseViewController.swift in Sources */,
 				839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */,
+				83B477042584AE70009DD837 /* RegisterEmailPassViewController.swift in Sources */,
+				8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */,
 				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
+				839A2F94258621DC009BBFA1 /* CustomDropDownMenu.swift in Sources */,
+				83B779AB2587ACC300018EBA /* MyAccountCell.swift in Sources */,
 				83E895E2257E4A6100D66424 /* AppDelegate.swift in Sources */,
+				83B4770A2584DB27009DD837 /* RegisterAboutYourselfViewController.swift in Sources */,
+				8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */,
 				839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */,
+				8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */,
+				83B779B12587ACE100018EBA /* SignInInfoCell.swift in Sources */,
+				83B779B62587ACFA00018EBA /* ManageAccount.swift in Sources */,
+				8396FBB62587917300FD3C16 /* ProfileViewController.swift in Sources */,
 				83E895E4257E4A6100D66424 /* SceneDelegate.swift in Sources */,
 				839BEB31257F86F500B24C76 /* CustomButtom.swift in Sources */,
 			);

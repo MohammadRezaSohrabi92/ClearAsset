@@ -50,7 +50,11 @@ class CustomButton : UIButton {
     
     fileprivate func setupOrangeButton() {
         self.backgroundColor = UIColor.appOrangeColor
-        addShadow(shadowColor: UIColor.appOrangeColor!.cgColor, shadowOffset: CGSize(width: 1, height: 1), shadowOpacity: 1, shadowRadius: 8, cornerRadius: 8)
+        addShadow(shadowColor: UIColor.appOrangeColor!.cgColor, shadowOffset: CGSize(width: 1, height: 1), shadowOpacity: 1, shadowRadius: 6, cornerRadius: 8)
+    }
+    
+    func setOnClick(onClick: Selector) {
+        self.addTarget(onClick.self, action: onClick, for: .touchUpInside)
     }
     
 }

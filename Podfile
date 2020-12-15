@@ -7,5 +7,7 @@ target 'ClearAsset' do
 
   # Pods for ClearAsset
 pod 'PKHUD', '~> 5.0'
+pod 'DropDown'
+pod 'IQKeyboardManagerSwift'
 
 end
