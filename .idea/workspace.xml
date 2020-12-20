@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="858f1dba-3e44-4c3a-88f5-f918c31d5153" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2020,_11_38_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2020__11_38__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_08_12_2020,_12_16_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_08_12_2020__12_16__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClearAsset.xcworkspace/xcuserdata/peykoffice.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset.xcworkspace/xcuserdata/peykoffice.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Profile/ProfileViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Profile/ProfileViewController.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +71,7 @@
       <workItem from="1607414223819" duration="12000" />
       <workItem from="1607414267075" duration="236000" />
       <workItem from="1607417895837" duration="615000" />
+      <workItem from="1608042759821" duration="1040000" />
     </task>
     <servers />
   </component>
@@ -82,5 +89,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="265" key="Vcs.Push.Dialog.v2" timestamp="1608043182374">
+      <screen x="0" y="25" width="1792" height="1027" />
+    </state>
+    <state x="413" y="265" key="Vcs.Push.Dialog.v2/0.25.1792.1027/1792.25.1920.1055@0.25.1792.1027" timestamp="1608043182374" />
   </component>
 </project>

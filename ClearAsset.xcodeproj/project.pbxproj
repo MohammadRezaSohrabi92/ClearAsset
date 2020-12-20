@@ -56,6 +56,7 @@
 		83E89624257E61E700D66424 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E89616257E61E700D66424 /* Nunito-Italic.ttf */; };
 		83E89627257E671C00D66424 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E89626257E671C00D66424 /* StartViewController.swift */; };
 		83E8962D257E6D9200D66424 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8962C257E6D9200D66424 /* UIView.swift */; };
+		83E89D8A258F2E8B00BB1C26 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E89D89258F2E8B00BB1C26 /* CustomScrollView.swift */; };
 		898E40ACE0B21B4E7D04DB1B /* Pods_ClearAsset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,7 @@
 		83E89616257E61E700D66424 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		83E89626257E671C00D66424 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		83E8962C257E6D9200D66424 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		83E89D89258F2E8B00BB1C26 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 		B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearAsset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA0B017A6D009BF4F1B5B00 /* Pods-ClearAsset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.debug.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +185,7 @@
 				83B477062584BB5A009DD837 /* CustomTextField.swift */,
 				839A2F93258621DC009BBFA1 /* CustomDropDownMenu.swift */,
 				8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */,
+				83E89D89258F2E8B00BB1C26 /* CustomScrollView.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */,
 				839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */,
 				8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */,
+				83E89D8A258F2E8B00BB1C26 /* CustomScrollView.swift in Sources */,
 				83B779B12587ACE100018EBA /* SignInInfoCell.swift in Sources */,
 				83B779B62587ACFA00018EBA /* ManageAccount.swift in Sources */,
 				8396FBB62587917300FD3C16 /* ProfileViewController.swift in Sources */,
