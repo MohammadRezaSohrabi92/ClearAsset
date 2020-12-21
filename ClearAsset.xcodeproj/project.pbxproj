@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */; };
+		834A9A3A258F8FF600DEC86F /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */; };
 		8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8351C5A7257FB90A0034FA65 /* Login.storyboard */; };
 		83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83812E3A257FBEE500D217AE /* LoginViewController.swift */; };
+		838EA8E62590B5DE00E97933 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EA8E52590B5DE00E97933 /* String.swift */; };
+		838EA8E82590B60800E97933 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 838EA8EA2590B60800E97933 /* Localizable.strings */; };
 		8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */; };
 		8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FB9A258749C400FD3C16 /* UITextField.swift */; };
 		8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FBB1258786C400FD3C16 /* RegisterCheckEmailViewController.swift */; };
@@ -18,6 +22,10 @@
 		839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BCA3D25820643008F3DAE /* UIViewController.swift */; };
 		839BEB31257F86F500B24C76 /* CustomButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BEB30257F86F500B24C76 /* CustomButtom.swift */; };
 		839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BEB33257F8FC300B24C76 /* UIColor.swift */; };
+		83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9DC5F258F61FA00B3DCAB /* TabBarViewController.swift */; };
+		83A9DC64258F623100B3DCAB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A9DC63258F623100B3DCAB /* TabBar.storyboard */; };
+		83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */; };
+		83A9DC6C258F6E6400B3DCAB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A9DC6B258F6E6400B3DCAB /* Home.storyboard */; };
 		83B476C625849FA3009DD837 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B476C525849FA3009DD837 /* Register.storyboard */; };
 		83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B476C82584A40A009DD837 /* CustomLabel.swift */; };
 		83B477002584A953009DD837 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B476FF2584A953009DD837 /* BaseViewController.swift */; };
@@ -57,13 +65,19 @@
 		83E89627257E671C00D66424 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E89626257E671C00D66424 /* StartViewController.swift */; };
 		83E8962D257E6D9200D66424 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8962C257E6D9200D66424 /* UIView.swift */; };
 		83E89D8A258F2E8B00BB1C26 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E89D89258F2E8B00BB1C26 /* CustomScrollView.swift */; };
+		83E89D90258F43EB00BB1C26 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E89D8F258F43EB00BB1C26 /* Menu.storyboard */; };
+		83E89D9A258F4CB800BB1C26 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E89D99258F4CB800BB1C26 /* MenuViewController.swift */; };
 		898E40ACE0B21B4E7D04DB1B /* Pods_ClearAsset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2ED65B334B3AE0D1784B588E /* Pods-ClearAsset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.release.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.release.xcconfig"; sourceTree = "<group>"; };
+		834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		8351C5A7257FB90A0034FA65 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		83812E3A257FBEE500D217AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		838EA8E52590B5DE00E97933 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		838EA8E92590B60800E97933 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPadedTextField.swift; sourceTree = "<group>"; };
 		8396FB9A258749C400FD3C16 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		8396FBB1258786C400FD3C16 /* RegisterCheckEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCheckEmailViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +87,10 @@
 		839BCA3D25820643008F3DAE /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		839BEB30257F86F500B24C76 /* CustomButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtom.swift; sourceTree = "<group>"; };
 		839BEB33257F8FC300B24C76 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		83A9DC5F258F61FA00B3DCAB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		83A9DC63258F623100B3DCAB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		83A9DC6B258F6E6400B3DCAB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		83B476C525849FA3009DD837 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		83B476C82584A40A009DD837 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		83B476FF2584A953009DD837 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +132,8 @@
 		83E89626257E671C00D66424 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		83E8962C257E6D9200D66424 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		83E89D89258F2E8B00BB1C26 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		83E89D8F258F43EB00BB1C26 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		83E89D99258F4CB800BB1C26 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearAsset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA0B017A6D009BF4F1B5B00 /* Pods-ClearAsset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.debug.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +158,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		834A9A36258F8FD600DEC86F /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */,
+				834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
 		8351C5A5257FB8A80034FA65 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +179,9 @@
 		8351C5A6257FB8B60034FA65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				83A9DC66258F6E3800B3DCAB /* Home */,
+				83A9DC5E258F61D900B3DCAB /* TabBar */,
+				83E89D8E258F43E000BB1C26 /* Menu */,
 				8396FBB42587914900FD3C16 /* Profile */,
 				83B476FE2584A938009DD837 /* Base */,
 				83B476C425849F71009DD837 /* Register */,
@@ -188,6 +220,24 @@
 				83E89D89258F2E8B00BB1C26 /* CustomScrollView.swift */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		83A9DC5E258F61D900B3DCAB /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				83A9DC5F258F61FA00B3DCAB /* TabBarViewController.swift */,
+				83A9DC63258F623100B3DCAB /* TabBar.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		83A9DC66258F6E3800B3DCAB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */,
+				83A9DC6B258F6E6400B3DCAB /* Home.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		83B476C425849F71009DD837 /* Register */ = {
@@ -280,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				83E895EA257E4A6200D66424 /* Assets.xcassets */,
+				838EA8EA2590B60800E97933 /* Localizable.strings */,
 				83E89602257E614800D66424 /* Custom-Fonts */,
 			);
 			path = Assets;
@@ -330,8 +381,19 @@
 				839BEB33257F8FC300B24C76 /* UIColor.swift */,
 				839BCA3D25820643008F3DAE /* UIViewController.swift */,
 				8396FB9A258749C400FD3C16 /* UITextField.swift */,
+				838EA8E52590B5DE00E97933 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83E89D8E258F43E000BB1C26 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				834A9A36258F8FD600DEC86F /* MenuCell */,
+				83E89D8F258F43EB00BB1C26 /* Menu.storyboard */,
+				83E89D99258F4CB800BB1C26 /* MenuViewController.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		C8F5CA6003B2594DA32017C6 /* Pods */ = {
@@ -409,14 +471,17 @@
 				83E8961A257E61E700D66424 /* Nunito-Regular.ttf in Resources */,
 				83E89622257E61E700D66424 /* Nunito-Light.ttf in Resources */,
 				83E89618257E61E700D66424 /* Nunito-SemiBold.ttf in Resources */,
+				83A9DC6C258F6E6400B3DCAB /* Home.storyboard in Resources */,
 				83E895EE257E4A6200D66424 /* LaunchScreen.storyboard in Resources */,
 				83E8961C257E61E700D66424 /* Nunito-ExtraBold.ttf in Resources */,
 				83E8961E257E61E700D66424 /* Nunito-LightItalic.ttf in Resources */,
+				83A9DC64258F623100B3DCAB /* TabBar.storyboard in Resources */,
 				8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */,
 				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
 				83E89623257E61E700D66424 /* Nunito-BlackItalic.ttf in Resources */,
 				8396FBBA2587918B00FD3C16 /* Profile.storyboard in Resources */,
 				83E89619257E61E700D66424 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				83E89D90258F43EB00BB1C26 /* Menu.storyboard in Resources */,
 				83B779B72587ACFA00018EBA /* ManageAccount.xib in Resources */,
 				83E89620257E61E700D66424 /* Nunito-ExtraLight.ttf in Resources */,
 				83E89617257E61E700D66424 /* Nunito-BoldItalic.ttf in Resources */,
@@ -424,6 +489,8 @@
 				83E895EB257E4A6200D66424 /* Assets.xcassets in Resources */,
 				83E8961D257E61E700D66424 /* Nunito-Black.ttf in Resources */,
 				83E8961F257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				838EA8E82590B60800E97933 /* Localizable.strings in Resources */,
+				834A9A3A258F8FF600DEC86F /* MenuTableViewCell.xib in Resources */,
 				83E895FA257E543300D66424 /* Start.storyboard in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
 				83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */,
@@ -483,12 +550,15 @@
 				83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
+				83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */,
 				83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */,
 				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
 				83C2F597257F6774008FC305 /* Utility.swift in Sources */,
 				83B477002584A953009DD837 /* BaseViewController.swift in Sources */,
 				839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */,
+				834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */,
 				83B477042584AE70009DD837 /* RegisterEmailPassViewController.swift in Sources */,
+				838EA8E62590B5DE00E97933 /* String.swift in Sources */,
 				8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */,
 				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
 				839A2F94258621DC009BBFA1 /* CustomDropDownMenu.swift in Sources */,
@@ -497,6 +567,8 @@
 				83B4770A2584DB27009DD837 /* RegisterAboutYourselfViewController.swift in Sources */,
 				8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */,
 				839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */,
+				83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */,
+				83E89D9A258F4CB800BB1C26 /* MenuViewController.swift in Sources */,
 				8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */,
 				83E89D8A258F2E8B00BB1C26 /* CustomScrollView.swift in Sources */,
 				83B779B12587ACE100018EBA /* SignInInfoCell.swift in Sources */,
@@ -510,6 +582,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		838EA8EA2590B60800E97933 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				838EA8E92590B60800E97933 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		83E895E7257E4A6200D66424 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
