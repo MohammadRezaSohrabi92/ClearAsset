@@ -20,7 +20,7 @@ class Utility {
 }
 
 enum AppStoryboard: String {
-    case Start, Login, Register, Profile
+    case Start, Login, Register, Profile, Menu, TabBar
     var instance: UIStoryboard {
       return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
     }
@@ -30,7 +30,6 @@ enum AppStoryboard: String {
     }
     func initialViewController() -> UIViewController? {
         return instance.instantiateInitialViewController()
-
     }
 
 }
