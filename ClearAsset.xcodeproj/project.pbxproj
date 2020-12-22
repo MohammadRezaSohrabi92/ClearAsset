@@ -68,6 +68,16 @@
 		83E89D90258F43EB00BB1C26 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E89D8F258F43EB00BB1C26 /* Menu.storyboard */; };
 		83E89D9A258F4CB800BB1C26 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E89D99258F4CB800BB1C26 /* MenuViewController.swift */; };
 		898E40ACE0B21B4E7D04DB1B /* Pods_ClearAsset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */; };
+		E40EAE8825921BEB00E9AD35 /* BottomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40EAE8625921BEB00E9AD35 /* BottomTableViewCell.swift */; };
+		E40EAE8925921BEB00E9AD35 /* BottomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E40EAE8725921BEB00E9AD35 /* BottomTableViewCell.xib */; };
+		E40EAE8D25921BFF00E9AD35 /* BottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40EAE8B25921BFF00E9AD35 /* BottomCollectionViewCell.swift */; };
+		E40EAE8E25921BFF00E9AD35 /* BottomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E40EAE8C25921BFF00E9AD35 /* BottomCollectionViewCell.xib */; };
+		E4E700602591E6CE00B8C0E4 /* TopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7005E2591E6CE00B8C0E4 /* TopViewCell.swift */; };
+		E4E700612591E6CE00B8C0E4 /* TopViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E7005F2591E6CE00B8C0E4 /* TopViewCell.xib */; };
+		E4E70069259205B500B8C0E4 /* MiddleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E70067259205B400B8C0E4 /* MiddleCollectionViewCell.swift */; };
+		E4E7006A259205B500B8C0E4 /* MiddleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E70068259205B400B8C0E4 /* MiddleCollectionViewCell.xib */; };
+		E4E7006E25920EA600B8C0E4 /* MiddleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7006C25920EA600B8C0E4 /* MiddleTableViewCell.swift */; };
+		E4E7006F25920EA600B8C0E4 /* MiddleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E7006D25920EA600B8C0E4 /* MiddleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +145,16 @@
 		83E89D8F258F43EB00BB1C26 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		83E89D99258F4CB800BB1C26 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B3CF623ABB8D123EF8ED4BD4 /* Pods_ClearAsset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearAsset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40EAE8625921BEB00E9AD35 /* BottomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTableViewCell.swift; sourceTree = "<group>"; };
+		E40EAE8725921BEB00E9AD35 /* BottomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomTableViewCell.xib; sourceTree = "<group>"; };
+		E40EAE8B25921BFF00E9AD35 /* BottomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewCell.swift; sourceTree = "<group>"; };
+		E40EAE8C25921BFF00E9AD35 /* BottomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomCollectionViewCell.xib; sourceTree = "<group>"; };
+		E4E7005E2591E6CE00B8C0E4 /* TopViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewCell.swift; sourceTree = "<group>"; };
+		E4E7005F2591E6CE00B8C0E4 /* TopViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewCell.xib; sourceTree = "<group>"; };
+		E4E70067259205B400B8C0E4 /* MiddleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleCollectionViewCell.swift; sourceTree = "<group>"; };
+		E4E70068259205B400B8C0E4 /* MiddleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiddleCollectionViewCell.xib; sourceTree = "<group>"; };
+		E4E7006C25920EA600B8C0E4 /* MiddleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleTableViewCell.swift; sourceTree = "<group>"; };
+		E4E7006D25920EA600B8C0E4 /* MiddleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiddleTableViewCell.xib; sourceTree = "<group>"; };
 		EBA0B017A6D009BF4F1B5B00 /* Pods-ClearAsset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.debug.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,6 +254,7 @@
 		83A9DC66258F6E3800B3DCAB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E4E7005C2591E68400B8C0E4 /* cells */,
 				83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */,
 				83A9DC6B258F6E6400B3DCAB /* Home.storyboard */,
 			);
@@ -405,6 +426,47 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E4E7005C2591E68400B8C0E4 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				E4E700652591EA5D00B8C0E4 /* bottomCell */,
+				E4E700642591EA5200B8C0E4 /* middleCell */,
+				E4E7005D2591E69400B8C0E4 /* topCell */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		E4E7005D2591E69400B8C0E4 /* topCell */ = {
+			isa = PBXGroup;
+			children = (
+				E4E7005E2591E6CE00B8C0E4 /* TopViewCell.swift */,
+				E4E7005F2591E6CE00B8C0E4 /* TopViewCell.xib */,
+			);
+			path = topCell;
+			sourceTree = "<group>";
+		};
+		E4E700642591EA5200B8C0E4 /* middleCell */ = {
+			isa = PBXGroup;
+			children = (
+				E4E70067259205B400B8C0E4 /* MiddleCollectionViewCell.swift */,
+				E4E70068259205B400B8C0E4 /* MiddleCollectionViewCell.xib */,
+				E4E7006C25920EA600B8C0E4 /* MiddleTableViewCell.swift */,
+				E4E7006D25920EA600B8C0E4 /* MiddleTableViewCell.xib */,
+			);
+			path = middleCell;
+			sourceTree = "<group>";
+		};
+		E4E700652591EA5D00B8C0E4 /* bottomCell */ = {
+			isa = PBXGroup;
+			children = (
+				E40EAE8625921BEB00E9AD35 /* BottomTableViewCell.swift */,
+				E40EAE8725921BEB00E9AD35 /* BottomTableViewCell.xib */,
+				E40EAE8B25921BFF00E9AD35 /* BottomCollectionViewCell.swift */,
+				E40EAE8C25921BFF00E9AD35 /* BottomCollectionViewCell.xib */,
+			);
+			path = bottomCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -467,7 +529,9 @@
 				83E89621257E61E700D66424 /* Nunito-ExtraLightItalic.ttf in Resources */,
 				83B779AC2587ACC300018EBA /* MyAccountCell.xib in Resources */,
 				83E89624257E61E700D66424 /* Nunito-Italic.ttf in Resources */,
+				E4E7006A259205B500B8C0E4 /* MiddleCollectionViewCell.xib in Resources */,
 				83B476C625849FA3009DD837 /* Register.storyboard in Resources */,
+				E4E700612591E6CE00B8C0E4 /* TopViewCell.xib in Resources */,
 				83E8961A257E61E700D66424 /* Nunito-Regular.ttf in Resources */,
 				83E89622257E61E700D66424 /* Nunito-Light.ttf in Resources */,
 				83E89618257E61E700D66424 /* Nunito-SemiBold.ttf in Resources */,
@@ -476,6 +540,7 @@
 				83E8961C257E61E700D66424 /* Nunito-ExtraBold.ttf in Resources */,
 				83E8961E257E61E700D66424 /* Nunito-LightItalic.ttf in Resources */,
 				83A9DC64258F623100B3DCAB /* TabBar.storyboard in Resources */,
+				E40EAE8925921BEB00E9AD35 /* BottomTableViewCell.xib in Resources */,
 				8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */,
 				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
 				83E89623257E61E700D66424 /* Nunito-BlackItalic.ttf in Resources */,
@@ -488,10 +553,12 @@
 				83E8961B257E61E700D66424 /* Nunito-Bold.ttf in Resources */,
 				83E895EB257E4A6200D66424 /* Assets.xcassets in Resources */,
 				83E8961D257E61E700D66424 /* Nunito-Black.ttf in Resources */,
+				E4E7006F25920EA600B8C0E4 /* MiddleTableViewCell.xib in Resources */,
 				83E8961F257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf in Resources */,
 				838EA8E82590B60800E97933 /* Localizable.strings in Resources */,
 				834A9A3A258F8FF600DEC86F /* MenuTableViewCell.xib in Resources */,
 				83E895FA257E543300D66424 /* Start.storyboard in Resources */,
+				E40EAE8E25921BFF00E9AD35 /* BottomCollectionViewCell.xib in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
 				83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */,
 			);
@@ -547,12 +614,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B477072584BB5A009DD837 /* CustomTextField.swift in Sources */,
+				E40EAE8D25921BFF00E9AD35 /* BottomCollectionViewCell.swift in Sources */,
 				83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
+				E40EAE8825921BEB00E9AD35 /* BottomTableViewCell.swift in Sources */,
 				83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */,
 				83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */,
 				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
+				E4E700602591E6CE00B8C0E4 /* TopViewCell.swift in Sources */,
 				83C2F597257F6774008FC305 /* Utility.swift in Sources */,
 				83B477002584A953009DD837 /* BaseViewController.swift in Sources */,
 				839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */,
@@ -560,6 +630,7 @@
 				83B477042584AE70009DD837 /* RegisterEmailPassViewController.swift in Sources */,
 				838EA8E62590B5DE00E97933 /* String.swift in Sources */,
 				8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */,
+				E4E70069259205B500B8C0E4 /* MiddleCollectionViewCell.swift in Sources */,
 				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
 				839A2F94258621DC009BBFA1 /* CustomDropDownMenu.swift in Sources */,
 				83B779AB2587ACC300018EBA /* MyAccountCell.swift in Sources */,
@@ -568,6 +639,7 @@
 				8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */,
 				839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */,
 				83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */,
+				E4E7006E25920EA600B8C0E4 /* MiddleTableViewCell.swift in Sources */,
 				83E89D9A258F4CB800BB1C26 /* MenuViewController.swift in Sources */,
 				8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */,
 				83E89D8A258F2E8B00BB1C26 /* CustomScrollView.swift in Sources */,
