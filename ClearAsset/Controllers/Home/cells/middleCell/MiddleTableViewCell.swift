@@ -24,11 +24,11 @@ class MiddleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate, forRow row: Int) {
+    func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate, forSection section: Int) {
         collectionView.register(UINib(nibName: "MiddleCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: middleCollectionIdentifier)
         collectionView.delegate = dataSourceDelegate
         collectionView.dataSource = dataSourceDelegate
-        collectionView.tag = row
+        collectionView.tag = section
         collectionView.reloadData()
     }
     

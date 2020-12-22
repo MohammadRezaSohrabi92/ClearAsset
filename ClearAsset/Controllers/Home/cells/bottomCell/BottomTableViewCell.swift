@@ -26,11 +26,11 @@ class BottomTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate & UICollectionViewDelegateFlowLayout, forRow row: Int) {
+    func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate & UICollectionViewDelegateFlowLayout, forSection section: Int) {
         collectionView.register(UINib(nibName: "BottomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: bottomCollectionIdentifier)
         collectionView.delegate = dataSourceDelegate
         collectionView.dataSource = dataSourceDelegate        
-        collectionView.tag = row
+        collectionView.tag = section
         collectionView.reloadData()
     }
     
