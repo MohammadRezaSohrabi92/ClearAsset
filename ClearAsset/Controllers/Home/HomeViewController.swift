@@ -137,12 +137,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 extension HomeViewController: SideMenuNavigationControllerDelegate {
 
     func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appearing! (animated: \(animated))")
         menuButton.setImage(UIImage(named: "close"), for: .normal)
     }
 
-    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappearing! (animated: \(animated))")
+    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {        
         menuButton.setImage(UIImage(named: "berger"), for: .normal)
     }
 }
