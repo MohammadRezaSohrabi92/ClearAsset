@@ -34,6 +34,7 @@ class MenuViewController: UIViewController {
 
 }
 
+    //MARK:- tableView extensions
 extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -48,5 +49,9 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return UITableViewCell()
     }
-
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
 }
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MiddleCollectionViewCell" customModule="ClearAsset" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="265" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXI-29-3Ql">
+                        <rect key="frame" x="0.0" y="0.0" width="265" height="170"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OilGasBack" translatesAutoresizingMaskIntoConstraints="NO" id="QSy-ON-F3g">
+                                <rect key="frame" x="8" y="8" width="249" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QSy-ON-F3g" secondAttribute="height" multiplier="184:91" id="d8v-Xn-Q7u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oil, Gas and Energy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KK-xY-1Y3">
+                                <rect key="frame" x="79" y="139" width="107" height="23"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="12"/>
+                                <color key="textColor" name="appDescriptionCV"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QSy-ON-F3g" firstAttribute="top" secondItem="YXI-29-3Ql" secondAttribute="top" constant="8" id="63Q-Pp-5JH"/>
+                            <constraint firstAttribute="bottom" secondItem="8KK-xY-1Y3" secondAttribute="bottom" constant="8" id="VA0-ai-FDv"/>
+                            <constraint firstItem="8KK-xY-1Y3" firstAttribute="top" secondItem="QSy-ON-F3g" secondAttribute="bottom" constant="8" id="YjT-ux-DbG"/>
+                            <constraint firstItem="8KK-xY-1Y3" firstAttribute="centerX" secondItem="YXI-29-3Ql" secondAttribute="centerX" id="ge5-b8-dSV"/>
+                            <constraint firstItem="QSy-ON-F3g" firstAttribute="leading" secondItem="YXI-29-3Ql" secondAttribute="leading" constant="8" id="pPd-S2-kxh"/>
+                            <constraint firstAttribute="trailing" secondItem="QSy-ON-F3g" secondAttribute="trailing" constant="8" id="v7k-fg-tjb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="YXI-29-3Ql" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Nt-1X-Rwx"/>
+                <constraint firstAttribute="trailing" secondItem="YXI-29-3Ql" secondAttribute="trailing" id="VRp-pe-E3m"/>
+                <constraint firstItem="YXI-29-3Ql" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dXS-Ly-Izu"/>
+                <constraint firstAttribute="bottom" secondItem="YXI-29-3Ql" secondAttribute="bottom" id="eAq-eg-3yD"/>
+            </constraints>
+            <size key="customSize" width="231" height="142"/>
+            <point key="canvasLocation" x="26.811594202898554" y="70.3125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="OilGasBack" width="190" height="97"/>
+        <namedColor name="appDescriptionCV">
+            <color red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

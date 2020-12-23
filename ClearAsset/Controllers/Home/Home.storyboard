@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyQ-G9-XaC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BTd-nD-ERf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--add-->
+        <!--Home View Controller-->
         <scene sceneID="KKI-yq-Ftc">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zyQ-G9-XaC" customClass="HomeViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,40 +17,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKU-64-LVZ">
-                                <rect key="frame" x="118" y="372" width="179" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
-                                </state>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZY-cW-BPx" userLabel="navigationView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman" translatesAutoresizingMaskIntoConstraints="NO" id="THH-Vk-vkf">
+                                        <rect key="frame" x="344" y="6.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="hem-QY-7Fo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="H9p-5Y-N8k">
+                                        <rect key="frame" x="165.5" y="14" width="83" height="34.5"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olR-7v-qBn">
+                                        <rect key="frame" x="16" y="17" width="28" height="28.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="olR-7v-qBn" secondAttribute="height" multiplier="1:1" id="VWZ-ZN-LKV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="berger"/>
+                                        <connections>
+                                            <action selector="didTapOnMenuButton:" destination="zyQ-G9-XaC" eventType="touchUpInside" id="XR0-9X-YPQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="THH-Vk-vkf" firstAttribute="centerY" secondItem="sZY-cW-BPx" secondAttribute="centerY" id="BLk-P8-CFN"/>
+                                    <constraint firstItem="H9p-5Y-N8k" firstAttribute="height" secondItem="sZY-cW-BPx" secondAttribute="height" multiplier="0.55" id="GCc-9a-1WS"/>
+                                    <constraint firstAttribute="trailing" secondItem="THH-Vk-vkf" secondAttribute="trailing" constant="20" id="LG9-fD-gLe"/>
+                                    <constraint firstItem="olR-7v-qBn" firstAttribute="leading" secondItem="sZY-cW-BPx" secondAttribute="leading" constant="16" id="V1z-K4-uSs"/>
+                                    <constraint firstItem="H9p-5Y-N8k" firstAttribute="centerX" secondItem="sZY-cW-BPx" secondAttribute="centerX" id="Y8x-5n-blB"/>
+                                    <constraint firstItem="THH-Vk-vkf" firstAttribute="height" secondItem="sZY-cW-BPx" secondAttribute="height" multiplier="0.8" id="ZnS-hN-Oz5"/>
+                                    <constraint firstItem="olR-7v-qBn" firstAttribute="height" secondItem="sZY-cW-BPx" secondAttribute="height" multiplier="0.45" id="cLz-8f-rrG"/>
+                                    <constraint firstItem="olR-7v-qBn" firstAttribute="centerY" secondItem="sZY-cW-BPx" secondAttribute="centerY" id="lzd-IM-797"/>
+                                    <constraint firstItem="H9p-5Y-N8k" firstAttribute="width" secondItem="sZY-cW-BPx" secondAttribute="width" multiplier="0.2" id="r1L-H2-z3X"/>
+                                    <constraint firstItem="H9p-5Y-N8k" firstAttribute="centerY" secondItem="sZY-cW-BPx" secondAttribute="centerY" id="uKb-JF-IkI"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Bm-Ea-yTB">
+                                <rect key="frame" x="0.0" y="106.5" width="414" height="706.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
-                                    <action selector="buttonAction:" destination="zyQ-G9-XaC" eventType="touchUpInside" id="FLo-py-jkw"/>
+                                    <outlet property="dataSource" destination="zyQ-G9-XaC" id="hXC-kM-gVa"/>
+                                    <outlet property="delegate" destination="zyQ-G9-XaC" id="lSb-tp-N4v"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cap-dL-JJW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sZY-cW-BPx" firstAttribute="leading" secondItem="cap-dL-JJW" secondAttribute="leading" id="COL-SC-5uM"/>
+                            <constraint firstItem="sZY-cW-BPx" firstAttribute="top" secondItem="cap-dL-JJW" secondAttribute="top" id="FJI-sA-jie"/>
+                            <constraint firstItem="sZY-cW-BPx" firstAttribute="trailing" secondItem="cap-dL-JJW" secondAttribute="trailing" id="IOF-iV-c8k"/>
+                            <constraint firstItem="1Bm-Ea-yTB" firstAttribute="leading" secondItem="cap-dL-JJW" secondAttribute="leading" id="KwZ-8g-fNG"/>
+                            <constraint firstItem="sZY-cW-BPx" firstAttribute="height" secondItem="qEH-yt-oXd" secondAttribute="height" multiplier="0.07" id="U3r-hx-CrJ"/>
+                            <constraint firstItem="cap-dL-JJW" firstAttribute="bottom" secondItem="1Bm-Ea-yTB" secondAttribute="bottom" id="j3M-0D-FoR"/>
+                            <constraint firstItem="1Bm-Ea-yTB" firstAttribute="top" secondItem="sZY-cW-BPx" secondAttribute="bottom" id="oks-dM-ws6"/>
+                            <constraint firstItem="cap-dL-JJW" firstAttribute="trailing" secondItem="1Bm-Ea-yTB" secondAttribute="trailing" id="uQw-au-Fb0"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="add" image="category" id="WrN-9V-P3f"/>
+                    <navigationItem key="navigationItem" id="plc-oe-r4J"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainTable" destination="1Bm-Ea-yTB" id="2HG-tX-d24"/>
+                        <outlet property="menuButton" destination="olR-7v-qBn" id="BaZ-w9-HBP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5GL-Ar-sFk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202.8985507246377" y="151.33928571428569"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="zyu-W9-kFX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="BTd-nD-ERf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="WrN-9V-P3f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EEd-09-Zp7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zyQ-G9-XaC" kind="relationship" relationship="rootViewController" id="1vY-Qv-AK7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gJ-3b-efq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="292.75362318840581" y="151.33928571428569"/>
         </scene>
     </scenes>
     <resources>
-        <image name="category" width="30" height="25"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="berger" width="132.5" height="107"/>
+        <image name="home" width="30" height="30"/>
+        <image name="littleLogo" width="225" height="125.5"/>
+        <image name="woman" width="114.5" height="114.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
