@@ -15,6 +15,12 @@
 		83023E9125971F39000F910F /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E9025971F39000F910F /* ServicesViewController.swift */; };
 		83023E9525971F56000F910F /* AuctionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E9425971F56000F910F /* AuctionsViewController.swift */; };
 		83023E9925971F61000F910F /* Auctions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83023E9825971F61000F910F /* Auctions.storyboard */; };
+		83023EA6259731B5000F910F /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023EA4259731B5000F910F /* CategoryTableViewCell.swift */; };
+		83023EA7259731B5000F910F /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83023EA5259731B5000F910F /* CategoryTableViewCell.xib */; };
+		83023EAD2597324F000F910F /* SubCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023EAB2597324F000F910F /* SubCategoryCell.swift */; };
+		83023EAE2597324F000F910F /* SubCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83023EAC2597324F000F910F /* SubCategoryCell.xib */; };
+		83023EB525973418000F910F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023EB325973418000F910F /* CategoryCollectionViewCell.swift */; };
+		83023EB625973418000F910F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83023EB425973418000F910F /* CategoryCollectionViewCell.xib */; };
 		834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */; };
 		834A9A3A258F8FF600DEC86F /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */; };
 		8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8351C5A7257FB90A0034FA65 /* Login.storyboard */; };
@@ -98,6 +104,12 @@
 		83023E9025971F39000F910F /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		83023E9425971F56000F910F /* AuctionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsViewController.swift; sourceTree = "<group>"; };
 		83023E9825971F61000F910F /* Auctions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auctions.storyboard; sourceTree = "<group>"; };
+		83023EA4259731B5000F910F /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		83023EA5259731B5000F910F /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		83023EAB2597324F000F910F /* SubCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryCell.swift; sourceTree = "<group>"; };
+		83023EAC2597324F000F910F /* SubCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoryCell.xib; sourceTree = "<group>"; };
+		83023EB325973418000F910F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		83023EB425973418000F910F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		8351C5A7257FB90A0034FA65 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -197,6 +209,7 @@
 		83023E7E25971E80000F910F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				83023EA225972E26000F910F /* Cell */,
 				83023E7F25971EB9000F910F /* Category.storyboard */,
 				83023E8225971ED7000F910F /* CategoryViewController.swift */,
 			);
@@ -228,6 +241,35 @@
 				83023E9825971F61000F910F /* Auctions.storyboard */,
 			);
 			path = Auctions;
+			sourceTree = "<group>";
+		};
+		83023EA225972E26000F910F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				83023EAA259731C2000F910F /* SubCategoryCell */,
+				83023EA9259731BC000F910F /* CategoryCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		83023EA9259731BC000F910F /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				83023EB325973418000F910F /* CategoryCollectionViewCell.swift */,
+				83023EB425973418000F910F /* CategoryCollectionViewCell.xib */,
+				83023EA4259731B5000F910F /* CategoryTableViewCell.swift */,
+				83023EA5259731B5000F910F /* CategoryTableViewCell.xib */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		83023EAA259731C2000F910F /* SubCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				83023EAB2597324F000F910F /* SubCategoryCell.swift */,
+				83023EAC2597324F000F910F /* SubCategoryCell.xib */,
+			);
+			path = SubCategoryCell;
 			sourceTree = "<group>";
 		};
 		834A9A36258F8FD600DEC86F /* MenuCell */ = {
@@ -585,6 +627,7 @@
 				83E89621257E61E700D66424 /* Nunito-ExtraLightItalic.ttf in Resources */,
 				83B779AC2587ACC300018EBA /* MyAccountCell.xib in Resources */,
 				83023E8725971EF2000F910F /* Add.storyboard in Resources */,
+				83023EAE2597324F000F910F /* SubCategoryCell.xib in Resources */,
 				83E89624257E61E700D66424 /* Nunito-Italic.ttf in Resources */,
 				E4E7006A259205B500B8C0E4 /* MiddleCollectionViewCell.xib in Resources */,
 				83B476C625849FA3009DD837 /* Register.storyboard in Resources */,
@@ -593,6 +636,7 @@
 				83E89622257E61E700D66424 /* Nunito-Light.ttf in Resources */,
 				83E89618257E61E700D66424 /* Nunito-SemiBold.ttf in Resources */,
 				83A9DC6C258F6E6400B3DCAB /* Home.storyboard in Resources */,
+				83023EA7259731B5000F910F /* CategoryTableViewCell.xib in Resources */,
 				83E895EE257E4A6200D66424 /* LaunchScreen.storyboard in Resources */,
 				83E8961C257E61E700D66424 /* Nunito-ExtraBold.ttf in Resources */,
 				83E8961E257E61E700D66424 /* Nunito-LightItalic.ttf in Resources */,
@@ -616,6 +660,7 @@
 				838EA8E82590B60800E97933 /* Localizable.strings in Resources */,
 				834A9A3A258F8FF600DEC86F /* MenuTableViewCell.xib in Resources */,
 				83E895FA257E543300D66424 /* Start.storyboard in Resources */,
+				83023EB625973418000F910F /* CategoryCollectionViewCell.xib in Resources */,
 				83023E8E25971F30000F910F /* Services.storyboard in Resources */,
 				E40EAE8E25921BFF00E9AD35 /* BottomCollectionViewCell.xib in Resources */,
 				83023E9925971F61000F910F /* Auctions.storyboard in Resources */,
@@ -688,7 +733,9 @@
 				83C2F597257F6774008FC305 /* Utility.swift in Sources */,
 				83B477002584A953009DD837 /* BaseViewController.swift in Sources */,
 				839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */,
+				83023EA6259731B5000F910F /* CategoryTableViewCell.swift in Sources */,
 				834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */,
+				83023EAD2597324F000F910F /* SubCategoryCell.swift in Sources */,
 				83B477042584AE70009DD837 /* RegisterEmailPassViewController.swift in Sources */,
 				838EA8E62590B5DE00E97933 /* String.swift in Sources */,
 				83023E8325971ED7000F910F /* CategoryViewController.swift in Sources */,
@@ -711,6 +758,7 @@
 				83B779B62587ACFA00018EBA /* ManageAccount.swift in Sources */,
 				8396FBB62587917300FD3C16 /* ProfileViewController.swift in Sources */,
 				83E895E4257E4A6100D66424 /* SceneDelegate.swift in Sources */,
+				83023EB525973418000F910F /* CategoryCollectionViewCell.swift in Sources */,
 				839BEB31257F86F500B24C76 /* CustomButtom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

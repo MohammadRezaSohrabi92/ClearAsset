@@ -16,16 +16,78 @@
                     <view key="view" contentMode="scaleToFill" id="6MU-lg-wpV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fp4-eD-7zb" userLabel="navigationView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman" translatesAutoresizingMaskIntoConstraints="NO" id="Xzh-iY-O98">
+                                        <rect key="frame" x="344" y="6.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="vPR-Jp-1tT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="i6q-ua-WKC">
+                                        <rect key="frame" x="165.5" y="14" width="83" height="34.5"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9r-V2-Os9">
+                                        <rect key="frame" x="16" y="17" width="28" height="28.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="e9r-V2-Os9" secondAttribute="height" multiplier="1:1" id="3yI-po-8AU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="berger"/>
+                                        <connections>
+                                            <action selector="didTapOnMenu:" destination="Vdb-t5-9UT" eventType="touchUpInside" id="8C8-OT-h4k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="i6q-ua-WKC" firstAttribute="height" secondItem="fp4-eD-7zb" secondAttribute="height" multiplier="0.55" id="2YF-KA-pqh"/>
+                                    <constraint firstItem="i6q-ua-WKC" firstAttribute="centerX" secondItem="fp4-eD-7zb" secondAttribute="centerX" id="5T9-4R-2He"/>
+                                    <constraint firstItem="e9r-V2-Os9" firstAttribute="centerY" secondItem="fp4-eD-7zb" secondAttribute="centerY" id="Ap5-p1-cLl"/>
+                                    <constraint firstItem="e9r-V2-Os9" firstAttribute="height" secondItem="fp4-eD-7zb" secondAttribute="height" multiplier="0.45" id="GdX-Zk-YBN"/>
+                                    <constraint firstItem="e9r-V2-Os9" firstAttribute="leading" secondItem="fp4-eD-7zb" secondAttribute="leading" constant="16" id="RCe-Ht-tWX"/>
+                                    <constraint firstItem="i6q-ua-WKC" firstAttribute="centerY" secondItem="fp4-eD-7zb" secondAttribute="centerY" id="WGq-Ej-L0g"/>
+                                    <constraint firstItem="i6q-ua-WKC" firstAttribute="width" secondItem="fp4-eD-7zb" secondAttribute="width" multiplier="0.2" id="ePG-4v-dpS"/>
+                                    <constraint firstItem="Xzh-iY-O98" firstAttribute="centerY" secondItem="fp4-eD-7zb" secondAttribute="centerY" id="el3-W1-dvU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xzh-iY-O98" secondAttribute="trailing" constant="20" id="oRw-Lr-6Rg"/>
+                                    <constraint firstItem="Xzh-iY-O98" firstAttribute="height" secondItem="fp4-eD-7zb" secondAttribute="height" multiplier="0.8" id="vBq-Dt-otF"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wwF-ei-wWf">
+                                <rect key="frame" x="0.0" y="106.5" width="414" height="706.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vdb-t5-9UT" id="9AI-Lj-hh7"/>
+                                    <outlet property="delegate" destination="Vdb-t5-9UT" id="FYd-QT-GyF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MI7-1q-ymK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fp4-eD-7zb" firstAttribute="height" secondItem="6MU-lg-wpV" secondAttribute="height" multiplier="0.07" id="1kw-Dy-sv1"/>
+                            <constraint firstItem="MI7-1q-ymK" firstAttribute="trailing" secondItem="wwF-ei-wWf" secondAttribute="trailing" id="7a2-IH-avQ"/>
+                            <constraint firstItem="MI7-1q-ymK" firstAttribute="bottom" secondItem="wwF-ei-wWf" secondAttribute="bottom" id="7nS-c6-K5D"/>
+                            <constraint firstItem="fp4-eD-7zb" firstAttribute="top" secondItem="MI7-1q-ymK" secondAttribute="top" id="Ced-Q9-3xz"/>
+                            <constraint firstItem="wwF-ei-wWf" firstAttribute="top" secondItem="fp4-eD-7zb" secondAttribute="bottom" id="ERq-Vf-G3B"/>
+                            <constraint firstItem="fp4-eD-7zb" firstAttribute="leading" secondItem="MI7-1q-ymK" secondAttribute="leading" id="Zfi-rd-YDC"/>
+                            <constraint firstItem="wwF-ei-wWf" firstAttribute="leading" secondItem="MI7-1q-ymK" secondAttribute="leading" id="fja-xA-JSN"/>
+                            <constraint firstAttribute="trailing" secondItem="fp4-eD-7zb" secondAttribute="trailing" id="i3P-mi-L37"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Category" image="category" id="tXK-b2-RXj"/>
                     <navigationItem key="navigationItem" id="pQp-Uk-NYy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainTable" destination="wwF-ei-wWf" id="pT1-wY-pMU"/>
+                        <outlet property="menuButton" destination="e9r-V2-Os9" id="O7A-SU-bae"/>
+                        <outlet property="profilePicture" destination="Xzh-iY-O98" id="WG0-ZQ-cxM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwT-Ef-doB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="124.55357142857142"/>
+            <point key="canvasLocation" x="945" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xe5-BQ-eOf">
@@ -46,7 +108,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="berger" width="132.5" height="107"/>
         <image name="category" width="30" height="25"/>
+        <image name="littleLogo" width="225" height="125.5"/>
+        <image name="woman" width="114.5" height="114.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
