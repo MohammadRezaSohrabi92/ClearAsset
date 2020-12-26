@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     let middleCollectionIdentifier = "middleCollectionIdentifer"
     let bottomCellIdentifier = "bottomCellIdentifer"
     let bottomCollectionItemIdentifier = "bottomCollectionIdentifier"
+    var menu : SideMenuNavigationController!
 
     //MARK:- lifeCycle
     override func viewDidLoad() {
@@ -31,20 +32,22 @@ class HomeViewController: UIViewController {
 
     //MARK:- other methods
     func initViews() {
+        initMenu()
         mainTable.register(UINib(nibName: "TopViewCell", bundle: nil), forCellReuseIdentifier: mainTableIdentifer)
         mainTable.register(UINib(nibName: "MiddleTableViewCell", bundle: nil), forCellReuseIdentifier: secondCellIdentifier)
         mainTable.register(UINib(nibName: "BottomTableViewCell", bundle: nil), forCellReuseIdentifier: bottomCellIdentifier)
     }
-
-
-    //MARK:- actions
-
-    @IBAction func didTapOnMenuButton(_ sender: Any) {
+    
+    func initMenu() {
         let sb = UIStoryboard(name: "Menu", bundle: nil)
-        let menu = sb.instantiateViewController(withIdentifier: "SideMenuNavigationController") as! SideMenuNavigationController
+        menu = sb.instantiateViewController(withIdentifier: "SideMenuNavigationController") as? SideMenuNavigationController
         menu.menuWidth = self.view.layer.frame.width - (self.view.layer.frame.width / 6)
         SideMenuManager.default.addPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+    }
+    
+    //MARK:- actions
+    @IBAction func didTapOnMenuButton(_ sender: Any) {
         present(menu, animated: true, completion: nil)
     }
     
