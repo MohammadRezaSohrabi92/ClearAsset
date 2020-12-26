@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83023E8025971EB9000F910F /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83023E7F25971EB9000F910F /* Category.storyboard */; };
+		83023E8325971ED7000F910F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E8225971ED7000F910F /* CategoryViewController.swift */; };
+		83023E8725971EF2000F910F /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83023E8625971EF2000F910F /* Add.storyboard */; };
+		83023E8A25971F06000F910F /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E8925971F06000F910F /* AddViewController.swift */; };
+		83023E8E25971F30000F910F /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83023E8D25971F30000F910F /* Services.storyboard */; };
+		83023E9125971F39000F910F /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E9025971F39000F910F /* ServicesViewController.swift */; };
+		83023E9525971F56000F910F /* AuctionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E9425971F56000F910F /* AuctionsViewController.swift */; };
+		83023E9925971F61000F910F /* Auctions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83023E9825971F61000F910F /* Auctions.storyboard */; };
 		834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */; };
 		834A9A3A258F8FF600DEC86F /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */; };
 		8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8351C5A7257FB90A0034FA65 /* Login.storyboard */; };
@@ -82,6 +90,14 @@
 
 /* Begin PBXFileReference section */
 		2ED65B334B3AE0D1784B588E /* Pods-ClearAsset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearAsset.release.xcconfig"; path = "Target Support Files/Pods-ClearAsset/Pods-ClearAsset.release.xcconfig"; sourceTree = "<group>"; };
+		83023E7F25971EB9000F910F /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		83023E8225971ED7000F910F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		83023E8625971EF2000F910F /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		83023E8925971F06000F910F /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		83023E8D25971F30000F910F /* Services.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Services.storyboard; sourceTree = "<group>"; };
+		83023E9025971F39000F910F /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		83023E9425971F56000F910F /* AuctionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsViewController.swift; sourceTree = "<group>"; };
+		83023E9825971F61000F910F /* Auctions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auctions.storyboard; sourceTree = "<group>"; };
 		834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		8351C5A7257FB90A0034FA65 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -178,6 +194,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		83023E7E25971E80000F910F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				83023E7F25971EB9000F910F /* Category.storyboard */,
+				83023E8225971ED7000F910F /* CategoryViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		83023E8525971EE4000F910F /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				83023E8625971EF2000F910F /* Add.storyboard */,
+				83023E8925971F06000F910F /* AddViewController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		83023E8C25971F24000F910F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83023E8D25971F30000F910F /* Services.storyboard */,
+				83023E9025971F39000F910F /* ServicesViewController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		83023E9325971F42000F910F /* Auctions */ = {
+			isa = PBXGroup;
+			children = (
+				83023E9425971F56000F910F /* AuctionsViewController.swift */,
+				83023E9825971F61000F910F /* Auctions.storyboard */,
+			);
+			path = Auctions;
+			sourceTree = "<group>";
+		};
 		834A9A36258F8FD600DEC86F /* MenuCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +251,10 @@
 		8351C5A6257FB8B60034FA65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				83023E9325971F42000F910F /* Auctions */,
+				83023E8C25971F24000F910F /* Services */,
+				83023E8525971EE4000F910F /* Add */,
+				83023E7E25971E80000F910F /* Category */,
 				83A9DC66258F6E3800B3DCAB /* Home */,
 				83A9DC5E258F61D900B3DCAB /* TabBar */,
 				83E89D8E258F43E000BB1C26 /* Menu */,
@@ -528,6 +584,7 @@
 			files = (
 				83E89621257E61E700D66424 /* Nunito-ExtraLightItalic.ttf in Resources */,
 				83B779AC2587ACC300018EBA /* MyAccountCell.xib in Resources */,
+				83023E8725971EF2000F910F /* Add.storyboard in Resources */,
 				83E89624257E61E700D66424 /* Nunito-Italic.ttf in Resources */,
 				E4E7006A259205B500B8C0E4 /* MiddleCollectionViewCell.xib in Resources */,
 				83B476C625849FA3009DD837 /* Register.storyboard in Resources */,
@@ -550,6 +607,7 @@
 				83B779B72587ACFA00018EBA /* ManageAccount.xib in Resources */,
 				83E89620257E61E700D66424 /* Nunito-ExtraLight.ttf in Resources */,
 				83E89617257E61E700D66424 /* Nunito-BoldItalic.ttf in Resources */,
+				83023E8025971EB9000F910F /* Category.storyboard in Resources */,
 				83E8961B257E61E700D66424 /* Nunito-Bold.ttf in Resources */,
 				83E895EB257E4A6200D66424 /* Assets.xcassets in Resources */,
 				83E8961D257E61E700D66424 /* Nunito-Black.ttf in Resources */,
@@ -558,7 +616,9 @@
 				838EA8E82590B60800E97933 /* Localizable.strings in Resources */,
 				834A9A3A258F8FF600DEC86F /* MenuTableViewCell.xib in Resources */,
 				83E895FA257E543300D66424 /* Start.storyboard in Resources */,
+				83023E8E25971F30000F910F /* Services.storyboard in Resources */,
 				E40EAE8E25921BFF00E9AD35 /* BottomCollectionViewCell.xib in Resources */,
+				83023E9925971F61000F910F /* Auctions.storyboard in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
 				83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */,
 			);
@@ -615,7 +675,9 @@
 			files = (
 				83B477072584BB5A009DD837 /* CustomTextField.swift in Sources */,
 				E40EAE8D25921BFF00E9AD35 /* BottomCollectionViewCell.swift in Sources */,
+				83023E9125971F39000F910F /* ServicesViewController.swift in Sources */,
 				83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */,
+				83023E9525971F56000F910F /* AuctionsViewController.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
 				E40EAE8825921BEB00E9AD35 /* BottomTableViewCell.swift in Sources */,
@@ -629,8 +691,10 @@
 				834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */,
 				83B477042584AE70009DD837 /* RegisterEmailPassViewController.swift in Sources */,
 				838EA8E62590B5DE00E97933 /* String.swift in Sources */,
+				83023E8325971ED7000F910F /* CategoryViewController.swift in Sources */,
 				8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */,
 				E4E70069259205B500B8C0E4 /* MiddleCollectionViewCell.swift in Sources */,
+				83023E8A25971F06000F910F /* AddViewController.swift in Sources */,
 				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
 				839A2F94258621DC009BBFA1 /* CustomDropDownMenu.swift in Sources */,
 				83B779AB2587ACC300018EBA /* MyAccountCell.swift in Sources */,
