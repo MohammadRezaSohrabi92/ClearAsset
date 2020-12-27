@@ -21,9 +21,14 @@
 		83023EAE2597324F000F910F /* SubCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83023EAC2597324F000F910F /* SubCategoryCell.xib */; };
 		83023EB525973418000F910F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023EB325973418000F910F /* CategoryCollectionViewCell.swift */; };
 		83023EB625973418000F910F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83023EB425973418000F910F /* CategoryCollectionViewCell.xib */; };
+		831E75D225986F43000046E5 /* CustomAddTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E75D125986F43000046E5 /* CustomAddTitle.swift */; };
+		831E75D52598732F000046E5 /* CustomAddTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E75D42598732F000046E5 /* CustomAddTextFeild.swift */; };
+		831E75DA25988A45000046E5 /* AddTransmissionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E75D825988A45000046E5 /* AddTransmissionCollectionViewCell.swift */; };
+		831E75DB25988A45000046E5 /* AddTransmissionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831E75D925988A45000046E5 /* AddTransmissionCollectionViewCell.xib */; };
 		834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */; };
 		834A9A3A258F8FF600DEC86F /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */; };
 		8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8351C5A7257FB90A0034FA65 /* Login.storyboard */; };
+		836FC7522598681600F958AC /* AddListingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FC7512598681600F958AC /* AddListingDetailViewController.swift */; };
 		83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83812E3A257FBEE500D217AE /* LoginViewController.swift */; };
 		838EA8E62590B5DE00E97933 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EA8E52590B5DE00E97933 /* String.swift */; };
 		838EA8E82590B60800E97933 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 838EA8EA2590B60800E97933 /* Localizable.strings */; };
@@ -112,9 +117,14 @@
 		83023EAC2597324F000F910F /* SubCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoryCell.xib; sourceTree = "<group>"; };
 		83023EB325973418000F910F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		83023EB425973418000F910F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		831E75D125986F43000046E5 /* CustomAddTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddTitle.swift; sourceTree = "<group>"; };
+		831E75D42598732F000046E5 /* CustomAddTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddTextFeild.swift; sourceTree = "<group>"; };
+		831E75D825988A45000046E5 /* AddTransmissionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransmissionCollectionViewCell.swift; sourceTree = "<group>"; };
+		831E75D925988A45000046E5 /* AddTransmissionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTransmissionCollectionViewCell.xib; sourceTree = "<group>"; };
 		834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		834A9A38258F8FF600DEC86F /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		8351C5A7257FB90A0034FA65 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		836FC7512598681600F958AC /* AddListingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingDetailViewController.swift; sourceTree = "<group>"; };
 		83812E3A257FBEE500D217AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		838EA8E52590B5DE00E97933 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		838EA8E92590B60800E97933 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -223,9 +233,9 @@
 		83023E8525971EE4000F910F /* Add */ = {
 			isa = PBXGroup;
 			children = (
-				83AF23CB25978ACC00B64D49 /* AddListingCell */,
 				83023E8625971EF2000F910F /* Add.storyboard */,
-				83023E8925971F06000F910F /* AddListingViewController.swift */,
+				836FC74C2598676900F958AC /* AddListingDetail */,
+				836FC74A2598672900F958AC /* AddListingCategory */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -277,6 +287,15 @@
 			path = SubCategoryCell;
 			sourceTree = "<group>";
 		};
+		831E75D7259889FD000046E5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				831E75D825988A45000046E5 /* AddTransmissionCollectionViewCell.swift */,
+				831E75D925988A45000046E5 /* AddTransmissionCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		834A9A36258F8FD600DEC86F /* MenuCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +333,24 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		836FC74A2598672900F958AC /* AddListingCategory */ = {
+			isa = PBXGroup;
+			children = (
+				83AF23CB25978ACC00B64D49 /* AddListingCell */,
+				83023E8925971F06000F910F /* AddListingViewController.swift */,
+			);
+			path = AddListingCategory;
+			sourceTree = "<group>";
+		};
+		836FC74C2598676900F958AC /* AddListingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				831E75D7259889FD000046E5 /* Cell */,
+				836FC7512598681600F958AC /* AddListingDetailViewController.swift */,
+			);
+			path = AddListingDetail;
+			sourceTree = "<group>";
+		};
 		8396FBB42587914900FD3C16 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +378,8 @@
 				839A2F93258621DC009BBFA1 /* CustomDropDownMenu.swift */,
 				8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */,
 				83E89D89258F2E8B00BB1C26 /* CustomScrollView.swift */,
+				831E75D125986F43000046E5 /* CustomAddTitle.swift */,
+				831E75D42598732F000046E5 /* CustomAddTextFeild.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -678,6 +717,7 @@
 				83023EB625973418000F910F /* CategoryCollectionViewCell.xib in Resources */,
 				83023E8E25971F30000F910F /* Services.storyboard in Resources */,
 				E40EAE8E25921BFF00E9AD35 /* BottomCollectionViewCell.xib in Resources */,
+				831E75DB25988A45000046E5 /* AddTransmissionCollectionViewCell.xib in Resources */,
 				83023E9925971F61000F910F /* Auctions.storyboard in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
 				83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */,
@@ -738,9 +778,12 @@
 				83023E9125971F39000F910F /* ServicesViewController.swift in Sources */,
 				83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */,
 				83023E9525971F56000F910F /* AuctionsViewController.swift in Sources */,
+				831E75DA25988A45000046E5 /* AddTransmissionCollectionViewCell.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
 				E40EAE8825921BEB00E9AD35 /* BottomTableViewCell.swift in Sources */,
+				831E75D225986F43000046E5 /* CustomAddTitle.swift in Sources */,
+				836FC7522598681600F958AC /* AddListingDetailViewController.swift in Sources */,
 				83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */,
 				83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */,
 				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
@@ -763,6 +806,7 @@
 				83E895E2257E4A6100D66424 /* AppDelegate.swift in Sources */,
 				83B4770A2584DB27009DD837 /* RegisterAboutYourselfViewController.swift in Sources */,
 				8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */,
+				831E75D52598732F000046E5 /* CustomAddTextFeild.swift in Sources */,
 				839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */,
 				83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */,
 				83AF23CE25978AE500B64D49 /* AddListingTableViewCell.swift in Sources */,

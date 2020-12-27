@@ -14,4 +14,5 @@ extension UIColor {
     static let appBlueLightAlpha = UIColor(red: 41/255, green: 52/255, blue: 98/255, alpha: 0.65)
     static let appBorderColor = UIColor(named: "appBorder")
     static let appTextfieldBG = UIColor(named: "appTextfieldBG")
+    static let appGray = UIColor(named: "appGray")
 }

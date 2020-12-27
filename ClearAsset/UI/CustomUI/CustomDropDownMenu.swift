@@ -14,6 +14,20 @@ class CustomDropDownMenu: UIView {
     //init var
     let dropDownMenu = DropDown()
     
+    @IBInspectable var isRegister: Bool {
+        get {
+            return true
+        } set {
+            if !newValue {
+                backView.backgroundColor = .white
+                bottomArrow.tintColor = UIColor.appGray
+            } else {
+                backView.backgroundColor = UIColor.appTextfieldBG
+                bottomArrow.tintColor = UIColor.appOrangeColor
+            }
+        }
+    }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.backgroundColor = .clear
@@ -26,8 +40,7 @@ class CustomDropDownMenu: UIView {
     }
     
     lazy var backView: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor.appTextfieldBG
+        let view = UIView()        
         view.cornerRadius = 8
         view.borderColor = UIColor.appBorderColor
         view.borderWidth = 1
@@ -47,6 +60,7 @@ class CustomDropDownMenu: UIView {
     
     lazy var bottomArrow: UIImageView = {
         let iv = UIImageView(image: UIImage(named: "arrowBottom"))
+        iv.image = iv.image?.withRenderingMode(.alwaysTemplate)
         iv.contentMode = .scaleAspectFit
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv

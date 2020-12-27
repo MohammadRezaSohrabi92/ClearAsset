@@ -42,6 +42,10 @@ extension AddListingViewController: UITableViewDelegate, UITableViewDataSource {
         return 10
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigationController?.pushViewController(AppStoryboard.Add.viewController(viewControllerClass: AddListingDetailViewController.self), animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: addListingCellIdentifier, for: indexPath) as? AddListingTableViewCell {
             return cell
