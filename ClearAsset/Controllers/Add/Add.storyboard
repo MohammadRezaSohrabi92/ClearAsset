@@ -4,24 +4,97 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Add-->
         <scene sceneID="bvV-Da-Ko5">
             <objects>
-                <viewController id="hz2-80-xvM" customClass="AddViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hz2-80-xvM" customClass="AddListingViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dvh-rk-CEa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSQ-kD-rSN" userLabel="navigationView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman" translatesAutoresizingMaskIntoConstraints="NO" id="AK7-S1-dcN">
+                                        <rect key="frame" x="344" y="6.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Ojz-mM-gFX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3oi-O9-XdJ">
+                                        <rect key="frame" x="165.5" y="14" width="83" height="34.5"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMX-Bj-llP">
+                                        <rect key="frame" x="16" y="17" width="28" height="28.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZMX-Bj-llP" secondAttribute="height" multiplier="1:1" id="e9e-Ke-eGd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="berger"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AK7-S1-dcN" firstAttribute="centerY" secondItem="MSQ-kD-rSN" secondAttribute="centerY" id="3N8-JS-nau"/>
+                                    <constraint firstItem="AK7-S1-dcN" firstAttribute="height" secondItem="MSQ-kD-rSN" secondAttribute="height" multiplier="0.8" id="5qk-gK-2te"/>
+                                    <constraint firstItem="ZMX-Bj-llP" firstAttribute="centerY" secondItem="MSQ-kD-rSN" secondAttribute="centerY" id="AUY-fl-lC1"/>
+                                    <constraint firstItem="3oi-O9-XdJ" firstAttribute="width" secondItem="MSQ-kD-rSN" secondAttribute="width" multiplier="0.2" id="Igg-g7-Mfc"/>
+                                    <constraint firstItem="3oi-O9-XdJ" firstAttribute="height" secondItem="MSQ-kD-rSN" secondAttribute="height" multiplier="0.55" id="R9U-OX-gDr"/>
+                                    <constraint firstItem="3oi-O9-XdJ" firstAttribute="centerY" secondItem="MSQ-kD-rSN" secondAttribute="centerY" id="T4d-jI-kj9"/>
+                                    <constraint firstItem="ZMX-Bj-llP" firstAttribute="leading" secondItem="MSQ-kD-rSN" secondAttribute="leading" constant="16" id="brP-tJ-Hjf"/>
+                                    <constraint firstItem="ZMX-Bj-llP" firstAttribute="height" secondItem="MSQ-kD-rSN" secondAttribute="height" multiplier="0.45" id="l2N-cf-vFD"/>
+                                    <constraint firstAttribute="trailing" secondItem="AK7-S1-dcN" secondAttribute="trailing" constant="20" id="mMD-TX-DON"/>
+                                    <constraint firstItem="3oi-O9-XdJ" firstAttribute="centerX" secondItem="MSQ-kD-rSN" secondAttribute="centerX" id="yRC-Uu-AiQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzN-t8-myn">
+                                <rect key="frame" x="161.5" y="122.5" width="91.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                <color key="textColor" name="appAddTitle"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CSK-aP-uMv">
+                                <rect key="frame" x="0.0" y="159.5" width="414" height="653.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hz2-80-xvM" id="yFJ-13-2xY"/>
+                                    <outlet property="delegate" destination="hz2-80-xvM" id="Nhz-ZS-ZeV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GMj-Gd-oXY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LzN-t8-myn" firstAttribute="centerX" secondItem="GMj-Gd-oXY" secondAttribute="centerX" id="1dw-sS-3BJ"/>
+                            <constraint firstItem="GMj-Gd-oXY" firstAttribute="trailing" secondItem="MSQ-kD-rSN" secondAttribute="trailing" id="Ha6-dZ-tvj"/>
+                            <constraint firstItem="GMj-Gd-oXY" firstAttribute="bottom" secondItem="CSK-aP-uMv" secondAttribute="bottom" id="Jya-ZZ-z6i"/>
+                            <constraint firstItem="MSQ-kD-rSN" firstAttribute="top" secondItem="GMj-Gd-oXY" secondAttribute="top" id="MPS-Tu-EqM"/>
+                            <constraint firstItem="CSK-aP-uMv" firstAttribute="leading" secondItem="GMj-Gd-oXY" secondAttribute="leading" id="Vww-OP-VFr"/>
+                            <constraint firstItem="MSQ-kD-rSN" firstAttribute="leading" secondItem="dvh-rk-CEa" secondAttribute="leading" id="YQL-V9-RGv"/>
+                            <constraint firstItem="MSQ-kD-rSN" firstAttribute="height" secondItem="dvh-rk-CEa" secondAttribute="height" multiplier="0.07" id="b9g-kG-v0J"/>
+                            <constraint firstItem="GMj-Gd-oXY" firstAttribute="trailing" secondItem="CSK-aP-uMv" secondAttribute="trailing" id="hc3-fw-ek9"/>
+                            <constraint firstItem="CSK-aP-uMv" firstAttribute="top" secondItem="LzN-t8-myn" secondAttribute="bottom" constant="16" id="izZ-CI-rhc"/>
+                            <constraint firstItem="LzN-t8-myn" firstAttribute="top" secondItem="MSQ-kD-rSN" secondAttribute="bottom" constant="16" id="noy-EQ-Qlh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" image="plus-1" id="cW6-N7-XJ3"/>
                     <navigationItem key="navigationItem" id="8mb-NM-dwJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainTable" destination="CSK-aP-uMv" id="4nG-06-gIZ"/>
+                        <outlet property="menuButton" destination="ZMX-Bj-llP" id="Ty3-pH-e0x"/>
+                        <outlet property="profilePhoto" destination="AK7-S1-dcN" id="vxw-2r-DNG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y35-sf-aFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,7 +119,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="berger" width="132.5" height="107"/>
+        <image name="littleLogo" width="225" height="125.5"/>
         <image name="plus-1" width="30" height="30"/>
+        <image name="woman" width="114.5" height="114.5"/>
+        <namedColor name="appAddTitle">
+            <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

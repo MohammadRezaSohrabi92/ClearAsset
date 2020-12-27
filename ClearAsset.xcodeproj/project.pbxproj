@@ -10,7 +10,7 @@
 		83023E8025971EB9000F910F /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83023E7F25971EB9000F910F /* Category.storyboard */; };
 		83023E8325971ED7000F910F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E8225971ED7000F910F /* CategoryViewController.swift */; };
 		83023E8725971EF2000F910F /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83023E8625971EF2000F910F /* Add.storyboard */; };
-		83023E8A25971F06000F910F /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E8925971F06000F910F /* AddViewController.swift */; };
+		83023E8A25971F06000F910F /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E8925971F06000F910F /* AddListingViewController.swift */; };
 		83023E8E25971F30000F910F /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83023E8D25971F30000F910F /* Services.storyboard */; };
 		83023E9125971F39000F910F /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E9025971F39000F910F /* ServicesViewController.swift */; };
 		83023E9525971F56000F910F /* AuctionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E9425971F56000F910F /* AuctionsViewController.swift */; };
@@ -40,6 +40,8 @@
 		83A9DC64258F623100B3DCAB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A9DC63258F623100B3DCAB /* TabBar.storyboard */; };
 		83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */; };
 		83A9DC6C258F6E6400B3DCAB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A9DC6B258F6E6400B3DCAB /* Home.storyboard */; };
+		83AF23CE25978AE500B64D49 /* AddListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF23CC25978AE500B64D49 /* AddListingTableViewCell.swift */; };
+		83AF23CF25978AE500B64D49 /* AddListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83AF23CD25978AE500B64D49 /* AddListingTableViewCell.xib */; };
 		83B476C625849FA3009DD837 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B476C525849FA3009DD837 /* Register.storyboard */; };
 		83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B476C82584A40A009DD837 /* CustomLabel.swift */; };
 		83B477002584A953009DD837 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B476FF2584A953009DD837 /* BaseViewController.swift */; };
@@ -99,7 +101,7 @@
 		83023E7F25971EB9000F910F /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
 		83023E8225971ED7000F910F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		83023E8625971EF2000F910F /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
-		83023E8925971F06000F910F /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		83023E8925971F06000F910F /* AddListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewController.swift; sourceTree = "<group>"; };
 		83023E8D25971F30000F910F /* Services.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Services.storyboard; sourceTree = "<group>"; };
 		83023E9025971F39000F910F /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		83023E9425971F56000F910F /* AuctionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,8 @@
 		83A9DC63258F623100B3DCAB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		83A9DC6B258F6E6400B3DCAB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		83AF23CC25978AE500B64D49 /* AddListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingTableViewCell.swift; sourceTree = "<group>"; };
+		83AF23CD25978AE500B64D49 /* AddListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddListingTableViewCell.xib; sourceTree = "<group>"; };
 		83B476C525849FA3009DD837 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		83B476C82584A40A009DD837 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		83B476FF2584A953009DD837 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -219,8 +223,9 @@
 		83023E8525971EE4000F910F /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				83AF23CB25978ACC00B64D49 /* AddListingCell */,
 				83023E8625971EF2000F910F /* Add.storyboard */,
-				83023E8925971F06000F910F /* AddViewController.swift */,
+				83023E8925971F06000F910F /* AddListingViewController.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -357,6 +362,15 @@
 				83A9DC6B258F6E6400B3DCAB /* Home.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		83AF23CB25978ACC00B64D49 /* AddListingCell */ = {
+			isa = PBXGroup;
+			children = (
+				83AF23CC25978AE500B64D49 /* AddListingTableViewCell.swift */,
+				83AF23CD25978AE500B64D49 /* AddListingTableViewCell.xib */,
+			);
+			path = AddListingCell;
 			sourceTree = "<group>";
 		};
 		83B476C425849F71009DD837 /* Register */ = {
@@ -655,6 +669,7 @@
 				83E8961B257E61E700D66424 /* Nunito-Bold.ttf in Resources */,
 				83E895EB257E4A6200D66424 /* Assets.xcassets in Resources */,
 				83E8961D257E61E700D66424 /* Nunito-Black.ttf in Resources */,
+				83AF23CF25978AE500B64D49 /* AddListingTableViewCell.xib in Resources */,
 				E4E7006F25920EA600B8C0E4 /* MiddleTableViewCell.xib in Resources */,
 				83E8961F257E61E700D66424 /* Nunito-ExtraBoldItalic.ttf in Resources */,
 				838EA8E82590B60800E97933 /* Localizable.strings in Resources */,
@@ -741,7 +756,7 @@
 				83023E8325971ED7000F910F /* CategoryViewController.swift in Sources */,
 				8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */,
 				E4E70069259205B500B8C0E4 /* MiddleCollectionViewCell.swift in Sources */,
-				83023E8A25971F06000F910F /* AddViewController.swift in Sources */,
+				83023E8A25971F06000F910F /* AddListingViewController.swift in Sources */,
 				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
 				839A2F94258621DC009BBFA1 /* CustomDropDownMenu.swift in Sources */,
 				83B779AB2587ACC300018EBA /* MyAccountCell.swift in Sources */,
@@ -750,6 +765,7 @@
 				8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */,
 				839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */,
 				83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */,
+				83AF23CE25978AE500B64D49 /* AddListingTableViewCell.swift in Sources */,
 				E4E7006E25920EA600B8C0E4 /* MiddleTableViewCell.swift in Sources */,
 				83E89D9A258F4CB800BB1C26 /* MenuViewController.swift in Sources */,
 				8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */,
