@@ -20,7 +20,7 @@ class Utility {
 }
 
 enum AppStoryboard: String {
-    case Start, Login, Register, Profile, Menu, TabBar
+    case Start, Login, Register, Profile, Menu, TabBar, Services
     var instance: UIStoryboard {
       return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
     }

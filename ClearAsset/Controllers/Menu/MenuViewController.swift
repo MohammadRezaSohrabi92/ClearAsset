@@ -11,7 +11,7 @@ class MenuViewController: UIViewController {
     
     //MARK:- Views
     @IBOutlet weak var table: UITableView!
-    
+    @IBOutlet weak var profileView: UIView!
     
     //init var
     let menuCellIdentifier = "MenuCellIdentifier"
@@ -28,9 +28,15 @@ class MenuViewController: UIViewController {
     
     fileprivate func initViews() {
         table.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: menuCellIdentifier)
+        profileView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnProfileView(_:))))
     }
     
     //MARK:- Other methods
+    
+    //MARK:- actions
+    @objc func didTapOnProfileView(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.pushViewController(AppStoryboard.Profile.viewController(viewControllerClass: ProfileViewController.self), animated: true)
+    }
 
 }
 

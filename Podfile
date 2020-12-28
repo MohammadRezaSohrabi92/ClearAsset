@@ -10,5 +10,6 @@ pod 'PKHUD', '~> 5.0'
 pod 'DropDown'
 pod 'IQKeyboardManagerSwift'
 pod ‘SideMenu’
+pod 'Cosmos', '~> 23.0'
 
 end
