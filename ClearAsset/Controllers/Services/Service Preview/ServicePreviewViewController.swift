@@ -28,7 +28,6 @@ class ServicePreviewViewController: UIViewController {
     func initView() {
         mainTable.register(UINib(nibName: "ServicePreviewTableViewCell", bundle: nil), forCellReuseIdentifier: mainTableIdentifier)
     }
-
 }
 
     //MARK:- tableView delegate and data source
@@ -46,5 +45,9 @@ extension ServicePreviewViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigationController?.pushViewController(AppStoryboard.Services.viewController(viewControllerClass: ServiceDetailViewController.self), animated: true)
     }
 }

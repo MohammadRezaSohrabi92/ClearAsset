@@ -38,13 +38,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercedes service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-Bu-4IF">
-                                <rect key="frame" x="66.5" y="101" width="250.5" height="44"/>
+                                <rect key="frame" x="65.5" y="101" width="252" height="37.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="32"/>
                                 <color key="textColor" name="appDarkBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBZ-SQ-iAj" customClass="CosmosView" customModule="Cosmos">
-                                <rect key="frame" x="100.5" y="153" width="182" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBZ-SQ-iAj" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="100.5" y="146.5" width="182" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rating">
@@ -74,7 +74,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuT-gk-Xer">
-                                <rect key="frame" x="16" y="195" width="351" height="115"/>
+                                <rect key="frame" x="16" y="188.5" width="351" height="115"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  </string>
                                 <color key="textColor" name="appDarkBlue"/>

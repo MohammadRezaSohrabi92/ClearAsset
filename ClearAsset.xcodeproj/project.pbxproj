@@ -23,6 +23,9 @@
 		83023EB625973418000F910F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83023EB425973418000F910F /* CategoryCollectionViewCell.xib */; };
 		8305CCD12598C70D001C61A6 /* ServicePreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305CCCF2598C70D001C61A6 /* ServicePreviewTableViewCell.swift */; };
 		8305CCD22598C70D001C61A6 /* ServicePreviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8305CCD02598C70D001C61A6 /* ServicePreviewTableViewCell.xib */; };
+		831F9BC12599D24D00A03D50 /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F9BC02599D24D00A03D50 /* ServiceDetailViewController.swift */; };
+		831F9BD5259A092600A03D50 /* ServiceCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F9BD3259A092600A03D50 /* ServiceCommentCell.swift */; };
+		831F9BD6259A092600A03D50 /* ServiceCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831F9BD4259A092600A03D50 /* ServiceCommentCell.xib */; };
 		834075DF2598B20A00987840 /* ServiceCategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834075DD2598B20A00987840 /* ServiceCategoryCVCell.swift */; };
 		834075E02598B20A00987840 /* ServiceCategoryCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834075DE2598B20A00987840 /* ServiceCategoryCVCell.xib */; };
 		834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */; };
@@ -117,6 +120,9 @@
 		83023EB425973418000F910F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		8305CCCF2598C70D001C61A6 /* ServicePreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePreviewTableViewCell.swift; sourceTree = "<group>"; };
 		8305CCD02598C70D001C61A6 /* ServicePreviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicePreviewTableViewCell.xib; sourceTree = "<group>"; };
+		831F9BC02599D24D00A03D50 /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
+		831F9BD3259A092600A03D50 /* ServiceCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCommentCell.swift; sourceTree = "<group>"; };
+		831F9BD4259A092600A03D50 /* ServiceCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCommentCell.xib; sourceTree = "<group>"; };
 		834075DD2598B20A00987840 /* ServiceCategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryCVCell.swift; sourceTree = "<group>"; };
 		834075DE2598B20A00987840 /* ServiceCategoryCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCategoryCVCell.xib; sourceTree = "<group>"; };
 		834A9A37258F8FF600DEC86F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -238,6 +244,7 @@
 		83023E8C25971F24000F910F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				831F9BBF2599D22B00A03D50 /* Service Detail */,
 				83F9E0502598C1C00062FD0B /* Service Preview */,
 				834075DC2598B1C300987840 /* Service Category  */,
 				83023E8D25971F30000F910F /* Services.storyboard */,
@@ -290,6 +297,24 @@
 				8305CCD02598C70D001C61A6 /* ServicePreviewTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		831F9BBF2599D22B00A03D50 /* Service Detail */ = {
+			isa = PBXGroup;
+			children = (
+				831F9BD2259A00CD00A03D50 /* cell */,
+				831F9BC02599D24D00A03D50 /* ServiceDetailViewController.swift */,
+			);
+			path = "Service Detail";
+			sourceTree = "<group>";
+		};
+		831F9BD2259A00CD00A03D50 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				831F9BD3259A092600A03D50 /* ServiceCommentCell.swift */,
+				831F9BD4259A092600A03D50 /* ServiceCommentCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		834075DC2598B1C300987840 /* Service Category  */ = {
@@ -692,6 +717,7 @@
 				E40EAE8925921BEB00E9AD35 /* BottomTableViewCell.xib in Resources */,
 				8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */,
 				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
+				831F9BD6259A092600A03D50 /* ServiceCommentCell.xib in Resources */,
 				83E89623257E61E700D66424 /* Nunito-BlackItalic.ttf in Resources */,
 				8396FBBA2587918B00FD3C16 /* Profile.storyboard in Resources */,
 				83E89619257E61E700D66424 /* Nunito-SemiBoldItalic.ttf in Resources */,
@@ -784,12 +810,14 @@
 				839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */,
 				83F9E0522598C1E60062FD0B /* ServicePreviewViewController.swift in Sources */,
 				83023EA6259731B5000F910F /* CategoryTableViewCell.swift in Sources */,
+				831F9BD5259A092600A03D50 /* ServiceCommentCell.swift in Sources */,
 				834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */,
 				83023EAD2597324F000F910F /* SubCategoryCell.swift in Sources */,
 				83B477042584AE70009DD837 /* RegisterEmailPassViewController.swift in Sources */,
 				838EA8E62590B5DE00E97933 /* String.swift in Sources */,
 				83023E8325971ED7000F910F /* CategoryViewController.swift in Sources */,
 				8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */,
+				831F9BC12599D24D00A03D50 /* ServiceDetailViewController.swift in Sources */,
 				E4E70069259205B500B8C0E4 /* MiddleCollectionViewCell.swift in Sources */,
 				83023E8A25971F06000F910F /* AddViewController.swift in Sources */,
 				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
