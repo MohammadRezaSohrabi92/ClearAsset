@@ -15,6 +15,7 @@ class ProfileViewController: BaseViewController, UINavigationControllerDelegate 
     @IBOutlet weak var mainTable: UITableView!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var imageContainer: UIView!
+    @IBOutlet weak var backButton: UIButton!
     
     
     //MARK:- init var
@@ -44,6 +45,10 @@ class ProfileViewController: BaseViewController, UINavigationControllerDelegate 
         self.navigationController?.view.backgroundColor = .clear
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
+    
     //MARK:- ohter methods
     fileprivate func initViews() {
         mainTable.register(UINib(nibName: "MyAccountCell", bundle: nil), forCellReuseIdentifier: accountCellIdentifier)
@@ -54,6 +59,8 @@ class ProfileViewController: BaseViewController, UINavigationControllerDelegate 
                         TableData(isExpanded: true, title: "Manage Account")]
         mainTable.refreshControl?.isEnabled = false
         imageContainer.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(getImageProfileUser(_:))))
+        backButton.imageView?.image? = backButton.imageView?.image?.withRenderingMode(.alwaysTemplate) ?? UIImage()
+        backButton.imageView?.tintColor = .white
     }
     
     @objc func getImageProfileUser(_ sender: UITapGestureRecognizer) {
@@ -83,6 +90,11 @@ class ProfileViewController: BaseViewController, UINavigationControllerDelegate 
             present(imagePicker, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func didTapOnBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
     //MARK:- tableView delegate and data source

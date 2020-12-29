@@ -121,6 +121,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="profileView" destination="Li6-gF-Bv9" id="eMd-b0-PJn"/>
                         <outlet property="table" destination="V6P-70-qxz" id="KBX-9z-jpu"/>
                     </connections>
                 </viewController>

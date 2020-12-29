@@ -28,5 +28,11 @@ class RegisterCheckEmailViewController: BaseViewController {
     fileprivate func initViews() {
         
     }
-
+    
+    //MARK:- actions
+    
+    @IBAction func didTapOnSkipButton(_ sender: Any) {
+        self.navigationController?.pushViewController(AppStoryboard.TabBar.viewController(viewControllerClass: TabBarViewController.self), animated: true)
+    }
+    
 }

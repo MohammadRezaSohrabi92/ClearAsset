@@ -18,7 +18,7 @@
         <!--Register Email Pass View Controller-->
         <scene sceneID="HnE-sG-UC0">
             <objects>
-                <viewController id="nkD-Qq-yyP" customClass="RegisterEmailPassViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterEmailPassViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nkD-Qq-yyP" customClass="RegisterEmailPassViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RAy-9Z-YHn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -844,6 +844,9 @@ If you don't receive an email, please make sure to check your Spam or Junk folde
                                         <state key="normal" title="Skip">
                                             <color key="titleColor" name="appDarkBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapOnSkipButton:" destination="pO5-5P-LtI" eventType="touchUpInside" id="0mu-Jl-gpO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
