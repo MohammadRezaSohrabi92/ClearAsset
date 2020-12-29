@@ -61,7 +61,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="nqt-3f-71g">
             <objects>
-                <tabBarController id="YIQ-iK-Yfg" customClass="TabBarViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YIQ-iK-Yfg" customClass="TabBarViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TFS-wA-xTm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

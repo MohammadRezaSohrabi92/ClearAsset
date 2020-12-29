@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uu5-Bd-S5o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uu5-Bd-S5o">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,12 +12,12 @@
         <!--Profile View Controller-->
         <scene sceneID="b2y-F6-WbH">
             <objects>
-                <viewController id="dGk-3L-j8l" customClass="ProfileViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dGk-3L-j8l" customClass="ProfileViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kA9-3v-Pq3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backPic" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-ja-d9E">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backpic" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-ja-d9E">
                                 <rect key="frame" x="0.0" y="-1" width="414" height="206"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angel Fernandus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoM-cC-Tco" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
@@ -105,10 +105,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhB-rS-9hn">
+                                <rect key="frame" x="8" y="44" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bYr-ZW-eVI"/>
+                                    <constraint firstAttribute="width" constant="46" id="wyK-NO-flc"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="didTapOnBackButton:" destination="dGk-3L-j8l" eventType="touchUpInside" id="OAY-dg-ywt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9lP-wM-fhe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="PhB-rS-9hn" firstAttribute="leading" secondItem="9lP-wM-fhe" secondAttribute="leading" constant="8" id="5u6-nC-mHk"/>
                             <constraint firstItem="6dV-aT-2Lc" firstAttribute="centerY" secondItem="fQf-ja-d9E" secondAttribute="bottom" id="6oK-cu-Z6q"/>
                             <constraint firstItem="fQf-ja-d9E" firstAttribute="top" secondItem="kA9-3v-Pq3" secondAttribute="top" constant="-1" id="79T-iV-3Yr"/>
                             <constraint firstItem="fQf-ja-d9E" firstAttribute="leading" secondItem="9lP-wM-fhe" secondAttribute="leading" id="CCT-xV-kvM"/>
@@ -119,6 +131,7 @@
                             <constraint firstItem="EoM-cC-Tco" firstAttribute="top" secondItem="6dV-aT-2Lc" secondAttribute="bottom" constant="16" id="aQR-4O-KGn"/>
                             <constraint firstItem="EoM-cC-Tco" firstAttribute="centerX" secondItem="9lP-wM-fhe" secondAttribute="centerX" id="aiC-fp-8Jt"/>
                             <constraint firstItem="fQf-ja-d9E" firstAttribute="trailing" secondItem="9lP-wM-fhe" secondAttribute="trailing" id="bcr-C5-hM7"/>
+                            <constraint firstItem="PhB-rS-9hn" firstAttribute="top" secondItem="9lP-wM-fhe" secondAttribute="top" id="c0U-lD-T32"/>
                             <constraint firstItem="PuS-h0-WWu" firstAttribute="top" secondItem="EoM-cC-Tco" secondAttribute="bottom" constant="12" id="m3q-rC-kpa"/>
                             <constraint firstItem="9Fi-9f-ccV" firstAttribute="top" secondItem="PuS-h0-WWu" secondAttribute="bottom" constant="12" id="xSc-Su-M5O"/>
                             <constraint firstItem="9lP-wM-fhe" firstAttribute="trailing" secondItem="9Fi-9f-ccV" secondAttribute="trailing" constant="8" id="z4Z-Rp-NQm"/>
@@ -127,6 +140,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fn2-Cx-tJX"/>
                     <connections>
+                        <outlet property="backButton" destination="PhB-rS-9hn" id="8jy-FN-4IY"/>
                         <outlet property="email" destination="PuS-h0-WWu" id="5O3-Bo-ven"/>
                         <outlet property="imageContainer" destination="6dV-aT-2Lc" id="h5f-RS-5vQ"/>
                         <outlet property="mainTable" destination="9Fi-9f-ccV" id="dEO-FI-ijL"/>
@@ -141,10 +155,9 @@
         <!--Navigation Controller-->
         <scene sceneID="7Do-jX-LPE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uu5-Bd-S5o" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="uu5-Bd-S5o" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d4M-V9-Rle">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -158,7 +171,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backPic" width="943" height="455"/>
+        <image name="Backpic" width="943" height="455"/>
+        <image name="back" width="33" height="29"/>
         <image name="camera" width="350" height="350"/>
         <image name="woman" width="114.5" height="114.5"/>
         <systemColor name="systemBackgroundColor">
