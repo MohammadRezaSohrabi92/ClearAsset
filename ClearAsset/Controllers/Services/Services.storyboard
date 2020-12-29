@@ -45,6 +45,9 @@
                                             <constraint firstAttribute="width" secondItem="fue-hj-zBj" secondAttribute="height" multiplier="1:1" id="uXz-67-SGw"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="berger"/>
+                                        <connections>
+                                            <action selector="didTapOnMenuButton:" destination="qq1-FJ-70T" eventType="touchUpInside" id="TvH-sK-Ldy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,6 +182,9 @@
                                             <constraint firstAttribute="width" secondItem="eqD-5i-w6r" secondAttribute="height" multiplier="1:1" id="IUI-47-ZIr"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="back"/>
+                                        <connections>
+                                            <action selector="didTapOnBackButton:" destination="HRc-hz-ZUG" eventType="touchUpInside" id="d8g-f2-Wsh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -305,27 +311,30 @@
             <objects>
                 <viewController storyboardIdentifier="ServiceDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eyZ-xm-Q18" customClass="ServiceDetailViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLu-c4-Kq1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9S-Sh-j5Z" userLabel="navigationView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="105"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="91"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman" translatesAutoresizingMaskIntoConstraints="NO" id="u7Z-Qo-Wbk">
-                                        <rect key="frame" x="344" y="10.5" width="50" height="84"/>
+                                        <rect key="frame" x="344" y="9" width="50" height="73"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Ym1-yL-v2p"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5ld-2K-Bqn">
-                                        <rect key="frame" x="165.5" y="23.5" width="83" height="58"/>
+                                        <rect key="frame" x="165.5" y="20.5" width="83" height="50"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rno-9O-z4F">
-                                        <rect key="frame" x="16" y="29" width="47.5" height="47"/>
+                                        <rect key="frame" x="16" y="25" width="41" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Rno-9O-z4F" secondAttribute="height" multiplier="1:1" id="Nvw-Ig-Hhi"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="didTapOnBackButton:" destination="eyZ-xm-Q18" eventType="touchUpInside" id="Pfj-RM-Rnv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -343,10 +352,10 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzg-H0-gcO">
-                                <rect key="frame" x="0.0" y="149" width="414" height="1317"/>
+                                <rect key="frame" x="0.0" y="135" width="414" height="1131"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-ra-3eV" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-5U-CAX" userLabel="description">
                                                 <rect key="frame" x="16" y="12" width="382" height="310"/>
@@ -659,7 +668,7 @@ Nulla condimentum erat ut tellus porttitor, nec pellentesque lorem maximus.Phase
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lIS-7r-LFR">
-                                                <rect key="frame" x="8" y="1003" width="398" height="289"/>
+                                                <rect key="frame" x="8" y="1003" width="398" height="89"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="750" constant="289" id="NPd-5c-L9Q"/>
@@ -691,7 +700,7 @@ Nulla condimentum erat ut tellus porttitor, nec pellentesque lorem maximus.Phase
                                             <constraint firstAttribute="trailing" secondItem="7FQ-ls-X0p" secondAttribute="trailing" constant="8" id="kHD-zQ-QpP"/>
                                             <constraint firstItem="7FQ-ls-X0p" firstAttribute="leading" secondItem="jUg-ra-3eV" secondAttribute="leading" constant="8" id="qbE-SB-Eut"/>
                                             <constraint firstAttribute="trailing" secondItem="9g0-b5-Igk" secondAttribute="trailing" constant="8" id="ryH-Aa-23K"/>
-                                            <constraint firstAttribute="height" constant="1300" id="smP-zf-g4f"/>
+                                            <constraint firstAttribute="height" constant="1100" id="smP-zf-g4f"/>
                                             <constraint firstItem="jiF-x6-W0O" firstAttribute="leading" secondItem="jUg-ra-3eV" secondAttribute="leading" constant="8" id="uFb-Tu-bAJ"/>
                                             <constraint firstAttribute="bottom" secondItem="lIS-7r-LFR" secondAttribute="bottom" constant="8" id="w97-U1-rWr"/>
                                             <constraint firstItem="lIS-7r-LFR" firstAttribute="top" secondItem="vSS-bK-klp" secondAttribute="bottom" constant="8" id="wtr-0J-WMQ"/>
@@ -708,6 +717,40 @@ Nulla condimentum erat ut tellus porttitor, nec pellentesque lorem maximus.Phase
                                 <viewLayoutGuide key="contentLayoutGuide" id="BVS-F1-oCd"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="d2X-HA-q8i"/>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fL0-vJ-2Aj">
+                                <rect key="frame" x="0.0" y="1168" width="414" height="98"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EHS-8b-jbI">
+                                        <rect key="frame" x="20.5" y="15" width="373" height="68.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="ZOr-Qz-PEH">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="68.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ZOr-Qz-PEH" secondAttribute="height" multiplier="1:1" id="hxd-iN-0zr"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+44123456789" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z58-RT-wJb">
+                                                <rect key="frame" x="76.5" y="0.0" width="296.5" height="68.5"/>
+                                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="33"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ZOr-Qz-PEH" secondAttribute="bottom" id="3E0-so-QTf"/>
+                                            <constraint firstItem="ZOr-Qz-PEH" firstAttribute="top" secondItem="EHS-8b-jbI" secondAttribute="top" id="P8T-EV-uSm"/>
+                                            <constraint firstItem="ZOr-Qz-PEH" firstAttribute="leading" secondItem="EHS-8b-jbI" secondAttribute="leading" id="XDn-U3-IBJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="appOrange"/>
+                                <constraints>
+                                    <constraint firstItem="EHS-8b-jbI" firstAttribute="width" secondItem="fL0-vJ-2Aj" secondAttribute="width" multiplier="0.9" id="P8H-xj-RmT"/>
+                                    <constraint firstItem="EHS-8b-jbI" firstAttribute="centerY" secondItem="fL0-vJ-2Aj" secondAttribute="centerY" id="QlL-FV-cz5"/>
+                                    <constraint firstItem="EHS-8b-jbI" firstAttribute="height" secondItem="fL0-vJ-2Aj" secondAttribute="height" multiplier="0.7" id="Y9M-Nx-0Xw"/>
+                                    <constraint firstItem="EHS-8b-jbI" firstAttribute="centerX" secondItem="fL0-vJ-2Aj" secondAttribute="centerX" id="sjD-4Y-vh6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Ii-14-hmv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -716,17 +759,22 @@ Nulla condimentum erat ut tellus porttitor, nec pellentesque lorem maximus.Phase
                             <constraint firstItem="bzg-H0-gcO" firstAttribute="top" secondItem="g9S-Sh-j5Z" secondAttribute="bottom" id="3M7-Lw-hSH"/>
                             <constraint firstItem="1Ii-14-hmv" firstAttribute="trailing" secondItem="g9S-Sh-j5Z" secondAttribute="trailing" id="4Ci-HP-1lL"/>
                             <constraint firstItem="1Ii-14-hmv" firstAttribute="trailing" secondItem="bzg-H0-gcO" secondAttribute="trailing" id="9CO-s6-Dvx"/>
+                            <constraint firstItem="fL0-vJ-2Aj" firstAttribute="height" secondItem="1Ii-14-hmv" secondAttribute="height" multiplier="0.08" id="Ist-Xz-9BZ"/>
                             <constraint firstItem="g9S-Sh-j5Z" firstAttribute="leading" secondItem="eLu-c4-Kq1" secondAttribute="leading" id="d6E-9d-oxF"/>
+                            <constraint firstItem="fL0-vJ-2Aj" firstAttribute="leading" secondItem="1Ii-14-hmv" secondAttribute="leading" id="dg5-Gr-gWW"/>
+                            <constraint firstItem="1Ii-14-hmv" firstAttribute="bottom" secondItem="fL0-vJ-2Aj" secondAttribute="bottom" id="e04-fb-4ss"/>
                             <constraint firstItem="g9S-Sh-j5Z" firstAttribute="height" secondItem="eLu-c4-Kq1" secondAttribute="height" multiplier="0.07" id="eD6-O6-QcP"/>
                             <constraint firstItem="bzg-H0-gcO" firstAttribute="leading" secondItem="1Ii-14-hmv" secondAttribute="leading" id="kVs-Jr-K88"/>
+                            <constraint firstItem="1Ii-14-hmv" firstAttribute="trailing" secondItem="fL0-vJ-2Aj" secondAttribute="trailing" id="nsY-wK-zVn"/>
                             <constraint firstItem="g9S-Sh-j5Z" firstAttribute="top" secondItem="1Ii-14-hmv" secondAttribute="top" id="qYi-tD-B5c"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2lx-nY-vWV"/>
-                    <size key="freeformSize" width="414" height="1500"/>
+                    <size key="freeformSize" width="414" height="1300"/>
                     <connections>
                         <outlet property="commentTable" destination="lIS-7r-LFR" id="bHy-7q-WJ8"/>
                         <outlet property="commentTableHeight" destination="NPd-5c-L9Q" id="018-ZT-H3R"/>
+                        <outlet property="contentViewHeight" destination="smP-zf-g4f" id="yaq-dJ-vLS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KD-U3-nM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -777,6 +825,7 @@ Nulla condimentum erat ut tellus porttitor, nec pellentesque lorem maximus.Phase
         <image name="location" width="43.5" height="51.5"/>
         <image name="search" width="24" height="24"/>
         <image name="services" width="30" height="30.5"/>
+        <image name="telephone" width="82.5" height="82"/>
         <image name="twitter" width="49" height="39.5"/>
         <image name="woman" width="114.5" height="114.5"/>
         <namedColor name="appBorder">
@@ -787,6 +836,9 @@ Nulla condimentum erat ut tellus porttitor, nec pellentesque lorem maximus.Phase
         </namedColor>
         <namedColor name="appGray">
             <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appOrange">
+            <color red="0.95686274509803926" green="0.34901960784313724" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

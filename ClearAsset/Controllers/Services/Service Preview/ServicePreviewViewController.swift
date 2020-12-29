@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ServicePreviewViewController: UIViewController {
+class ServicePreviewViewController: BaseViewController {
     
     //MARK:- Views
     @IBOutlet weak var mainTable: UITableView!
@@ -28,6 +28,13 @@ class ServicePreviewViewController: UIViewController {
     func initView() {
         mainTable.register(UINib(nibName: "ServicePreviewTableViewCell", bundle: nil), forCellReuseIdentifier: mainTableIdentifier)
     }
+    
+//MARK:- actions
+    
+    @IBAction func didTapOnBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
     //MARK:- tableView delegate and data source
@@ -48,6 +55,8 @@ extension ServicePreviewViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(AppStoryboard.Services.viewController(viewControllerClass: ServiceDetailViewController.self), animated: true)
+        let nextVC = AppStoryboard.Services.viewController(viewControllerClass: ServiceDetailViewController.self)
+        nextVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }

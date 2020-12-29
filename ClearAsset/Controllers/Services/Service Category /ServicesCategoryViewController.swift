@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class ServicesCategoryViewController: UIViewController {
     
@@ -14,7 +15,7 @@ class ServicesCategoryViewController: UIViewController {
     
     //init var
     let mainCollectionIdentifier = "serviceCategoryCollectionViewCellIdentifier"
-    
+    var menu : SideMenuNavigationController!
     //MARK:- Life Cycle
     
     override func viewDidLoad() {
@@ -26,7 +27,22 @@ class ServicesCategoryViewController: UIViewController {
     
     //MARK:- Other methods
     func initViews() {
+        initMenu()
         mainCollection.register(UINib(nibName: "ServiceCategoryCVCell", bundle: nil), forCellWithReuseIdentifier: mainCollectionIdentifier)
+    }
+    
+    func initMenu() {
+        let sb = UIStoryboard(name: "Menu", bundle: nil)
+        menu = sb.instantiateViewController(withIdentifier: "SideMenuNavigationController") as? SideMenuNavigationController
+        menu.menuWidth = self.view.layer.frame.width - (self.view.layer.frame.width / 6)
+        SideMenuManager.default.addPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+    }
+    
+//MARK:- actions
+    
+    @IBAction func didTapOnMenuButton(_ sender: Any) {
+        present(menu, animated: true, completion: nil)
     }
 
 }
