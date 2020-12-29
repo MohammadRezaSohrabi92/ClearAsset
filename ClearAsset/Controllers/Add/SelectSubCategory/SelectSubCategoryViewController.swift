@@ -7,9 +7,9 @@
 
 import UIKit
 
-class AddListingViewController: UIViewController {
+class SelectSubCategoryViewController: BaseViewController {
     
-    //MARK:- Views
+//MARK:- Views
     
     @IBOutlet weak var mainTable: UITableView!
     @IBOutlet weak var menuButton: UIButton!
@@ -19,7 +19,7 @@ class AddListingViewController: UIViewController {
     //init var
     let addListingCellIdentifier = "addListingCellIdentifier"
     
-    //MARK:- LifeCycle
+//MARK:- LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,11 +33,16 @@ class AddListingViewController: UIViewController {
         mainTable.register(UINib(nibName: "AddListingTableViewCell", bundle: nil), forCellReuseIdentifier: addListingCellIdentifier)
     }
 
+//MARK:- Actions
+    
+    @IBAction func didTapOnBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 
     //MARK:- tableView delegate and data source
-extension AddListingViewController: UITableViewDelegate, UITableViewDataSource {
+extension SelectSubCategoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +17,11 @@ class TabBarViewController: UITabBarController {
         self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.appBlueColor
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //self.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
+    }
 
     /*
     // MARK: - Navigation
@@ -27,5 +32,6 @@ class TabBarViewController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }

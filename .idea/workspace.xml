@@ -19,79 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="858f1dba-3e44-4c3a-88f5-f918c31d5153" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/benz.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/benz.imageset/benz.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/emptyStar.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/emptyStar.imageset/noun_Star_-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/emptyStar.imageset/noun_Star_-1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/emptyStar.imageset/noun_Star_-1@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/facebook.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/facebook.imageset/Icon awesome-facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/facebook.imageset/Icon awesome-facebook@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/facebook.imageset/Icon awesome-facebook@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/fillStar.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/fillStar.imageset/noun_Star_1359493.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/fillStar.imageset/noun_Star_1359493@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/fillStar.imageset/noun_Star_1359493@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/fillUser.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/fillUser.imageset/Icon awesome-user-alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/fillUser.imageset/Icon awesome-user-alt@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/fillUser.imageset/Icon awesome-user-alt@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/filter.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/filter.imageset/noun_filter_3053002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/filter.imageset/noun_filter_3053002@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/filter.imageset/noun_filter_3053002@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/forward.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/forward.imageset/Icon feather-arrow-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/forward.imageset/Icon feather-arrow-left@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/forward.imageset/Icon feather-arrow-left@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/google.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/google.imageset/Icon awesome-google-plus-g.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/google.imageset/Icon awesome-google-plus-g@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/google.imageset/Icon awesome-google-plus-g@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/insta.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/insta.imageset/Icon feather-instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/insta.imageset/Icon feather-instagram@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/insta.imageset/Icon feather-instagram@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/location.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/location.imageset/Path 661.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/location.imageset/Path 661@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/location.imageset/Path 661@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/telephone.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/telephone.imageset/noun_call_3483649.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/telephone.imageset/noun_call_3483649@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/telephone.imageset/noun_call_3483649@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/twitter.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/twitter.imageset/Icon awesome-twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/twitter.imageset/Icon awesome-twitter@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Assets/Assets.xcassets/Icons/twitter.imageset/Icon awesome-twitter@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Category /Cell/ServiceCategoryCVCell.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Category /Cell/ServiceCategoryCVCell.xib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Category /ServicesCategoryViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Detail/ServiceDetailViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Detail/cell/ServiceCommentCell.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Detail/cell/ServiceCommentCell.xib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Preview/Cell/ServicePreviewTableViewCell.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Preview/Cell/ServicePreviewTableViewCell.xib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Service Preview/ServicePreviewViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset.xcodeproj/project.pbxproj" afterDir="false" />
+    <list default="true" id="858f1dba-3e44-4c3a-88f5-f918c31d5153" name="Default Changelist" comment="Merge branch 'master' of https://github.com/MohammadRezaSohrabi92/ClearAsset into feature_addProduct_UI&#10;&#10;# Conflicts:&#10;#&#9;ClearAsset.xcodeproj/project.pbxproj&#10;#&#9;ClearAsset/Utility/Utility.swift">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClearAsset.xcworkspace/xcuserdata/peykoffice.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset.xcworkspace/xcuserdata/peykoffice.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Home/Home.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Home/Home.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Login/Login.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Login/Login.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Login/LoginViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Login/LoginViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Menu/Menu.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Menu/Menu.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Menu/MenuViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Menu/MenuViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Profile/Profile.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Profile/Profile.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Profile/ProfileViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Profile/ProfileViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Register/Register.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Register/Register.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Register/RegisterCheckEmailViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Register/RegisterCheckEmailViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Services.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Services/Services.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Services/ServicesViewController.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/TabBar/TabBar.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/TabBar/TabBar.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Utility/Utility.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Utility/Utility.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +68,16 @@
       <workItem from="1607417895837" duration="615000" />
       <workItem from="1608042759821" duration="1040000" />
       <workItem from="1609231505454" duration="14000" />
+      <workItem from="1609231570490" duration="475000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/MohammadRezaSohrabi92/ClearAsset into feature_addProduct_UI&#10;&#10;# Conflicts:&#10;#&#9;ClearAsset.xcodeproj/project.pbxproj&#10;#&#9;ClearAsset/Utility/Utility.swift">
+      <created>1609231835008</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609231835008</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +95,19 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/MohammadRezaSohrabi92/ClearAsset into feature_addProduct_UI&#10;&#10;# Conflicts:&#10;#&#9;ClearAsset.xcodeproj/project.pbxproj&#10;#&#9;ClearAsset/Utility/Utility.swift" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/MohammadRezaSohrabi92/ClearAsset into feature_addProduct_UI&#10;&#10;# Conflicts:&#10;#&#9;ClearAsset.xcodeproj/project.pbxproj&#10;#&#9;ClearAsset/Utility/Utility.swift" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="70" y="132" key="MergeDialog" timestamp="1609231750132">
+      <screen x="0" y="25" width="1792" height="1027" />
+    </state>
+    <state x="70" y="132" key="MergeDialog/0.25.1792.1027/1792.25.1920.1055@0.25.1792.1027" timestamp="1609231750132" />
+    <state x="425" y="322" key="MultipleFileMergeDialog" timestamp="1609231750207">
+      <screen x="0" y="25" width="1792" height="1027" />
+    </state>
+    <state x="425" y="322" key="MultipleFileMergeDialog/0.25.1792.1027/1792.25.1920.1055@0.25.1792.1027" timestamp="1609231750207" />
     <state x="413" y="265" key="Vcs.Push.Dialog.v2" timestamp="1608043182374">
       <screen x="0" y="25" width="1792" height="1027" />
     </state>

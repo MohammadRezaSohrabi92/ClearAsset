@@ -20,6 +20,7 @@ class RegisterCheckEmailViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
         
     }
     
@@ -32,7 +33,9 @@ class RegisterCheckEmailViewController: BaseViewController {
     //MARK:- actions
     
     @IBAction func didTapOnSkipButton(_ sender: Any) {
-        self.navigationController?.pushViewController(AppStoryboard.TabBar.viewController(viewControllerClass: TabBarViewController.self), animated: true)
+        let vc = AppStoryboard.TabBar.viewController(viewControllerClass: TabBarViewController.self)
+        vc.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

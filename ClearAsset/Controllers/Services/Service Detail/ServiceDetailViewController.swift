@@ -73,10 +73,6 @@ extension ServiceDetailViewController: UITableViewDelegate, UITableViewDataSourc
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        print("hello")
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }

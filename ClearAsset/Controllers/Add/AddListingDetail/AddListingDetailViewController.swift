@@ -11,8 +11,8 @@ class AddListingDetailViewController: UIViewController {
     
     //MARK:- Views
     @IBOutlet weak var transmissionDetailCV: UICollectionView!
-    
-    
+    @IBOutlet weak var mainTable: UITableView!
+        
     //init var
     let transmissionDetailCVIdentifier = "transmissionDetailCollectionViewIdentifier"
 
