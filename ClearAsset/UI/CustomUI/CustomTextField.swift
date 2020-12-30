@@ -22,7 +22,7 @@ class CustomTextField : LeftPadedTextField {
     fileprivate func setup() {
         self.backgroundColor = UIColor.appTextfieldBG
         self.font = UIFont(name: Utility.appFont.boldFont, size: 15)
-        self.textColor = UIColor.appBlueColor
+        self.textColor = UIColor.appBlueColor    
         self.cornerRadius = 8
         self.borderColor = UIColor.appBorderColor
         self.borderWidth = 1

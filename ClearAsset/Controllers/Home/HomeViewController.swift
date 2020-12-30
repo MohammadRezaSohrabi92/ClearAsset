@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
     }
 
     //MARK:- other methods
-    func initViews() {
+    func initViews() {        
         initMenu()
         mainTable.register(UINib(nibName: "TopViewCell", bundle: nil), forCellReuseIdentifier: mainTableIdentifer)
         mainTable.register(UINib(nibName: "MiddleTableViewCell", bundle: nil), forCellReuseIdentifier: secondCellIdentifier)

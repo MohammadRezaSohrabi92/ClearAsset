@@ -19,21 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="858f1dba-3e44-4c3a-88f5-f918c31d5153" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2020,_11_38_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2020__11_38__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_08_12_2020,_12_16_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_08_12_2020__12_16__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="858f1dba-3e44-4c3a-88f5-f918c31d5153" name="Default Changelist" comment="Merge branch 'master' of https://github.com/MohammadRezaSohrabi92/ClearAsset into feature_addProduct_UI&#10;&#10;# Conflicts:&#10;#&#9;ClearAsset.xcodeproj/project.pbxproj&#10;#&#9;ClearAsset/Utility/Utility.swift">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClearAsset.xcworkspace/xcuserdata/peykoffice.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset.xcworkspace/xcuserdata/peykoffice.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClearAsset/Controllers/Profile/ProfileViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ClearAsset/Controllers/Profile/ProfileViewController.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_75DA578C-B6CD-471A-A008-9FD378A01AC6" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_iosmac_x86_64" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -48,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
-    <configuration name="ClearAsset" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClearAsset" TARGET_NAME="ClearAsset" CONFIG_NAME="Debug" SCHEME_NAME="ClearAsset" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="ClearAsset" RUN_TARGET_NAME="ClearAsset" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+    <configuration name="Cosmos" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Cosmos" CONFIG_NAME="Debug" SCHEME_NAME="Cosmos" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -72,7 +67,17 @@
       <workItem from="1607414267075" duration="236000" />
       <workItem from="1607417895837" duration="615000" />
       <workItem from="1608042759821" duration="1040000" />
+      <workItem from="1609231505454" duration="14000" />
+      <workItem from="1609231570490" duration="475000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/MohammadRezaSohrabi92/ClearAsset into feature_addProduct_UI&#10;&#10;# Conflicts:&#10;#&#9;ClearAsset.xcodeproj/project.pbxproj&#10;#&#9;ClearAsset/Utility/Utility.swift">
+      <created>1609231835008</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609231835008</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,7 +95,19 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/MohammadRezaSohrabi92/ClearAsset into feature_addProduct_UI&#10;&#10;# Conflicts:&#10;#&#9;ClearAsset.xcodeproj/project.pbxproj&#10;#&#9;ClearAsset/Utility/Utility.swift" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/MohammadRezaSohrabi92/ClearAsset into feature_addProduct_UI&#10;&#10;# Conflicts:&#10;#&#9;ClearAsset.xcodeproj/project.pbxproj&#10;#&#9;ClearAsset/Utility/Utility.swift" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="70" y="132" key="MergeDialog" timestamp="1609231750132">
+      <screen x="0" y="25" width="1792" height="1027" />
+    </state>
+    <state x="70" y="132" key="MergeDialog/0.25.1792.1027/1792.25.1920.1055@0.25.1792.1027" timestamp="1609231750132" />
+    <state x="425" y="322" key="MultipleFileMergeDialog" timestamp="1609231750207">
+      <screen x="0" y="25" width="1792" height="1027" />
+    </state>
+    <state x="425" y="322" key="MultipleFileMergeDialog/0.25.1792.1027/1792.25.1920.1055@0.25.1792.1027" timestamp="1609231750207" />
     <state x="413" y="265" key="Vcs.Push.Dialog.v2" timestamp="1608043182374">
       <screen x="0" y="25" width="1792" height="1027" />
     </state>

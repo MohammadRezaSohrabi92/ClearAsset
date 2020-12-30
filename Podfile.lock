@@ -1,28 +1,36 @@
 PODS:
+  - Cosmos (23.0.0)
   - DropDown (2.3.13)
+  - GrowingTextView (0.7.2)
   - IQKeyboardManagerSwift (6.5.6)
   - PKHUD (5.3.0)
   - SideMenu (6.5.0)
 
 DEPENDENCIES:
+  - Cosmos (~> 23.0)
   - DropDown
+  - GrowingTextView (= 0.7.2)
   - IQKeyboardManagerSwift
   - PKHUD (~> 5.0)
   - SideMenu
 
 SPEC REPOS:
   trunk:
+    - Cosmos
     - DropDown
+    - GrowingTextView
     - IQKeyboardManagerSwift
     - PKHUD
     - SideMenu
 
 SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 4cf2fec4af1532997c8068381dcdd7d35c32cc9b
+PODFILE CHECKSUM: 4a646f94b481644e75326de8cead58fb6c7c3832
 
 COCOAPODS: 1.10.0

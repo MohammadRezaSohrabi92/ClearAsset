@@ -12,5 +12,6 @@ pod 'IQKeyboardManagerSwift'
 pod ‘SideMenu’
 pod 'Cosmos', '~> 23.0'
 pod 'GrowingTextView', '0.7.2'
+pod 'BEMCheckBox'
 
 end
