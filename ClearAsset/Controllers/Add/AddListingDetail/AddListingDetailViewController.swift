@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DropDown
 
 class AddListingDetailViewController: BaseViewController {
     
@@ -17,6 +18,7 @@ class AddListingDetailViewController: BaseViewController {
     @IBOutlet weak var addMoreDetailButton: UIView!
     
 //init var
+    let dropDownMenu = DropDown()
     let contentViewHeight: CGFloat = 1550
     let mainTableHeightConstant: CGFloat = 470
     var numberOfRows = 1
@@ -40,12 +42,27 @@ class AddListingDetailViewController: BaseViewController {
         mainTable.register(UINib(nibName: "DetailTableViewCell", bundle: nil), forCellReuseIdentifier: detailTVcellIdentiifer)
         mainTable.rowHeight = UITableView.automaticDimension
         addMoreDetailButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnAddMoreDetailButton(_:))))
+        initDropDownMenu()
+    }
+    
+    func initDropDownMenu() {
+        dropDownMenu.anchorView = addMoreDetailButton
+        dropDownMenu.textFont = UIFont(name: Utility.appFont.semiBold, size: 15)!
+        dropDownMenu.cellNib = UINib(nibName: "MoreDetailCell", bundle: nil)
+        dropDownMenu.dataSource = ["Car", "type", "Dog", "Animal"]
+        dropDownMenu.selectionAction = { [unowned self] (index: Int, item: String) in
+            numberOfRows += 1
+            mainTable.reloadData()
+            print("Selected item: \(item) at index: \(index)")
+        }
     }
     
 //MARK:- Actions
     @objc func didTapOnAddMoreDetailButton(_ sender: UITapGestureRecognizer) {
-        numberOfRows += 1
-        mainTable.reloadData()
+//        numberOfRows += 1
+//        mainTable.reloadData()
+        
+        dropDownMenu.show()
     }
     @IBAction func didTapOnBackButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -89,7 +106,6 @@ extension AddListingDetailViewController: UICollectionViewDataSource, UICollecti
         }
         return UICollectionViewCell()
     }
-    //By checking this box, I confirm that I have read and understood the Terms and Conditions//
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 110, height: 110)

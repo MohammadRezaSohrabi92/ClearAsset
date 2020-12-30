@@ -89,7 +89,6 @@ class CustomDropDownMenu: UIView {
         dropDownMenu.textFont = UIFont(name: Utility.appFont.semiBold, size: 15)!
         backView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnMenu(_:))))
         dropDownMenu.dataSource = ["Car", "type", "Dog", "Animal"]
-        textLabel.text = "Hello"
     }
     
     @objc func didTapOnMenu(_ sender: UITapGestureRecognizer) {

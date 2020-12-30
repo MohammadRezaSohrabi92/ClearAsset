@@ -82,13 +82,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8w-Yf-jpZ">
-                                        <rect key="frame" x="161.5" y="8" width="91" height="23.5"/>
+                                        <rect key="frame" x="164" y="8" width="86" height="20"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appAddTitle"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your sub category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inF-81-jft">
-                                        <rect key="frame" x="8" y="84" width="195.5" height="23.5"/>
+                                        <rect key="frame" x="8" y="87.5" width="190" height="20"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appSubTitle"/>
                                         <nil key="highlightedColor"/>
@@ -180,13 +180,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygN-hv-NtB">
-                                <rect key="frame" x="159" y="182.5" width="96.5" height="25"/>
+                                <rect key="frame" x="161.5" y="182.5" width="91.5" height="21"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="appAddTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWd-X5-O0P">
-                                <rect key="frame" x="0.0" y="215.5" width="414" height="1500.5"/>
+                                <rect key="frame" x="0.0" y="211.5" width="414" height="1504.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmH-YX-sy5" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1550"/>
@@ -351,7 +351,7 @@
                                                     <outlet property="delegate" destination="uq6-Tv-BnK" id="WSi-W1-mQu"/>
                                                 </connections>
                                             </tableView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCM-1N-Afe">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCM-1N-Afe" customClass="DropDown">
                                                 <rect key="frame" x="16" y="1270" width="382" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="idt-Eg-jhb">
@@ -390,13 +390,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By checking this box, I confirm that I have read and understood the Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZr-oQ-V4C">
-                                                <rect key="frame" x="16" y="1336" width="382" height="44"/>
+                                                <rect key="frame" x="16" y="1336" width="382" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                                 <color key="textColor" name="appDescriptionCV"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dev-yn-tZg" customClass="BEMCheckBox">
-                                                <rect key="frame" x="16" y="1392" width="35" height="35"/>
+                                                <rect key="frame" x="16" y="1385.5" width="35" height="35"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Rya-HZ-xCG"/>
@@ -416,14 +416,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rig-5Z-6g3">
-                                                <rect key="frame" x="67" y="1394.5" width="146" height="30"/>
+                                                <rect key="frame" x="67" y="1388" width="144" height="30"/>
                                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="15"/>
                                                 <state key="normal" title="Terms and conditions">
                                                     <color key="titleColor" name="appLightBlue"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciD-qr-4U3" customClass="CustomButton" customModule="ClearAsset" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="1444.5" width="382" height="65"/>
+                                                <rect key="frame" x="16" y="1438" width="382" height="65"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="Adh-5Y-Luz"/>
                                                 </constraints>
@@ -613,13 +613,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgT-6F-f1n">
-                                        <rect key="frame" x="161.5" y="8" width="91" height="23.5"/>
+                                        <rect key="frame" x="164" y="8" width="86" height="20"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appAddTitle"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsC-t4-flE">
-                                        <rect key="frame" x="8" y="84" width="162.5" height="23.5"/>
+                                        <rect key="frame" x="8" y="87.5" width="157" height="20"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appSubTitle"/>
                                         <nil key="highlightedColor"/>
@@ -677,8 +677,11 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="Dev-yn-tZg">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
         <designable name="ciD-qr-4U3">
-            <size key="intrinsicContentSize" width="130" height="40"/>
+            <size key="intrinsicContentSize" width="122" height="36"/>
         </designable>
     </designables>
     <resources>
