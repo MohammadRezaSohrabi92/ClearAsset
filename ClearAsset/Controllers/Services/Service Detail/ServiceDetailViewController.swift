@@ -59,11 +59,9 @@ extension ServiceDetailViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: commentCellIdentifier, for: indexPath) as? ServiceCommentCell {
-            cell.message.text = "aljbcsjldbcj jksb kj bnkj bkj bk jnkjns khb khb kjbkaj n kjbk jnkj kjb kj  kjb kjn k akj bnsk kjsn k kjsbn kk jkjs  kjkj kj jknskj sjdskjndjnv jkf kjdf kfj f vfj v sd sd c djsdkjnsljkdn nsjnkjdnlskndl kn n lsn lknsln lskn lksn lkns "
-            print(commentTable.contentSize.height)
+            cell.message.text = "aljbcsjldbcj jksb kj bnkj bkj bk jnkjns khb khb kjbkaj n kjbk jnkj kjb kj  kjb kjn k akj bnsk kjsn k kjsbn kk jkjs  kjkj kj jknskj sjdskjndjnv jkf kjdf kfj f vfj v sd sd c djsdkjnsljkdn nsjnkjdnlskndl kn n lsn lknsln lskn lksn lkns "            
             commentTableHeight.constant = commentTable.contentSize.height
             contentViewHeight.constant = staticContentHeight + commentTableHeight.constant + 100
-            print(contentViewHeight.constant)
             return cell
         }
         return UITableViewCell()

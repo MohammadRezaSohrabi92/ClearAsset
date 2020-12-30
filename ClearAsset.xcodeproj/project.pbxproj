@@ -46,6 +46,10 @@
 		838EA8E82590B60800E97933 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 838EA8EA2590B60800E97933 /* Localizable.strings */; };
 		8392FAA9259C865C005E69FC /* MoreDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392FAA7259C865C005E69FC /* MoreDetailCell.swift */; };
 		8392FAAA259C865C005E69FC /* MoreDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8392FAA8259C865C005E69FC /* MoreDetailCell.xib */; };
+		8392FABA259C916F005E69FC /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392FAB9259C916F005E69FC /* WatchListViewController.swift */; };
+		8392FABE259C917F005E69FC /* WatchList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8392FABD259C917F005E69FC /* WatchList.storyboard */; };
+		8392FAC5259CA6F8005E69FC /* SaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392FAC3259CA6F8005E69FC /* SaleTableViewCell.swift */; };
+		8392FAC6259CA6F8005E69FC /* SaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8392FAC4259CA6F8005E69FC /* SaleTableViewCell.xib */; };
 		8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */; };
 		8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FB9A258749C400FD3C16 /* UITextField.swift */; };
 		8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396FBB1258786C400FD3C16 /* RegisterCheckEmailViewController.swift */; };
@@ -157,6 +161,10 @@
 		838EA8E92590B60800E97933 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8392FAA7259C865C005E69FC /* MoreDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailCell.swift; sourceTree = "<group>"; };
 		8392FAA8259C865C005E69FC /* MoreDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailCell.xib; sourceTree = "<group>"; };
+		8392FAB9259C916F005E69FC /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
+		8392FABD259C917F005E69FC /* WatchList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchList.storyboard; sourceTree = "<group>"; };
+		8392FAC3259CA6F8005E69FC /* SaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTableViewCell.swift; sourceTree = "<group>"; };
+		8392FAC4259CA6F8005E69FC /* SaleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaleTableViewCell.xib; sourceTree = "<group>"; };
 		8396FB972587453E00FD3C16 /* LeftPadedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPadedTextField.swift; sourceTree = "<group>"; };
 		8396FB9A258749C400FD3C16 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		8396FBB1258786C400FD3C16 /* RegisterCheckEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCheckEmailViewController.swift; sourceTree = "<group>"; };
@@ -442,6 +450,33 @@
 			path = AddListingDetail;
 			sourceTree = "<group>";
 		};
+		8392FAB8259C911B005E69FC /* WatchList */ = {
+			isa = PBXGroup;
+			children = (
+				8392FAC0259CA6B0005E69FC /* Cells */,
+				8392FAB9259C916F005E69FC /* WatchListViewController.swift */,
+				8392FABD259C917F005E69FC /* WatchList.storyboard */,
+			);
+			path = WatchList;
+			sourceTree = "<group>";
+		};
+		8392FAC0259CA6B0005E69FC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8392FAC1259CA6BD005E69FC /* sale */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8392FAC1259CA6BD005E69FC /* sale */ = {
+			isa = PBXGroup;
+			children = (
+				8392FAC3259CA6F8005E69FC /* SaleTableViewCell.swift */,
+				8392FAC4259CA6F8005E69FC /* SaleTableViewCell.xib */,
+			);
+			path = sale;
+			sourceTree = "<group>";
+		};
 		8396FBB42587914900FD3C16 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -652,6 +687,7 @@
 		83E89D8E258F43E000BB1C26 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				8392FAB8259C911B005E69FC /* WatchList */,
 				834A9A36258F8FD600DEC86F /* MenuCell */,
 				83E89D8F258F43EB00BB1C26 /* Menu.storyboard */,
 				83E89D99258F4CB800BB1C26 /* MenuViewController.swift */,
@@ -833,8 +869,10 @@
 				831E75DB25988A45000046E5 /* AddTransmissionCollectionViewCell.xib in Resources */,
 				83023E9925971F61000F910F /* Auctions.storyboard in Resources */,
 				834075E02598B20A00987840 /* ServiceCategoryCVCell.xib in Resources */,
+				8392FABE259C917F005E69FC /* WatchList.storyboard in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
 				835A09EA259B6E7600D32DC9 /* DetailTableViewCell.xib in Resources */,
+				8392FAC6259CA6F8005E69FC /* SaleTableViewCell.xib in Resources */,
 				83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -901,8 +939,10 @@
 				836FC7522598681600F958AC /* AddListingDetailViewController.swift in Sources */,
 				83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */,
 				83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */,
+				8392FABA259C916F005E69FC /* WatchListViewController.swift in Sources */,
 				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
 				E4E700602591E6CE00B8C0E4 /* TopViewCell.swift in Sources */,
+				8392FAC5259CA6F8005E69FC /* SaleTableViewCell.swift in Sources */,
 				83C2F597257F6774008FC305 /* Utility.swift in Sources */,
 				83B477002584A953009DD837 /* BaseViewController.swift in Sources */,
 				839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */,

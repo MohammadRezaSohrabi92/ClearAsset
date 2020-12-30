@@ -48,12 +48,20 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: menuCellIdentifier, for: indexPath) as? MenuTableViewCell {
-            cell.selectionStyle = .gray
+            cell.selectionStyle = .none
             cell.accessoryType = .disclosureIndicator
             cell.fillCell(title: items[indexPath.row], imageName: itemsImage[indexPath.row])
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            let watchListVC = AppStoryboard.WatchList.viewController(viewControllerClass: WatchListViewController.self)
+            watchListVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(watchListVC, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
