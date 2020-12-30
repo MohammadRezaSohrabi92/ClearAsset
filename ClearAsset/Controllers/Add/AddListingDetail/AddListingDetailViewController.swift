@@ -7,26 +7,74 @@
 
 import UIKit
 
-class AddListingDetailViewController: UIViewController {
+class AddListingDetailViewController: BaseViewController {
     
-    //MARK:- Views
+//MARK:- Views
     @IBOutlet weak var transmissionDetailCV: UICollectionView!
     @IBOutlet weak var mainTable: UITableView!
-        
-    //init var
+    @IBOutlet weak var mainTableHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var contentViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var addMoreDetailButton: UIView!
+    
+//init var
+    let contentViewHeight: CGFloat = 1550
+    let mainTableHeightConstant: CGFloat = 470
+    var numberOfRows = 1
+    let detailTVcellIdentiifer = "detailTableViewCellIdentifier"
     let transmissionDetailCVIdentifier = "transmissionDetailCollectionViewIdentifier"
 
-    //MARK:- Life Cycle
+//MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initViews()
     }
     
-    //MARK:- Other Methods
-    func initViews() {
-        transmissionDetailCV.register(UINib(nibName: "AddTransmissionCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: transmissionDetailCVIdentifier)
+    override func viewWillLayoutSubviews() {
+        super.updateViewConstraints()
+        self.mainTableHeightConstraint?.constant = self.mainTable.contentSize.height
+        contentViewHeightConstraint.constant = self.mainTable.contentSize.height > mainTableHeightConstant ? mainTableHeightConstraint.constant + contentViewHeight - mainTableHeightConstant : contentViewHeight
     }
     
+//MARK:- Other Methods
+    func initViews() {
+        mainTable.register(UINib(nibName: "DetailTableViewCell", bundle: nil), forCellReuseIdentifier: detailTVcellIdentiifer)
+        mainTable.rowHeight = UITableView.automaticDimension
+        addMoreDetailButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnAddMoreDetailButton(_:))))
+    }
+    
+//MARK:- Actions
+    @objc func didTapOnAddMoreDetailButton(_ sender: UITapGestureRecognizer) {
+        numberOfRows += 1
+        mainTable.reloadData()
+    }
+    @IBAction func didTapOnBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+}
+
+//MARK:- TableView delegate and data source
+
+extension AddListingDetailViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return numberOfRows
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: detailTVcellIdentiifer, for: indexPath) as? DetailTableViewCell {
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let tableViewCell = cell as? DetailTableViewCell else { return }
+        tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forCell: indexPath.row)
+    }
 }
 
     //MARK:- CollectionView Delegate and Data Source
@@ -41,6 +89,7 @@ extension AddListingDetailViewController: UICollectionViewDataSource, UICollecti
         }
         return UICollectionViewCell()
     }
+    //By checking this box, I confirm that I have read and understood the Terms and Conditions//
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 110, height: 110)

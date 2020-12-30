@@ -44,18 +44,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        print("hello melo")
-        if viewController is SelectSubCategoryViewController {
-            let myViewController = AppStoryboard.Start.viewController(viewControllerClass: StartViewController.self)
-            myViewController.modalTransitionStyle = .crossDissolve
-            myViewController.modalPresentationStyle = .overCurrentContext
-            print("byebye")
-            tabBarController.present(myViewController, animated: true, completion: nil)
-            return false
-        }
-        return true
-    }
-
 }
 

@@ -261,8 +261,8 @@
 			children = (
 				83023E8625971EF2000F910F /* Add.storyboard */,
 				835A09D8259B580500D32DC9 /* SelectCategory */,
-				836FC74C2598676900F958AC /* AddListingDetail */,
 				836FC74A2598672900F958AC /* SelectSubCategory */,
+				836FC74C2598676900F958AC /* AddListingDetail */,
 			);
 			path = Add;
 			sourceTree = "<group>";

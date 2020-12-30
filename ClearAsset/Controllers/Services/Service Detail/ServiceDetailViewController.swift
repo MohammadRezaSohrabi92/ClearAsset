@@ -31,10 +31,6 @@ class ServiceDetailViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)        
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        commentTable.reloadData()
-    }
 
     
 //MARK:- other methods
