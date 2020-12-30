@@ -22,6 +22,7 @@ class AddListingDetailViewController: BaseViewController {
     let contentViewHeight: CGFloat = 1550
     let mainTableHeightConstant: CGFloat = 470
     var numberOfRows = 1
+    var detailTitle = "Transmission Details"
     let detailTVcellIdentiifer = "detailTableViewCellIdentifier"
     let transmissionDetailCVIdentifier = "transmissionDetailCollectionViewIdentifier"
 
@@ -47,21 +48,20 @@ class AddListingDetailViewController: BaseViewController {
     
     func initDropDownMenu() {
         dropDownMenu.anchorView = addMoreDetailButton
+        dropDownMenu.dismissMode = .onTap
         dropDownMenu.textFont = UIFont(name: Utility.appFont.semiBold, size: 15)!
         dropDownMenu.cellNib = UINib(nibName: "MoreDetailCell", bundle: nil)
         dropDownMenu.dataSource = ["Car", "type", "Dog", "Animal"]
         dropDownMenu.selectionAction = { [unowned self] (index: Int, item: String) in
             numberOfRows += 1
+            detailTitle = item
             mainTable.reloadData()
-            print("Selected item: \(item) at index: \(index)")
+            viewWillLayoutSubviews()
         }
     }
     
 //MARK:- Actions
     @objc func didTapOnAddMoreDetailButton(_ sender: UITapGestureRecognizer) {
-//        numberOfRows += 1
-//        mainTable.reloadData()
-        
         dropDownMenu.show()
     }
     @IBAction func didTapOnBackButton(_ sender: Any) {
@@ -79,6 +79,7 @@ extension AddListingDetailViewController: UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: detailTVcellIdentiifer, for: indexPath) as? DetailTableViewCell {
+            cell.mainTitleLabel.text = detailTitle
             return cell
         }
         return UITableViewCell()
