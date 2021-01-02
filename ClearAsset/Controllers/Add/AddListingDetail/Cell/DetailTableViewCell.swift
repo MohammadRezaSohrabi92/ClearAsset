@@ -9,6 +9,7 @@ import UIKit
 
 class DetailTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var mainTitleLabel: CustomAddTitle!
     @IBOutlet weak var collectionView: UICollectionView!
     
     let addDetailCVidentifier = "transmissionDetailCollectionViewIdentifier"

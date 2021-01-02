@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="ClearAsset" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mW3-Cg-fMs">
+                        <rect key="frame" x="8" y="8" width="339" height="159"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Lorem Ipsum?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFB-tM-r1P">
+                                <rect key="frame" x="8" y="16" width="323" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="19"/>
+                                <color key="textColor" name="appDarkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rIW-mH-ml1">
+                                <rect key="frame" x="8" y="42.5" width="323" height="108.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </string>
+                                <color key="textColor" name="appGray"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rIW-mH-ml1" secondAttribute="bottom" constant="8" id="6rN-nS-56H"/>
+                            <constraint firstItem="oFB-tM-r1P" firstAttribute="leading" secondItem="mW3-Cg-fMs" secondAttribute="leading" constant="8" id="9QP-as-GmE"/>
+                            <constraint firstItem="rIW-mH-ml1" firstAttribute="leading" secondItem="mW3-Cg-fMs" secondAttribute="leading" constant="8" id="GLO-rX-TgD"/>
+                            <constraint firstItem="rIW-mH-ml1" firstAttribute="top" secondItem="oFB-tM-r1P" secondAttribute="bottom" constant="4" id="H7n-ha-b4w"/>
+                            <constraint firstAttribute="trailing" secondItem="rIW-mH-ml1" secondAttribute="trailing" constant="8" id="R0B-IX-RcB"/>
+                            <constraint firstAttribute="trailing" secondItem="oFB-tM-r1P" secondAttribute="trailing" constant="8" id="nhW-zJ-pm4"/>
+                            <constraint firstItem="oFB-tM-r1P" firstAttribute="top" secondItem="mW3-Cg-fMs" secondAttribute="top" constant="16" id="qHz-Gp-tNR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="appOrange"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mW3-Cg-fMs" secondAttribute="bottom" constant="8" id="Fmz-K7-akT"/>
+                    <constraint firstItem="mW3-Cg-fMs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="OZP-aG-kln"/>
+                    <constraint firstAttribute="trailing" secondItem="mW3-Cg-fMs" secondAttribute="trailing" constant="8" id="fha-Do-MsK"/>
+                    <constraint firstItem="mW3-Cg-fMs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="raT-hp-s5o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="148.55072463768118" y="170.42410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="appDarkBlue">
+            <color red="0.16078431372549021" green="0.20392156862745098" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGray">
+            <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appOrange">
+            <color red="0.95686274509803926" green="0.34901960784313724" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
