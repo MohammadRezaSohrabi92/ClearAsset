@@ -677,9 +677,6 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="Dev-yn-tZg">
-            <size key="intrinsicContentSize" width="35" height="35"/>
-        </designable>
         <designable name="ciD-qr-4U3">
             <size key="intrinsicContentSize" width="122" height="36"/>
         </designable>

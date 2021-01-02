@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NotificationViewController: UIViewController {
+class NotificationViewController: BaseViewController {
 
     
 //MARK:- Views
