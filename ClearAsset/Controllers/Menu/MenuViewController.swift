@@ -62,6 +62,11 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             watchListVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(watchListVC, animated: true)
         }
+        if indexPath.row == 3 {
+            let notificationVC = AppStoryboard.Notification.viewController(viewControllerClass: NotificationViewController.self)
+            notificationVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(notificationVC, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

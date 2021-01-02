@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
         <array key="Nunito-ExtraBold.ttf">
             <string>Nunito-ExtraBold</string>
         </array>
@@ -27,146 +30,203 @@
                 <rect key="frame" x="0.0" y="0.0" width="442" height="307"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-J0-fsh">
-                        <rect key="frame" x="12" y="12" width="199" height="283"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-r7-YO9">
-                        <rect key="frame" x="227" y="14" width="180" height="38.5"/>
-                        <string key="text">Toyota Quantum 2.7 14
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8TP-V3-huG">
+                        <rect key="frame" x="0.0" y="8" width="442" height="291"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shipBack" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-J0-fsh">
+                                <rect key="frame" x="8" y="8" width="190" height="275"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-r7-YO9">
+                                <rect key="frame" x="214" y="12" width="185" height="33"/>
+                                <string key="text">Toyota Quantum 2.7 14
  Seater 2013</string>
-                        <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="14"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-RG-GTY">
-                        <rect key="frame" x="419" y="8" width="15" height="15"/>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="14"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-RG-GTY">
+                                <rect key="frame" x="411" y="8" width="23" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="sKG-Js-GAR"/>
+                                    <constraint firstAttribute="width" secondItem="EOM-RG-GTY" secondAttribute="height" multiplier="1:1" id="xq5-Zx-f6L"/>
+                                </constraints>
+                                <state key="normal" title="b" image="Close-1"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maitland, Western Cape, ZAF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e44-L3-nYh">
+                                <rect key="frame" x="214" y="55" width="208" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzN-L4-pMp">
+                                <rect key="frame" x="214" y="239" width="220" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="M9X-rZ-sei">
+                                        <rect key="frame" x="8" y="4" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="M9X-rZ-sei" secondAttribute="height" multiplier="1:1" id="rog-cI-IU3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$90,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddo-oe-ruK">
+                                        <rect key="frame" x="130" y="10" width="88" height="20"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj5-qN-Ks4">
+                                        <rect key="frame" x="93" y="10" width="33" height="20"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="appOrange"/>
+                                <constraints>
+                                    <constraint firstItem="Ddo-oe-ruK" firstAttribute="leading" secondItem="Hj5-qN-Ks4" secondAttribute="trailing" constant="4" id="7hN-rw-hdb"/>
+                                    <constraint firstItem="Hj5-qN-Ks4" firstAttribute="centerY" secondItem="hzN-L4-pMp" secondAttribute="centerY" id="HtK-Ee-w21"/>
+                                    <constraint firstAttribute="bottom" secondItem="M9X-rZ-sei" secondAttribute="bottom" constant="4" id="Mhi-UA-QpS"/>
+                                    <constraint firstItem="M9X-rZ-sei" firstAttribute="top" secondItem="hzN-L4-pMp" secondAttribute="top" constant="4" id="Qu3-eU-iTw"/>
+                                    <constraint firstItem="Ddo-oe-ruK" firstAttribute="centerY" secondItem="hzN-L4-pMp" secondAttribute="centerY" id="QuW-aN-Z9U"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ddo-oe-ruK" secondAttribute="trailing" constant="2" id="eja-AV-hFk"/>
+                                    <constraint firstAttribute="height" constant="40" id="gmy-s4-JiW"/>
+                                    <constraint firstItem="Ddo-oe-ruK" firstAttribute="width" secondItem="hzN-L4-pMp" secondAttribute="width" multiplier="0.4" id="sGn-o9-z3z"/>
+                                    <constraint firstItem="M9X-rZ-sei" firstAttribute="leading" secondItem="hzN-L4-pMp" secondAttribute="leading" constant="8" id="uMB-GT-Sv7"/>
+                                    <constraint firstItem="Hj5-qN-Ks4" firstAttribute="width" secondItem="hzN-L4-pMp" secondAttribute="width" multiplier="0.15" id="uvj-IG-uS2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="appOrange"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFA-5o-ixK">
+                                <rect key="frame" x="214" y="84" width="60" height="20"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Ujb-Q2-fxy"/>
+                                    <constraint firstAttribute="height" constant="20" id="fC0-cS-s7O"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Yard:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v80-KP-hfO">
+                                <rect key="frame" x="214" y="116" width="37.5" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="true" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgW-Ty-URJ">
+                                <rect key="frame" x="255.5" y="116" width="20" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rn-2t-F36">
+                                <rect key="frame" x="214" y="135" width="24" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUx-QR-een">
+                                <rect key="frame" x="242" y="135" width="24.5" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manufacturer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbe-Ly-1aW">
+                                <rect key="frame" x="214" y="154" width="69" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Deere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bk-fy-1wg">
+                                <rect key="frame" x="287" y="154" width="56.5" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnK-Bm-MIE">
+                                <rect key="frame" x="214" y="173" width="34" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8410" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNz-fc-ZnR">
+                                <rect key="frame" x="254" y="173" width="24.5" height="13"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                <color key="textColor" name="appGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="15" id="RSG-jM-r7k"/>
-                            <constraint firstAttribute="width" constant="15" id="sKG-Js-GAR"/>
-                        </constraints>
-                        <state key="normal" title="b"/>
-                    </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maitland, Western Cape, ZAF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e44-L3-nYh">
-                        <rect key="frame" x="227" y="62.5" width="207" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzN-L4-pMp">
-                        <rect key="frame" x="227" y="255" width="199" height="40"/>
-                        <color key="backgroundColor" name="appOrange"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="40" id="gmy-s4-JiW"/>
+                            <constraint firstItem="hzN-L4-pMp" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="1Jr-d8-Pt8"/>
+                            <constraint firstItem="2Bk-fy-1wg" firstAttribute="centerY" secondItem="Vbe-Ly-1aW" secondAttribute="centerY" id="1mw-OW-GUw"/>
+                            <constraint firstItem="Vbe-Ly-1aW" firstAttribute="top" secondItem="3Rn-2t-F36" secondAttribute="bottom" constant="6" id="7Be-Rr-0mM"/>
+                            <constraint firstItem="e44-L3-nYh" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="7M2-FU-74f"/>
+                            <constraint firstItem="EOM-RG-GTY" firstAttribute="leading" secondItem="Nme-r7-YO9" secondAttribute="trailing" constant="12" id="9B2-ec-ptD"/>
+                            <constraint firstItem="5I7-J0-fsh" firstAttribute="leading" secondItem="8TP-V3-huG" secondAttribute="leading" constant="8" id="9PL-YG-kU8"/>
+                            <constraint firstItem="EOM-RG-GTY" firstAttribute="top" secondItem="8TP-V3-huG" secondAttribute="top" constant="8" id="C8Z-W4-nmu"/>
+                            <constraint firstItem="dFA-5o-ixK" firstAttribute="top" secondItem="e44-L3-nYh" secondAttribute="bottom" constant="16" id="DU7-Ue-mLL"/>
+                            <constraint firstItem="Nme-r7-YO9" firstAttribute="top" secondItem="8TP-V3-huG" secondAttribute="top" constant="12" id="FIA-Ad-JTn"/>
+                            <constraint firstItem="GUx-QR-een" firstAttribute="centerY" secondItem="3Rn-2t-F36" secondAttribute="centerY" id="FeR-MF-KrL"/>
+                            <constraint firstItem="v80-KP-hfO" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="H29-an-xxX"/>
+                            <constraint firstItem="e44-L3-nYh" firstAttribute="top" secondItem="Nme-r7-YO9" secondAttribute="bottom" constant="10" id="H2C-hZ-nyr"/>
+                            <constraint firstItem="YNz-fc-ZnR" firstAttribute="centerY" secondItem="qnK-Bm-MIE" secondAttribute="centerY" id="HQT-cb-BPm"/>
+                            <constraint firstItem="3Rn-2t-F36" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="Igg-69-p6j"/>
+                            <constraint firstAttribute="trailing" secondItem="hzN-L4-pMp" secondAttribute="trailing" constant="8" id="JxJ-cm-KxF"/>
+                            <constraint firstItem="YNz-fc-ZnR" firstAttribute="leading" secondItem="qnK-Bm-MIE" secondAttribute="trailing" constant="6" id="KwY-eR-Mty"/>
+                            <constraint firstItem="PgW-Ty-URJ" firstAttribute="centerY" secondItem="v80-KP-hfO" secondAttribute="centerY" id="LyZ-Hu-3y3"/>
+                            <constraint firstItem="qnK-Bm-MIE" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="OeX-Vn-yrx"/>
+                            <constraint firstAttribute="bottom" secondItem="5I7-J0-fsh" secondAttribute="bottom" constant="8" id="PvP-zZ-SAz"/>
+                            <constraint firstItem="3Rn-2t-F36" firstAttribute="top" secondItem="v80-KP-hfO" secondAttribute="bottom" constant="6" id="Qba-OT-iRW"/>
+                            <constraint firstAttribute="trailing" secondItem="EOM-RG-GTY" secondAttribute="trailing" constant="8" id="RaI-fq-BtR"/>
+                            <constraint firstItem="PgW-Ty-URJ" firstAttribute="leading" secondItem="v80-KP-hfO" secondAttribute="trailing" constant="4" id="TF8-yE-Ikb"/>
+                            <constraint firstAttribute="trailing" secondItem="e44-L3-nYh" secondAttribute="trailing" constant="20" id="UY1-ks-s3A"/>
+                            <constraint firstItem="GUx-QR-een" firstAttribute="leading" secondItem="3Rn-2t-F36" secondAttribute="trailing" constant="4" id="V69-D9-41F"/>
+                            <constraint firstItem="dFA-5o-ixK" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="Wvw-0A-JEu"/>
+                            <constraint firstItem="5I7-J0-fsh" firstAttribute="width" secondItem="8TP-V3-huG" secondAttribute="width" multiplier="0.45" constant="-8.9000000000000057" id="bQT-Ln-8GA"/>
+                            <constraint firstItem="5I7-J0-fsh" firstAttribute="top" secondItem="8TP-V3-huG" secondAttribute="top" constant="8" id="g11-Mf-cxv"/>
+                            <constraint firstAttribute="bottom" secondItem="hzN-L4-pMp" secondAttribute="bottom" constant="12" id="hoa-OR-4yL"/>
+                            <constraint firstItem="qnK-Bm-MIE" firstAttribute="top" secondItem="Vbe-Ly-1aW" secondAttribute="bottom" constant="6" id="kcW-cz-Igw"/>
+                            <constraint firstItem="2Bk-fy-1wg" firstAttribute="leading" secondItem="Vbe-Ly-1aW" secondAttribute="trailing" constant="4" id="ocX-PR-IbS"/>
+                            <constraint firstItem="Nme-r7-YO9" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="tGX-5Y-daz"/>
+                            <constraint firstItem="v80-KP-hfO" firstAttribute="top" secondItem="dFA-5o-ixK" secondAttribute="bottom" constant="12" id="tUY-Rx-gCJ"/>
+                            <constraint firstItem="Vbe-Ly-1aW" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="vI1-Y0-mYT"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="8"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                <color key="value" name="appOrange"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                <size key="value" width="1" height="1"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                <real key="value" value="2"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                <real key="value" value="4"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="appBorder"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFA-5o-ixK">
-                        <rect key="frame" x="227" y="94" width="60" height="30"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="60" id="Ujb-Q2-fxy"/>
-                            <constraint firstAttribute="height" constant="30" id="fC0-cS-s7O"/>
-                        </constraints>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Yard:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v80-KP-hfO">
-                        <rect key="frame" x="227" y="140" width="36.5" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="true" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgW-Ty-URJ">
-                        <rect key="frame" x="267.5" y="140" width="20" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rn-2t-F36">
-                        <rect key="frame" x="227" y="163.5" width="24" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUx-QR-een">
-                        <rect key="frame" x="255" y="163.5" width="26.5" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manufacturer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbe-Ly-1aW">
-                        <rect key="frame" x="227" y="187" width="69" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Deere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bk-fy-1wg">
-                        <rect key="frame" x="300" y="187" width="55" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnK-Bm-MIE">
-                        <rect key="frame" x="227" y="210.5" width="34" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8410" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNz-fc-ZnR">
-                        <rect key="frame" x="267" y="210.5" width="26.5" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
-                        <color key="textColor" name="appGray"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="qnK-Bm-MIE" firstAttribute="top" secondItem="Vbe-Ly-1aW" secondAttribute="bottom" constant="8" id="5Da-Cn-2td"/>
-                    <constraint firstItem="YNz-fc-ZnR" firstAttribute="leading" secondItem="qnK-Bm-MIE" secondAttribute="trailing" constant="6" id="7Zy-8g-bVO"/>
-                    <constraint firstItem="2Bk-fy-1wg" firstAttribute="leading" secondItem="Vbe-Ly-1aW" secondAttribute="trailing" constant="4" id="9S2-jQ-JtL"/>
-                    <constraint firstItem="dFA-5o-ixK" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="9ts-t8-Kbx"/>
-                    <constraint firstItem="5I7-J0-fsh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="EW6-r9-wQO"/>
-                    <constraint firstItem="v80-KP-hfO" firstAttribute="top" secondItem="dFA-5o-ixK" secondAttribute="bottom" constant="16" id="EhR-Ag-0fS"/>
-                    <constraint firstItem="e44-L3-nYh" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="HKd-yx-caR"/>
-                    <constraint firstAttribute="trailing" secondItem="hzN-L4-pMp" secondAttribute="trailing" constant="16" id="HLF-Ce-5MW"/>
-                    <constraint firstItem="Nme-r7-YO9" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="NRg-kq-MDh"/>
-                    <constraint firstItem="EOM-RG-GTY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NgM-Xq-vnw"/>
-                    <constraint firstItem="5I7-J0-fsh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Pqs-Mf-V6g"/>
-                    <constraint firstItem="e44-L3-nYh" firstAttribute="top" secondItem="Nme-r7-YO9" secondAttribute="bottom" constant="10" id="QIo-yF-Qi8"/>
-                    <constraint firstItem="Vbe-Ly-1aW" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="ULZ-Nb-iy2"/>
-                    <constraint firstItem="PgW-Ty-URJ" firstAttribute="centerY" secondItem="v80-KP-hfO" secondAttribute="centerY" id="Xmy-Kd-d5I"/>
-                    <constraint firstAttribute="bottom" secondItem="5I7-J0-fsh" secondAttribute="bottom" constant="12" id="b3i-LY-e0N"/>
-                    <constraint firstAttribute="trailing" secondItem="e44-L3-nYh" secondAttribute="trailing" constant="8" id="cbr-Ig-q42"/>
-                    <constraint firstItem="2Bk-fy-1wg" firstAttribute="centerY" secondItem="Vbe-Ly-1aW" secondAttribute="centerY" id="coi-Wf-d4c"/>
-                    <constraint firstAttribute="trailing" secondItem="EOM-RG-GTY" secondAttribute="trailing" constant="8" id="eDa-f7-Kqc"/>
-                    <constraint firstAttribute="bottom" secondItem="hzN-L4-pMp" secondAttribute="bottom" constant="12" id="emu-4P-9pI"/>
-                    <constraint firstItem="YNz-fc-ZnR" firstAttribute="centerY" secondItem="qnK-Bm-MIE" secondAttribute="centerY" id="f1L-od-1lJ"/>
-                    <constraint firstItem="v80-KP-hfO" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="fVQ-fw-Ssj"/>
-                    <constraint firstItem="EOM-RG-GTY" firstAttribute="leading" secondItem="Nme-r7-YO9" secondAttribute="trailing" constant="12" id="fjg-Oc-5ge"/>
-                    <constraint firstItem="dFA-5o-ixK" firstAttribute="top" secondItem="e44-L3-nYh" secondAttribute="bottom" constant="16" id="gRo-fO-fUj"/>
-                    <constraint firstItem="PgW-Ty-URJ" firstAttribute="leading" secondItem="v80-KP-hfO" secondAttribute="trailing" constant="4" id="geC-uC-hwS"/>
-                    <constraint firstItem="GUx-QR-een" firstAttribute="leading" secondItem="3Rn-2t-F36" secondAttribute="trailing" constant="4" id="hjg-OT-puq"/>
-                    <constraint firstItem="GUx-QR-een" firstAttribute="centerY" secondItem="3Rn-2t-F36" secondAttribute="centerY" id="itn-1L-flr"/>
-                    <constraint firstItem="qnK-Bm-MIE" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="lFD-De-mwg"/>
-                    <constraint firstItem="3Rn-2t-F36" firstAttribute="top" secondItem="v80-KP-hfO" secondAttribute="bottom" constant="8" id="otG-f9-Zbr"/>
-                    <constraint firstItem="5I7-J0-fsh" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.45" id="vVi-aR-w91"/>
-                    <constraint firstItem="hzN-L4-pMp" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="x9I-hv-fry"/>
-                    <constraint firstItem="Vbe-Ly-1aW" firstAttribute="top" secondItem="3Rn-2t-F36" secondAttribute="bottom" constant="8" id="xQk-7d-9Ma"/>
-                    <constraint firstItem="Nme-r7-YO9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="z6z-XS-bZT"/>
-                    <constraint firstItem="3Rn-2t-F36" firstAttribute="leading" secondItem="5I7-J0-fsh" secondAttribute="trailing" constant="16" id="zRH-cu-IV5"/>
+                    <constraint firstItem="8TP-V3-huG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3GO-2S-Pua"/>
+                    <constraint firstAttribute="bottom" secondItem="8TP-V3-huG" secondAttribute="bottom" constant="8" id="JQu-3t-Qlf"/>
+                    <constraint firstItem="8TP-V3-huG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wgr-5W-Y21"/>
+                    <constraint firstAttribute="trailing" secondItem="8TP-V3-huG" secondAttribute="trailing" id="zyD-Uo-yur"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -174,12 +234,21 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Close-1" width="89" height="89.5"/>
+        <image name="shipBack" width="166" height="221"/>
+        <image name="telephone" width="82.5" height="82"/>
+        <namedColor name="appBorder">
+            <color red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="0.52999997138977051" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="appGray">
             <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="appOrange">
             <color red="0.95686274509803926" green="0.34901960784313724" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

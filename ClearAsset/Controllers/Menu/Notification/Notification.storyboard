@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="DzH-KX-XzP">
+            <objects>
+                <viewController storyboardIdentifier="NotificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Cy-jS-3X5" customClass="NotificationViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pYo-yk-h93">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8I-TK-ep4" userLabel="navigation view">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDZ-Oj-2cZ">
+                                        <rect key="frame" x="16" y="17" width="28" height="28.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MDZ-Oj-2cZ" secondAttribute="height" multiplier="1:1" id="b3A-yh-Cfd"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="didTapOnBackButton:" destination="1Cy-jS-3X5" eventType="touchUpInside" id="kDh-05-kjq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nI-4T-eXm">
+                                        <rect key="frame" x="147.5" y="16" width="119.5" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
+                                        <color key="textColor" name="appDarkBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MDZ-Oj-2cZ" firstAttribute="leading" secondItem="W8I-TK-ep4" secondAttribute="leading" constant="16" id="2kl-Gf-e8j"/>
+                                    <constraint firstItem="MDZ-Oj-2cZ" firstAttribute="centerY" secondItem="W8I-TK-ep4" secondAttribute="centerY" id="6dA-0R-iUc"/>
+                                    <constraint firstItem="MDZ-Oj-2cZ" firstAttribute="height" secondItem="W8I-TK-ep4" secondAttribute="height" multiplier="0.45" id="ny6-i8-3SD"/>
+                                    <constraint firstItem="0nI-4T-eXm" firstAttribute="centerY" secondItem="W8I-TK-ep4" secondAttribute="centerY" id="rYQ-3K-yuG"/>
+                                    <constraint firstItem="0nI-4T-eXm" firstAttribute="centerX" secondItem="W8I-TK-ep4" secondAttribute="centerX" id="wVQ-jS-gUb"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DjB-RG-UkJ">
+                                <rect key="frame" x="0.0" y="114.5" width="414" height="739.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Cy-jS-3X5" id="FBr-4z-qXw"/>
+                                    <outlet property="delegate" destination="1Cy-jS-3X5" id="iNP-fX-fDS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oW5-C1-CPt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="DjB-RG-UkJ" secondAttribute="bottom" constant="8" id="8C7-Tz-f1X"/>
+                            <constraint firstItem="oW5-C1-CPt" firstAttribute="trailing" secondItem="W8I-TK-ep4" secondAttribute="trailing" id="Bal-Px-fwN"/>
+                            <constraint firstItem="W8I-TK-ep4" firstAttribute="height" secondItem="pYo-yk-h93" secondAttribute="height" multiplier="0.07" id="Gqb-EV-XQJ"/>
+                            <constraint firstItem="W8I-TK-ep4" firstAttribute="leading" secondItem="pYo-yk-h93" secondAttribute="leading" id="a2e-8S-0mH"/>
+                            <constraint firstItem="oW5-C1-CPt" firstAttribute="trailing" secondItem="DjB-RG-UkJ" secondAttribute="trailing" id="aRo-Kc-lVo"/>
+                            <constraint firstItem="W8I-TK-ep4" firstAttribute="top" secondItem="oW5-C1-CPt" secondAttribute="top" id="aUS-FH-9wH"/>
+                            <constraint firstItem="DjB-RG-UkJ" firstAttribute="leading" secondItem="oW5-C1-CPt" secondAttribute="leading" id="kUW-gX-HpH"/>
+                            <constraint firstItem="DjB-RG-UkJ" firstAttribute="top" secondItem="W8I-TK-ep4" secondAttribute="bottom" constant="8" id="sq0-hg-Jzj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTable" destination="DjB-RG-UkJ" id="B09-cD-pae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ryq-e3-9HX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="171"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="33" height="29"/>
+        <namedColor name="appDarkBlue">
+            <color red="0.16078431372549021" green="0.20392156862745098" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -23,6 +23,12 @@
 		83023EB625973418000F910F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83023EB425973418000F910F /* CategoryCollectionViewCell.xib */; };
 		8305CCD12598C70D001C61A6 /* ServicePreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305CCCF2598C70D001C61A6 /* ServicePreviewTableViewCell.swift */; };
 		8305CCD22598C70D001C61A6 /* ServicePreviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8305CCD02598C70D001C61A6 /* ServicePreviewTableViewCell.xib */; };
+		830E0DA825A05359001FFCD0 /* AuctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E0DA625A05359001FFCD0 /* AuctionTableViewCell.swift */; };
+		830E0DA925A05359001FFCD0 /* AuctionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830E0DA725A05359001FFCD0 /* AuctionTableViewCell.xib */; };
+		830E0DAE25A08098001FFCD0 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830E0DAD25A08098001FFCD0 /* Notification.storyboard */; };
+		830E0DB225A080CA001FFCD0 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E0DB125A080CA001FFCD0 /* NotificationViewController.swift */; };
+		830E0DB925A08507001FFCD0 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E0DB725A08507001FFCD0 /* NotificationTableViewCell.swift */; };
+		830E0DBA25A08507001FFCD0 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830E0DB825A08507001FFCD0 /* NotificationTableViewCell.xib */; };
 		831E75D225986F43000046E5 /* CustomAddTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E75D125986F43000046E5 /* CustomAddTitle.swift */; };
 		831E75D52598732F000046E5 /* CustomAddTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E75D42598732F000046E5 /* CustomAddTextFeild.swift */; };
 		831E75DA25988A45000046E5 /* AddTransmissionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E75D825988A45000046E5 /* AddTransmissionCollectionViewCell.swift */; };
@@ -138,6 +144,12 @@
 		83023EB425973418000F910F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		8305CCCF2598C70D001C61A6 /* ServicePreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePreviewTableViewCell.swift; sourceTree = "<group>"; };
 		8305CCD02598C70D001C61A6 /* ServicePreviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicePreviewTableViewCell.xib; sourceTree = "<group>"; };
+		830E0DA625A05359001FFCD0 /* AuctionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionTableViewCell.swift; sourceTree = "<group>"; };
+		830E0DA725A05359001FFCD0 /* AuctionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuctionTableViewCell.xib; sourceTree = "<group>"; };
+		830E0DAD25A08098001FFCD0 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		830E0DB125A080CA001FFCD0 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		830E0DB725A08507001FFCD0 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		830E0DB825A08507001FFCD0 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		831E75D125986F43000046E5 /* CustomAddTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddTitle.swift; sourceTree = "<group>"; };
 		831E75D42598732F000046E5 /* CustomAddTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddTextFeild.swift; sourceTree = "<group>"; };
 		831E75D825988A45000046E5 /* AddTransmissionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransmissionCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -337,6 +349,34 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		830E0DA525A0533B001FFCD0 /* Auction */ = {
+			isa = PBXGroup;
+			children = (
+				830E0DA625A05359001FFCD0 /* AuctionTableViewCell.swift */,
+				830E0DA725A05359001FFCD0 /* AuctionTableViewCell.xib */,
+			);
+			path = Auction;
+			sourceTree = "<group>";
+		};
+		830E0DAC25A0808B001FFCD0 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				830E0DB525A0822A001FFCD0 /* Cells */,
+				830E0DAD25A08098001FFCD0 /* Notification.storyboard */,
+				830E0DB125A080CA001FFCD0 /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		830E0DB525A0822A001FFCD0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				830E0DB725A08507001FFCD0 /* NotificationTableViewCell.swift */,
+				830E0DB825A08507001FFCD0 /* NotificationTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		831E75D7259889FD000046E5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +503,7 @@
 		8392FAC0259CA6B0005E69FC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				830E0DA525A0533B001FFCD0 /* Auction */,
 				8392FAC1259CA6BD005E69FC /* sale */,
 			);
 			path = Cells;
@@ -687,6 +728,7 @@
 		83E89D8E258F43E000BB1C26 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				830E0DAC25A0808B001FFCD0 /* Notification */,
 				8392FAB8259C911B005E69FC /* WatchList */,
 				834A9A36258F8FD600DEC86F /* MenuCell */,
 				83E89D8F258F43EB00BB1C26 /* Menu.storyboard */,
@@ -845,7 +887,9 @@
 				8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */,
 				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
 				831F9BD6259A092600A03D50 /* ServiceCommentCell.xib in Resources */,
+				830E0DA925A05359001FFCD0 /* AuctionTableViewCell.xib in Resources */,
 				83E89623257E61E700D66424 /* Nunito-BlackItalic.ttf in Resources */,
+				830E0DBA25A08507001FFCD0 /* NotificationTableViewCell.xib in Resources */,
 				8396FBBA2587918B00FD3C16 /* Profile.storyboard in Resources */,
 				83E89619257E61E700D66424 /* Nunito-SemiBoldItalic.ttf in Resources */,
 				83E89D90258F43EB00BB1C26 /* Menu.storyboard in Resources */,
@@ -868,6 +912,7 @@
 				E40EAE8E25921BFF00E9AD35 /* BottomCollectionViewCell.xib in Resources */,
 				831E75DB25988A45000046E5 /* AddTransmissionCollectionViewCell.xib in Resources */,
 				83023E9925971F61000F910F /* Auctions.storyboard in Resources */,
+				830E0DAE25A08098001FFCD0 /* Notification.storyboard in Resources */,
 				834075E02598B20A00987840 /* ServiceCategoryCVCell.xib in Resources */,
 				8392FABE259C917F005E69FC /* WatchList.storyboard in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
@@ -933,6 +978,7 @@
 				83023E9525971F56000F910F /* AuctionsViewController.swift in Sources */,
 				831E75DA25988A45000046E5 /* AddTransmissionCollectionViewCell.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
+				830E0DA825A05359001FFCD0 /* AuctionTableViewCell.swift in Sources */,
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
 				E40EAE8825921BEB00E9AD35 /* BottomTableViewCell.swift in Sources */,
 				831E75D225986F43000046E5 /* CustomAddTitle.swift in Sources */,
@@ -940,6 +986,7 @@
 				83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */,
 				83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */,
 				8392FABA259C916F005E69FC /* WatchListViewController.swift in Sources */,
+				830E0DB925A08507001FFCD0 /* NotificationTableViewCell.swift in Sources */,
 				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
 				E4E700602591E6CE00B8C0E4 /* TopViewCell.swift in Sources */,
 				8392FAC5259CA6F8005E69FC /* SaleTableViewCell.swift in Sources */,
@@ -975,6 +1022,7 @@
 				8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */,
 				83E89D8A258F2E8B00BB1C26 /* CustomScrollView.swift in Sources */,
 				83B779B12587ACE100018EBA /* SignInInfoCell.swift in Sources */,
+				830E0DB225A080CA001FFCD0 /* NotificationViewController.swift in Sources */,
 				8305CCD12598C70D001C61A6 /* ServicePreviewTableViewCell.swift in Sources */,
 				83B779B62587ACFA00018EBA /* ManageAccount.swift in Sources */,
 				8396FBB62587917300FD3C16 /* ProfileViewController.swift in Sources */,
