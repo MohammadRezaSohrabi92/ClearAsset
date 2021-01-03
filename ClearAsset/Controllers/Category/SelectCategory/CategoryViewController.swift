@@ -91,6 +91,11 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return 70
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let productListVC = AppStoryboard.ProductList.viewController(viewControllerClass: ProductListViewController.self)
+        self.navigationController?.pushViewController(productListVC, animated: true)
+    }
 }
 
     //MARK:- CollectionView Delegate and Data Source
