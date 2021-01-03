@@ -187,25 +187,39 @@
                                     <constraint firstAttribute="height" constant="45" id="PaM-NK-bAx"/>
                                 </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sJh-ge-nq6">
+                                <rect key="frame" x="0.0" y="204.5" width="414" height="657.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KMW-kN-ty9" id="RQ7-Bl-K2v"/>
+                                    <outlet property="delegate" destination="KMW-kN-ty9" id="gmG-FC-pSd"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n1D-Ii-1zJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="n1D-Ii-1zJ" firstAttribute="trailing" secondItem="sJh-ge-nq6" secondAttribute="trailing" id="5YI-r7-wS3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="sJh-ge-nq6" secondAttribute="bottom" id="8HV-2e-GCX"/>
                             <constraint firstAttribute="trailing" secondItem="KP8-4a-Evw" secondAttribute="trailing" id="FW8-7b-oja"/>
                             <constraint firstItem="KP8-4a-Evw" firstAttribute="top" secondItem="n1D-Ii-1zJ" secondAttribute="top" id="HZ5-Ei-uoN"/>
                             <constraint firstItem="KP8-4a-Evw" firstAttribute="leading" secondItem="n1D-Ii-1zJ" secondAttribute="leading" id="L6n-TN-ZQM"/>
                             <constraint firstItem="n1D-Ii-1zJ" firstAttribute="trailing" secondItem="Ruj-4P-q6R" secondAttribute="trailing" constant="8" id="N4r-1H-YQK"/>
                             <constraint firstItem="n1D-Ii-1zJ" firstAttribute="trailing" secondItem="0G5-og-lQV" secondAttribute="trailing" constant="8" id="O20-0k-Zfy"/>
                             <constraint firstItem="0G5-og-lQV" firstAttribute="top" secondItem="Ruj-4P-q6R" secondAttribute="bottom" constant="8" id="cGA-ii-6GR"/>
+                            <constraint firstItem="sJh-ge-nq6" firstAttribute="leading" secondItem="n1D-Ii-1zJ" secondAttribute="leading" id="cH9-2Y-xs1"/>
                             <constraint firstItem="Ruj-4P-q6R" firstAttribute="leading" secondItem="07c-jR-wZs" secondAttribute="leading" constant="8" id="dM5-LX-5Bu"/>
                             <constraint firstItem="Ruj-4P-q6R" firstAttribute="top" secondItem="KP8-4a-Evw" secondAttribute="bottom" id="hUR-aE-3ao"/>
                             <constraint firstItem="0G5-og-lQV" firstAttribute="leading" secondItem="n1D-Ii-1zJ" secondAttribute="leading" constant="8" id="p8S-59-d8N"/>
                             <constraint firstItem="KP8-4a-Evw" firstAttribute="height" secondItem="07c-jR-wZs" secondAttribute="height" multiplier="0.07" id="pd1-Fx-7Rl"/>
+                            <constraint firstItem="sJh-ge-nq6" firstAttribute="top" secondItem="0G5-og-lQV" secondAttribute="bottom" id="t26-7d-t8g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2uy-UT-Zwh"/>
                     <connections>
                         <outlet property="filterButton" destination="gS6-kU-hK5" id="6eK-wA-fRC"/>
+                        <outlet property="mainTable" destination="sJh-ge-nq6" id="eEs-2p-Urr"/>
+                        <outlet property="sortButton" destination="GkP-Ho-92y" id="eax-DO-Zsb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32E-QD-I8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

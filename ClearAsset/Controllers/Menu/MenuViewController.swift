@@ -24,14 +24,15 @@ class MenuViewController: UIViewController {
 
         // Do any additional setup after loading the view.        
         initViews()
-    }
+    }    
+
     
+    //MARK:- Other methods
     fileprivate func initViews() {
         table.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: menuCellIdentifier)
         profileView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnProfileView(_:))))
     }
     
-    //MARK:- Other methods
     
     //MARK:- actions
     @objc func didTapOnProfileView(_ sender: UITapGestureRecognizer) {
@@ -48,7 +49,6 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: menuCellIdentifier, for: indexPath) as? MenuTableViewCell {
-            cell.selectionStyle = .none
             cell.accessoryType = .disclosureIndicator
             cell.fillCell(title: items[indexPath.row], imageName: itemsImage[indexPath.row])
             return cell
