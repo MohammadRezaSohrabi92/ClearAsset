@@ -68,4 +68,10 @@ extension ProductListViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 430.0
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let productVC = AppStoryboard.Product.viewController(viewControllerClass: ProductViewController.self)
+        productVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(productVC, animated: true)
+    }
 }
