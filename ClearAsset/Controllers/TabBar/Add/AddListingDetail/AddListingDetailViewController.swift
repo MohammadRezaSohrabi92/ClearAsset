@@ -10,8 +10,7 @@ import DropDown
 
 class AddListingDetailViewController: BaseViewController {
     
-//MARK:- Views
-    @IBOutlet weak var transmissionDetailCV: UICollectionView!
+//MARK:- Views    
     @IBOutlet weak var mainTable: UITableView!
     @IBOutlet weak var mainTableHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var contentViewHeightConstraint: NSLayoutConstraint!
