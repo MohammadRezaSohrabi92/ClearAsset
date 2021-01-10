@@ -94,7 +94,7 @@ Lorem Ipsum has </string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GhR-zH-WYN" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GhR-zH-WYN" customClass="CustomTextField" customModule="ClearAsset" customModuleProvider="target">
                                         <rect key="frame" x="16" y="37" width="382" height="62"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -108,13 +108,13 @@ Lorem Ipsum has </string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0q-hs-yUN">
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0q-hs-yUN">
                                         <rect key="frame" x="16" y="144" width="382" height="61.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visible" translatesAutoresizingMaskIntoConstraints="NO" id="bpW-Gq-tGw">
                                                 <rect key="frame" x="347.5" y="0.0" width="26.5" height="61.5"/>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CF6-gL-PkB" customClass="LeftPadedTextField" customModule="ClearAsset" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="At least 6 characters" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CF6-gL-PkB" customClass="LeftPadedTextField" customModule="ClearAsset" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="324.5" height="61.5"/>
                                                 <color key="textColor" name="appDarkBlue"/>
                                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="15"/>
@@ -153,7 +153,7 @@ Lorem Ipsum has </string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yrs-CF-OQU">
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yrs-CF-OQU">
                                         <rect key="frame" x="16" y="250.5" width="382" height="62"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visible" translatesAutoresizingMaskIntoConstraints="NO" id="Q5O-3X-br4">
@@ -250,7 +250,9 @@ Lorem Ipsum has </string>
                         <outlet property="emailTF" destination="GhR-zH-WYN" id="H5h-y8-GnD"/>
                         <outlet property="nextButton" destination="v0Y-v2-67B" id="ApH-GL-1Kb"/>
                         <outlet property="passwordTF" destination="CF6-gL-PkB" id="nrr-2p-rjX"/>
+                        <outlet property="passwordView" destination="Y0q-hs-yUN" id="t7k-CQ-5Du"/>
                         <outlet property="rePasswordTF" destination="yte-Nk-fcd" id="ekj-Ao-Oqw"/>
+                        <outlet property="rePasswordView" destination="Yrs-CF-OQU" id="GTe-6t-Mi6"/>
                         <outlet property="visiblePassword" destination="bpW-Gq-tGw" id="NDv-Jg-W3b"/>
                         <outlet property="visibleRePassword" destination="Q5O-3X-br4" id="55t-gi-wlh"/>
                         <segue destination="Wrt-d0-S4w" kind="show" id="4M4-42-KeF"/>

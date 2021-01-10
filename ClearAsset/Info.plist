@@ -42,7 +42,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>TabBar</string>
+					<string>Start</string>
 				</dict>
 			</array>
 		</dict>
@@ -72,6 +72,21 @@
 	<string>We need your permission</string>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>clear-asset.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
+	</dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>we need your permission</string>
 </dict>
