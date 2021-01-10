@@ -17,6 +17,19 @@ class Utility {
         static let semiBold = "Nunito-SemiBold"
     }
     
+    class func showHudLoading() {
+        HUD.show(.labeledProgress(title: "", subtitle: ""))
+    }
+    class func showHudLoading(title: String, message: String) {
+        HUD.show(.labeledProgress(title: title, subtitle: message))
+    }
+    class func hideSuccessHudLoading() {
+        HUD.flash(.success, delay: 1.0)
+    }
+    class func hideHudLoading() {
+        HUD.hide()
+    }
+    
 }
 
 enum AppStoryboard: String {
