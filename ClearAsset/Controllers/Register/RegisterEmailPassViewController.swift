@@ -18,6 +18,8 @@ class RegisterEmailPassViewController: BaseViewController {
     @IBOutlet private var visibleRePassword: UIImageView!
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var rePasswordView: UIView!
+    @IBOutlet weak var mScrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIView!
     
     ///init var
     var visibleClick = false
@@ -30,9 +32,33 @@ class RegisterEmailPassViewController: BaseViewController {
         // Do any additional setup after loading the view.
         initView()
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    //MARK:- Other methods
+    fileprivate func initView() {
+        nextButton.setOnClick(onClick: #selector(onTapNextButton(_:)))
+        [passwordTF, rePasswordTF].forEach { (tf) in
+            tf?.isSecureTextEntry = true
+        }
+        [visiblePassword, visibleRePassword].forEach { (iv) in
+            iv.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnVisibleImageView(_:))))
+        }
+        step1ViewModel = RegisterStep1ViewModel()
+        initScrollView(self.mScrollView)
+    }
+    
+    fileprivate func goToNextStep() {
+        let nextVC = AppStoryboard.Register.viewController(viewControllerClass: RegisterAboutYourselfViewController.self)
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    fileprivate func returnToDefaultView() {
+        emailTF.borderColor = UIColor.appBorderColor
+        passwordView.borderColor = UIColor.appBorderColor
+        rePasswordView.borderColor = UIColor.appBorderColor
     }
     
     func showError(error: ErrorMessageModel) {
@@ -52,29 +78,6 @@ class RegisterEmailPassViewController: BaseViewController {
         default:
             break
         }
-    }
-    
-    //MARK:- Other methods
-    fileprivate func initView() {
-        nextButton.setOnClick(onClick: #selector(onTapNextButton(_:)))
-        [passwordTF, rePasswordTF].forEach { (tf) in
-            tf?.isSecureTextEntry = true
-        }
-        [visiblePassword, visibleRePassword].forEach { (iv) in
-            iv.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnVisibleImageView(_:))))
-        }
-        step1ViewModel = RegisterStep1ViewModel()
-    }
-    
-    fileprivate func goToNextStep() {
-        let nextVC = AppStoryboard.Register.viewController(viewControllerClass: RegisterAboutYourselfViewController.self)
-        self.navigationController?.pushViewController(nextVC, animated: true)
-    }
-    
-    fileprivate func returnToDefaultView() {
-        emailTF.borderColor = UIColor.appBorderColor
-        passwordView.borderColor = UIColor.appBorderColor
-        rePasswordView.borderColor = UIColor.appBorderColor
     }
 
     //MARK:- Actions
@@ -104,5 +107,14 @@ class RegisterEmailPassViewController: BaseViewController {
                 self.showError(error: error!)
             }
         }
+    }
+}
+
+//MARK:- extensionss
+extension RegisterEmailPassViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        self.activeField = nil
+        return true
     }
 }

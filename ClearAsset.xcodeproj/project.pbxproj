@@ -545,6 +545,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		833E798E25AB2D8000AD7B59 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				834D4D3E25AADED200987FC7 /* RegisterStep1ViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		834075DC2598B1C300987840 /* Service Category  */ = {
 			isa = PBXGroup;
 			children = (
@@ -746,7 +754,7 @@
 		83AE0D0225A9B2E300E76F34 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				834D4D3E25AADED200987FC7 /* RegisterStep1ViewModel.swift */,
+				833E798E25AB2D8000AD7B59 /* Register */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
