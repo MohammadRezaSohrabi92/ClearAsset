@@ -48,6 +48,8 @@
 		8327B38B25A0A2BF002ED7EE /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327B38A25A0A2BF002ED7EE /* FilterViewController.swift */; };
 		8327B39025A0A7F0002ED7EE /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327B38E25A0A7F0002ED7EE /* FilterTableViewCell.swift */; };
 		8327B39125A0A7F0002ED7EE /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327B38F25A0A7F0002ED7EE /* FilterTableViewCell.xib */; };
+		832CA16A25AC60070054B91B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CA16925AC60070054B91B /* Currency.swift */; };
+		832CA16E25AC62FF0054B91B /* RegisterStep2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CA16D25AC62FF0054B91B /* RegisterStep2ViewModel.swift */; };
 		83310A0F25A194FC00424B9F /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83310A0E25A194FC00424B9F /* SortViewController.swift */; };
 		83310A1225A1950800424B9F /* Sort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83310A1125A1950800424B9F /* Sort.storyboard */; };
 		83310A1825A19A7200424B9F /* SortTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83310A1625A19A7200424B9F /* SortTableViewCell.swift */; };
@@ -64,6 +66,8 @@
 		835A09E9259B6E7600D32DC9 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A09E7259B6E7600D32DC9 /* DetailTableViewCell.swift */; };
 		835A09EA259B6E7600D32DC9 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835A09E8259B6E7600D32DC9 /* DetailTableViewCell.xib */; };
 		8361C9E625A5D22C00594F82 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361C9E525A5D22C00594F82 /* NetworkingClient.swift */; };
+		836EB4F225AC6BD000EA5D03 /* CurrencyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EB4F125AC6BD000EA5D03 /* CurrencyApi.swift */; };
+		836EB4F625AC6D6F00EA5D03 /* GetCurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EB4F525AC6D6F00EA5D03 /* GetCurrencyViewModel.swift */; };
 		836FC7522598681600F958AC /* AddListingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FC7512598681600F958AC /* AddListingDetailViewController.swift */; };
 		83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83812E3A257FBEE500D217AE /* LoginViewController.swift */; };
 		838EA8E62590B5DE00E97933 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EA8E52590B5DE00E97933 /* String.swift */; };
@@ -89,7 +93,7 @@
 		83A9DC64258F623100B3DCAB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A9DC63258F623100B3DCAB /* TabBar.storyboard */; };
 		83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */; };
 		83A9DC6C258F6E6400B3DCAB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A9DC6B258F6E6400B3DCAB /* Home.storyboard */; };
-		83AE0D0525A9BD6900E76F34 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE0D0425A9BD6900E76F34 /* Register.swift */; };
+		83AE0D0525A9BD6900E76F34 /* RegisterStep1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE0D0425A9BD6900E76F34 /* RegisterStep1.swift */; };
 		83AE0D0925A9C20900E76F34 /* RegisterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE0D0825A9C20900E76F34 /* RegisterApi.swift */; };
 		83AE0D0D25A9C55000E76F34 /* BaseSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE0D0C25A9C55000E76F34 /* BaseSDK.swift */; };
 		83AF23CE25978AE500B64D49 /* AddListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF23CC25978AE500B64D49 /* AddListingTableViewCell.swift */; };
@@ -109,6 +113,7 @@
 		83B779B72587ACFA00018EBA /* ManageAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B779B52587ACFA00018EBA /* ManageAccount.xib */; };
 		83BAB39825A1B21F00D57B93 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB39725A1B21F00D57B93 /* ProductViewController.swift */; };
 		83BAB39C25A1B23600D57B93 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BAB39B25A1B23600D57B93 /* Product.storyboard */; };
+		83BF868B25AD9A14003786C6 /* RegisterStep2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF868A25AD9A14003786C6 /* RegisterStep2.swift */; };
 		83C2F597257F6774008FC305 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2F596257F6774008FC305 /* Utility.swift */; };
 		83E895E2257E4A6100D66424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E895E1257E4A6100D66424 /* AppDelegate.swift */; };
 		83E895E4257E4A6100D66424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E895E3257E4A6100D66424 /* SceneDelegate.swift */; };
@@ -194,6 +199,8 @@
 		8327B38A25A0A2BF002ED7EE /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		8327B38E25A0A7F0002ED7EE /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		8327B38F25A0A7F0002ED7EE /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
+		832CA16925AC60070054B91B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		832CA16D25AC62FF0054B91B /* RegisterStep2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep2ViewModel.swift; sourceTree = "<group>"; };
 		83310A0E25A194FC00424B9F /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
 		83310A1125A1950800424B9F /* Sort.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sort.storyboard; sourceTree = "<group>"; };
 		83310A1625A19A7200424B9F /* SortTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTableViewCell.swift; sourceTree = "<group>"; };
@@ -210,6 +217,8 @@
 		835A09E7259B6E7600D32DC9 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		835A09E8259B6E7600D32DC9 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		8361C9E525A5D22C00594F82 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		836EB4F125AC6BD000EA5D03 /* CurrencyApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyApi.swift; sourceTree = "<group>"; };
+		836EB4F525AC6D6F00EA5D03 /* GetCurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrencyViewModel.swift; sourceTree = "<group>"; };
 		836FC7512598681600F958AC /* AddListingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingDetailViewController.swift; sourceTree = "<group>"; };
 		83812E3A257FBEE500D217AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		838EA8E52590B5DE00E97933 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -235,7 +244,7 @@
 		83A9DC63258F623100B3DCAB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		83A9DC6B258F6E6400B3DCAB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		83AE0D0425A9BD6900E76F34 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		83AE0D0425A9BD6900E76F34 /* RegisterStep1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep1.swift; sourceTree = "<group>"; };
 		83AE0D0825A9C20900E76F34 /* RegisterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterApi.swift; sourceTree = "<group>"; };
 		83AE0D0C25A9C55000E76F34 /* BaseSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSDK.swift; sourceTree = "<group>"; };
 		83AF23CC25978AE500B64D49 /* AddListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingTableViewCell.swift; sourceTree = "<group>"; };
@@ -255,6 +264,7 @@
 		83B779B52587ACFA00018EBA /* ManageAccount.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageAccount.xib; sourceTree = "<group>"; };
 		83BAB39725A1B21F00D57B93 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		83BAB39B25A1B23600D57B93 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		83BF868A25AD9A14003786C6 /* RegisterStep2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep2.swift; sourceTree = "<group>"; };
 		83C2F596257F6774008FC305 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		83E895DE257E4A6100D66424 /* ClearAsset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearAsset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E895E1257E4A6100D66424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -452,8 +462,8 @@
 		831B8DEC25A98D18000FB186 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				83AE0D0025A9B2C400E76F34 /* Api */,
 				8361C9E425A5D1C100594F82 /* Network */,
+				83AE0D0025A9B2C400E76F34 /* Api */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -526,6 +536,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		832CA16725AC5FE80054B91B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				83AE0D0425A9BD6900E76F34 /* RegisterStep1.swift */,
+				832CA16925AC60070054B91B /* Currency.swift */,
+				83BF868A25AD9A14003786C6 /* RegisterStep2.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		83310A0D25A194E200424B9F /* Sort */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,6 +569,8 @@
 			isa = PBXGroup;
 			children = (
 				834D4D3E25AADED200987FC7 /* RegisterStep1ViewModel.swift */,
+				836EB4F525AC6D6F00EA5D03 /* GetCurrencyViewModel.swift */,
+				832CA16D25AC62FF0054B91B /* RegisterStep2ViewModel.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -560,6 +582,14 @@
 				83023E9025971F39000F910F /* ServicesCategoryViewController.swift */,
 			);
 			path = "Service Category ";
+			sourceTree = "<group>";
+		};
+		83421E8D25AD829600640E03 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8307B18325A9F3D8003FD9AE /* ErrorModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		834A9A36258F8FD600DEC86F /* MenuCell */ = {
@@ -738,6 +768,7 @@
 			isa = PBXGroup;
 			children = (
 				83AE0D0825A9C20900E76F34 /* RegisterApi.swift */,
+				836EB4F125AC6BD000EA5D03 /* CurrencyApi.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -745,8 +776,8 @@
 		83AE0D0125A9B2DF00E76F34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				83AE0D0425A9BD6900E76F34 /* Register.swift */,
-				8307B18325A9F3D8003FD9AE /* ErrorModel.swift */,
+				83421E8D25AD829600640E03 /* Base */,
+				832CA16725AC5FE80054B91B /* Register */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -849,9 +880,9 @@
 		83E895E0257E4A6100D66424 /* ClearAsset */ = {
 			isa = PBXGroup;
 			children = (
-				83AE0D0225A9B2E300E76F34 /* ViewModel */,
 				83AE0D0125A9B2DF00E76F34 /* Model */,
 				831B8DEC25A98D18000FB186 /* Service */,
+				83AE0D0225A9B2E300E76F34 /* ViewModel */,
 				83C2F595257F675E008FC305 /* Utility */,
 				83E8962B257E6D8300D66424 /* Extensions */,
 				83E89601257E613200D66424 /* Assets */,
@@ -1193,10 +1224,12 @@
 			files = (
 				83B477072584BB5A009DD837 /* CustomTextField.swift in Sources */,
 				E40EAE8D25921BFF00E9AD35 /* BottomCollectionViewCell.swift in Sources */,
+				836EB4F625AC6D6F00EA5D03 /* GetCurrencyViewModel.swift in Sources */,
 				83023E9125971F39000F910F /* ServicesCategoryViewController.swift in Sources */,
 				83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */,
 				83023E9525971F56000F910F /* AuctionsViewController.swift in Sources */,
 				831E75DA25988A45000046E5 /* AddTransmissionCollectionViewCell.swift in Sources */,
+				832CA16A25AC60070054B91B /* Currency.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
 				830E0DA825A05359001FFCD0 /* AuctionTableViewCell.swift in Sources */,
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
@@ -1212,7 +1245,9 @@
 				8392FABA259C916F005E69FC /* WatchListViewController.swift in Sources */,
 				830E0DB925A08507001FFCD0 /* NotificationTableViewCell.swift in Sources */,
 				83E895E6257E4A6100D66424 /* ViewController.swift in Sources */,
+				832CA16E25AC62FF0054B91B /* RegisterStep2ViewModel.swift in Sources */,
 				E4E700602591E6CE00B8C0E4 /* TopViewCell.swift in Sources */,
+				83BF868B25AD9A14003786C6 /* RegisterStep2.swift in Sources */,
 				8325A1BD25A1D4AC0047E14F /* ProductPicCollectionViewCell.swift in Sources */,
 				8392FAC5259CA6F8005E69FC /* SaleTableViewCell.swift in Sources */,
 				83C2F597257F6774008FC305 /* Utility.swift in Sources */,
@@ -1223,7 +1258,7 @@
 				83023EA6259731B5000F910F /* CategoryTableViewCell.swift in Sources */,
 				831F9BD5259A092600A03D50 /* ServiceCommentCell.swift in Sources */,
 				834A9A39258F8FF600DEC86F /* MenuTableViewCell.swift in Sources */,
-				83AE0D0525A9BD6900E76F34 /* Register.swift in Sources */,
+				83AE0D0525A9BD6900E76F34 /* RegisterStep1.swift in Sources */,
 				83023EAD2597324F000F910F /* SubCategoryCell.swift in Sources */,
 				8390B28725A1A37D001DD7F9 /* ProductListTableViewCell.swift in Sources */,
 				83AE0D0925A9C20900E76F34 /* RegisterApi.swift in Sources */,
@@ -1251,6 +1286,7 @@
 				E4E7006E25920EA600B8C0E4 /* MiddleTableViewCell.swift in Sources */,
 				835A09DA259B583800D32DC9 /* SelectListingCategoryViewController.swift in Sources */,
 				83E89D9A258F4CB800BB1C26 /* MenuViewController.swift in Sources */,
+				836EB4F225AC6BD000EA5D03 /* CurrencyApi.swift in Sources */,
 				835A09E9259B6E7600D32DC9 /* DetailTableViewCell.swift in Sources */,
 				8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */,
 				83E89D8A258F2E8B00BB1C26 /* CustomScrollView.swift in Sources */,

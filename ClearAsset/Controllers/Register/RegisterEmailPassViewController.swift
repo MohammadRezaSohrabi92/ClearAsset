@@ -10,16 +10,16 @@ import UIKit
 class RegisterEmailPassViewController: BaseViewController {
     
     //MARK:- views
-    @IBOutlet private var emailTF: CustomTextField!
-    @IBOutlet private var nextButton: CustomButton!
-    @IBOutlet private var passwordTF: CustomTextField!
-    @IBOutlet private var rePasswordTF: CustomTextField!
-    @IBOutlet private var visiblePassword: UIImageView!
-    @IBOutlet private var visibleRePassword: UIImageView!
-    @IBOutlet weak var passwordView: UIView!
-    @IBOutlet weak var rePasswordView: UIView!
-    @IBOutlet weak var mScrollView: UIScrollView!
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet private weak var emailTF: CustomTextField!
+    @IBOutlet private weak var nextButton: CustomButton!
+    @IBOutlet private weak var passwordTF: CustomTextField!
+    @IBOutlet private weak var rePasswordTF: CustomTextField!
+    @IBOutlet private weak var visiblePassword: UIImageView!
+    @IBOutlet private weak var visibleRePassword: UIImageView!
+    @IBOutlet private weak var passwordView: UIView!
+    @IBOutlet private weak var rePasswordView: UIView!
+    @IBOutlet private weak var mScrollView: UIScrollView!
+    @IBOutlet private weak var contentView: UIView!
     
     ///init var
     var visibleClick = false
@@ -99,11 +99,11 @@ class RegisterEmailPassViewController: BaseViewController {
         Utility.showHudLoading()
         step1ViewModel.register(byEmail: emailTF.text, password: passwordTF.text, rePassword: rePasswordTF.text) { (response, error) in
             if error == nil {
-                Utility.hideSuccessHudLoading()
+                Utility.hideHudLoading()
                 self.goToNextStep()
             } else {
                 Utility.hideHudLoading()
-                self.showActionSheet(title: "error", message: error!.message, style: .alert, actions: [self.actionMessageClose()])
+                self.showActionSheet(title: "error".getString(), message: error!.message, style: .alert, actions: [self.actionMessageClose()])
                 self.showError(error: error!)
             }
         }

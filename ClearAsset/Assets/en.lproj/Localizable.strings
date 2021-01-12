@@ -6,4 +6,8 @@
   
 */
 
+"error" = "Error";
+"personal" = "Personal";
+"business" = "Business";
 
+"fullName" = "Full name is required";

@@ -28,7 +28,6 @@ class BaseViewController: UIViewController {
     }
     
     fileprivate func initView() {
-        hideKeyboardWhenTappedAround()
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
     
@@ -56,16 +55,14 @@ class BaseViewController: UIViewController {
         navigationController?.navigationItem.title = title
     }
     
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
     @objc func keyboardWillShow(notification : Notification){
+        guard let _ = scrollView else {
+            return
+        }
         guard let keyboardInfo = notification.userInfo else {return}
         if let keyboardSize = (keyboardInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size {
             let keyboardHeight = keyboardSize.height + 10
@@ -82,6 +79,9 @@ class BaseViewController: UIViewController {
     }
     
     @objc func keyboardWillHide(notification : Notification){
+        guard let _ = scrollView else {
+            return
+        }
         let contentInsets = UIEdgeInsets.zero
         self.scrollView?.contentInset = contentInsets
     }
