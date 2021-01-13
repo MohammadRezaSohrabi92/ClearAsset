@@ -17,12 +17,15 @@ class RegisterMailingInfoViewController: BaseViewController {
     @IBOutlet weak var countryLabel: CustomLabel!
     @IBOutlet weak var interestedLabel: CustomLabel!
     @IBOutlet weak var industryLabel: CustomLabel!
-    @IBOutlet private var nextBtn: CustomButton!
+    @IBOutlet private weak var nextBtn: CustomButton!
+    @IBOutlet weak var countryMenu: CustomDropDownMenu!
+    @IBOutlet weak var interestedMenu: CustomDropDownMenu!
+    @IBOutlet weak var industryMenu: CustomDropDownMenu!
     
     // MARK:- init var
-    let countryMenu = DropDown()
-    let interestedMenu = DropDown()
-    let industryMenu = DropDown()
+    var getCountryViewModel: GetCountryViewModel!
+    var allCountry: AllCountry?
+    var selectedCountry = ""
     
     // MARK:- lifeCycle
     override func viewDidLoad() {
@@ -34,41 +37,48 @@ class RegisterMailingInfoViewController: BaseViewController {
     
     // MARK:- other methods
     fileprivate func initView() {
-        let dataSource = ["Car", "Motorcycle", "Truck"]
-        countryMenu.anchorView = countryView
-        interestedMenu.anchorView = interestedView
-        industryMenu.anchorView = industryView
-        let views = [countryView, interestedView, industryView]
-        views.forEach { (view) in
-            view?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnMenu(_:))))
-        }
-        countryView.tag = 1
-        interestedView.tag = 2
-        industryView.tag = 3
-        countryMenu.dataSource = dataSource
-        interestedMenu.dataSource = dataSource
-        industryMenu.dataSource = dataSource
         nextBtn.setOnClick(onClick: #selector(onTapNextButton(_:)))
+        getCountryViewModel = GetCountryViewModel()
+        getAllCountry()
     }
-    
-    @objc fileprivate func didTapOnMenu(_ sender: UITapGestureRecognizer) {
-        switch sender.view?.tag {
-        case 1:
-            countryMenu.show()
-            break
-        case 2:
-            interestedMenu.show()
-            break
-        case 3:
-            industryMenu.show()
-            break
-        default:
-            break
+
+    func getAllCountry() {
+        Utility.showHudLoading()
+        getCountryViewModel.getCountry { (allCountry, error) in
+            if error == nil {
+                Utility.hideHudLoading()
+                if let counntries = allCountry {
+                    self.allCountry = counntries
+                    self.initCountries()
+                }
+            } else {
+                Utility.hideHudLoading()
+                self.showActionSheet(title: "error".getString(), message: error.debugDescription, style: .alert, actions: [self.actionMessageClose()])
+            }
         }
     }
-    
+
+    func initCountries() {
+        self.allCountry?.country.forEach({ (country) in
+            self.countryMenu.dropDownMenu.dataSource.append(country.name)
+        })
+        if countryMenu.dropDownMenu.dataSource.isEmpty {
+            return
+        }
+        self.countryMenu.textLabel.text = countryMenu.dropDownMenu.dataSource[0]
+        onSelectCountryDropDownMenu()
+    }
+
+//MARK:- Actions
     @objc fileprivate func onTapNextButton(_ sender: UITapGestureRecognizer) {
         self.navigationController?.pushViewController(AppStoryboard.Register.viewController(viewControllerClass: RegisterCheckEmailViewController.self), animated: true)
+    }
+
+    func onSelectCountryDropDownMenu() {
+        countryMenu.dropDownMenu.selectionAction = { [unowned self] (index: Int, item: String) in
+            countryMenu.textLabel.text = item
+            selectedCountry = (allCountry?.country[index].name)!
+        }
     }
 
 }

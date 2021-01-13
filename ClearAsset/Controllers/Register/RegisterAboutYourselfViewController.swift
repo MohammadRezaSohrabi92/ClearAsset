@@ -37,14 +37,13 @@ class RegisterAboutYourselfViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        //code
     }
     
     //MARK:- other methods
     fileprivate func initView() {
         initScrollView(mainScrollView)
         initAccountType()
-        onSelectCurrencyTypeDropDownMenu()
         nextButton.setOnClick(onClick: #selector(onTapNextButton(_:)))
         createCustomDatePicker()
         selectBirthdate.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnBirthdatePicker)))
@@ -65,8 +64,12 @@ class RegisterAboutYourselfViewController: BaseViewController {
         currency?.forEach({ (value) in
             currencyType.dropDownMenu.dataSource.append(value.name!)
         })
+        if currencyType.dropDownMenu.dataSource.isEmpty {
+            return
+        }
         currencyType.textLabel.text = currencyType.dropDownMenu.dataSource[0]
         selectedPreferredCurrency = (currencyData?.data.currency![0].value)!
+        onSelectCurrencyTypeDropDownMenu()
     }
     
     fileprivate func getCurrencyList() {

@@ -587,6 +587,7 @@ Lorem Ipsum has </string>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="appBorder"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRegister" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCF-Z3-i3d" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
@@ -716,6 +717,7 @@ Lorem Ipsum has </string>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="appBorder"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRegister" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary Industry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjc-4L-tTz" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
@@ -744,6 +746,7 @@ Lorem Ipsum has </string>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="appBorder"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRegister" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9W-t7-OKF" customClass="CustomButton" customModule="ClearAsset" customModuleProvider="target">
@@ -849,9 +852,12 @@ Lorem Ipsum has </string>
                     <navigationItem key="navigationItem" id="pom-nz-yii"/>
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
+                        <outlet property="countryMenu" destination="UBQ-vp-RWm" id="s2H-C7-Idd"/>
                         <outlet property="countryView" destination="UBQ-vp-RWm" id="29O-WL-Afl"/>
                         <outlet property="industryLabel" destination="gjc-4L-tTz" id="Mbe-aw-PMb"/>
+                        <outlet property="industryMenu" destination="iai-iu-ig9" id="CJE-PI-jkc"/>
                         <outlet property="industryView" destination="iai-iu-ig9" id="aGe-VE-eil"/>
+                        <outlet property="interestedMenu" destination="wD7-DN-GrF" id="gsu-kC-faS"/>
                         <outlet property="interestedView" destination="wD7-DN-GrF" id="eyP-YO-gsv"/>
                         <outlet property="nextBtn" destination="b9W-t7-OKF" id="UNz-ys-Hg7"/>
                         <segue destination="pO5-5P-LtI" kind="show" id="5nL-mW-C90"/>
