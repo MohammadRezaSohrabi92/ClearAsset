@@ -7,10 +7,6 @@
 
 import Foundation
 
-//struct ErrorMessageModel : Decodable {
-//    var errors: [String : String]?
-//}
-
 struct ModelResponse {
     var isSuccess: Bool
     var message: String

@@ -47,3 +47,34 @@ enum registerStep1Error: Int, CustomStringConvertible {
         }
     }
 }
+
+//struct Step1ErrorsFields : Codable {
+//    var email: [String]
+//    var password: [String]
+//    var rePassword: [String]
+//
+//    enum CodingKeys: String, CodingKey {
+//        case email, password, rePassword = "password_confirmation"
+//    }
+//
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        email = try values.decodeIfPresent([String].self, forKey: .email)!
+//        password = try values.decodeIfPresent([String].self, forKey: .password)!
+//        rePassword = try values.decodeIfPresent([String].self, forKey: .rePassword)!
+//    }
+//}
+//
+//struct TopLevel: Codable {
+//    let data: DataClass
+//}
+//
+//// MARK: - DataClass
+//struct DataClass: Codable {
+//    let errors: Errors
+//}
+//
+//// MARK: - Errors
+//struct Errors: Codable {
+//    let email, password: [String]
+//}

@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
         let sb = UIStoryboard(name: "Start", bundle: nil)
         let startVC = sb.instantiateInitialViewController()

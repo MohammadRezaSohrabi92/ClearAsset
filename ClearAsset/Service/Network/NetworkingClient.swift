@@ -16,6 +16,8 @@ class NetworkingClient {
     }()
     
     typealias webserviceResponse = ([[String : Any]]?, Error?) -> Void
+    typealias getResponse = (Data?, Error?) -> Void
+    typealias postResponse = (Data?, Error?) -> Void
     
     func executeGETrequest(_ url : URLConvertible, headers : HTTPHeaders? = nil, complition : @escaping webserviceResponse) {        
         AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers, interceptor: nil).validate().responseJSON { (response) in
@@ -25,6 +27,34 @@ class NetworkingClient {
                 complition(jsonArray, nil)
             } else if let jsonDict = response.value as? [String : Any] {
                 complition([jsonDict], nil)
+            }
+        }
+    }
+    
+    func getRequest(_ url: URLConvertible, completion: @escaping getResponse) {
+        AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).validate().responseData { (response) in
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)")
+            }
+            if let error = response.error {
+                completion(nil, error)
+            } else if let data = response.data {
+                completion(data, nil)
+            }
+        }
+    }
+    
+    func postRequest(_ url: URLConvertible, parameters: [String : Any]? = nil, headers: HTTPHeaders? = nil, completion: @escaping postResponse) {
+        AF.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: headers, interceptor: nil) { (urlRequest) in
+            urlRequest.timeoutInterval = 5
+        }.validate().responseData { (response) in
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)")
+            }            
+            if let error = response.error {
+                completion(response.data, error)
+            } else if let data = response.data {
+                completion(data, nil)
             }
         }
     }
