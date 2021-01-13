@@ -13,10 +13,10 @@ struct CountryData: Codable {
 
 // MARK: - DataClass
 struct AllCountry: Codable {
-    let country: [Country]
+    let country: [SingleCountry]
 }
 
 // MARK: - Country
-struct Country: Codable {
+struct SingleCountry: Codable {
     let name, code: String
 }
