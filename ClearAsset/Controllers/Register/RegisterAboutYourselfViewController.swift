@@ -23,9 +23,14 @@ class RegisterAboutYourselfViewController: BaseViewController {
     var currencyViewModel: GetCurrencyViewModel!
     var currencyData: currencyData?
     var step2ViewModel: RegisterStep2ViewModel!
-    
     var selectedAccountType = ""
     var selectedPreferredCurrency = ""
+    
+    var email : String!
+    var password: String!
+    var rePassword: String!
+    
+    let formatter = DateFormatter()
 
     //MARK:- LifeCycle
     override func viewDidLoad() {
@@ -37,19 +42,20 @@ class RegisterAboutYourselfViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        //code
     }
     
     //MARK:- other methods
     fileprivate func initView() {
+        formatter.dateFormat = "yyyy/MM/dd"
         initScrollView(mainScrollView)
         initAccountType()
-        onSelectCurrencyTypeDropDownMenu()
         nextButton.setOnClick(onClick: #selector(onTapNextButton(_:)))
         createCustomDatePicker()
         selectBirthdate.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnBirthdatePicker)))
         currencyViewModel = GetCurrencyViewModel()
         step2ViewModel = RegisterStep2ViewModel()
+        
     }
     
     fileprivate func initAccountType() {
@@ -57,7 +63,6 @@ class RegisterAboutYourselfViewController: BaseViewController {
         accountType.textLabel.text = accountType.dropDownMenu.dataSource[0]
         onSelectAccountTypeDropDownMenu()
         selectedAccountType = accountType.dropDownMenu.dataSource[0]
-        
     }
     
     fileprivate func initPreferredCurrency(allCurrency: currencyData) {
@@ -65,8 +70,12 @@ class RegisterAboutYourselfViewController: BaseViewController {
         currency?.forEach({ (value) in
             currencyType.dropDownMenu.dataSource.append(value.name!)
         })
+        if currencyType.dropDownMenu.dataSource.isEmpty {
+            return
+        }
         currencyType.textLabel.text = currencyType.dropDownMenu.dataSource[0]
         selectedPreferredCurrency = (currencyData?.data.currency![0].value)!
+        onSelectCurrencyTypeDropDownMenu()
     }
     
     fileprivate func getCurrencyList() {
@@ -96,6 +105,13 @@ class RegisterAboutYourselfViewController: BaseViewController {
     
     fileprivate func goToNextPage() {
         let nextVC = AppStoryboard.Register.viewController(viewControllerClass: RegisterMailingInfoViewController.self)
+        nextVC.email = email
+        nextVC.password = password
+        nextVC.rePassword = rePassword        
+        nextVC.accountType = selectedAccountType
+        nextVC.currency = selectedPreferredCurrency
+        nextVC.fullname = name.text
+        nextVC.birthday = formatter.string(from: datePicker.date)
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
@@ -115,8 +131,6 @@ class RegisterAboutYourselfViewController: BaseViewController {
     }
     
     @objc fileprivate func onTapNextButton(_ sender: UITapGestureRecognizer) {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd"
         Utility.showHudLoading()
         step2ViewModel.register(accountType: selectedAccountType.lowercased(), preferredCurrency: selectedPreferredCurrency, fullName: name.text, Birthday: formatter.string(from: datePicker.date)) { (topLevelError, error) in
             if error == nil {

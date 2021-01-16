@@ -11,3 +11,13 @@
 "business" = "Business";
 
 "fullName" = "Full name is required";
+"email" = "Email is not valid";
+"password" = "Password is not valid";
+"rePassword" = "Re-Password is not valid";
+"phoneNumber" = "Phone number is not valid";
+"addressLine1" = "Address line 1 is not valid";
+"city" = "City is not valid";
+"state" = "State is not valid";
+"zip" = "Zip/Postal code is not valid";
+"token" = "Something went wrong - 'token'";
+"unknown" = "unknown error";

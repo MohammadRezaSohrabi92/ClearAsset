@@ -52,6 +52,9 @@ class RegisterEmailPassViewController: BaseViewController {
     
     fileprivate func goToNextStep() {
         let nextVC = AppStoryboard.Register.viewController(viewControllerClass: RegisterAboutYourselfViewController.self)
+        nextVC.email = emailTF.text
+        nextVC.password = passwordTF.text
+        nextVC.rePassword = rePasswordTF.text
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
@@ -77,7 +80,7 @@ class RegisterEmailPassViewController: BaseViewController {
             break
         default:
             break
-        }
+        }        
     }
 
     //MARK:- Actions
