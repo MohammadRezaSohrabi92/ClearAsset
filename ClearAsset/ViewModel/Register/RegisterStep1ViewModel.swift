@@ -34,8 +34,17 @@ extension RegisterStep1ViewModel: RegisterServiceStep1Protocol {
                 self.registerService.register(parameter: parameter) { (response, error) in
                     if error == nil {
                         completion(response, nil)
+                        return
                     } else {
-                        completion(nil, ErrorMessageModel(title: "", message: error.debugDescription, code: nil))
+                        guard let serverError = error?.data.errors else {
+                            completion(nil, ErrorMessageModel(title: "", message: "unknown".getString(), code: nil))
+                            return
+                        }
+                        if !serverError.email[0].isEmpty {
+                            completion(nil, ErrorMessageModel(title: "", message: serverError.email[0], code: nil))
+                            return
+                        }
+                        return
                     }
                 }
             }

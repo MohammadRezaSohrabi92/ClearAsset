@@ -599,6 +599,35 @@ Lorem Ipsum has </string>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isLightTitle" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebV-4c-hP3">
+                                                <rect key="frame" x="16" y="228.5" width="382" height="70"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+1 123 15662 5 2651" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxW-G8-BJJ" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="70"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" name="appTextfieldBG"/>
+                                                <constraints>
+                                                    <constraint firstItem="OxW-G8-BJJ" firstAttribute="top" secondItem="ebV-4c-hP3" secondAttribute="top" id="2zS-gM-Dl2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OxW-G8-BJJ" secondAttribute="bottom" id="Tol-R7-edA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OxW-G8-BJJ" secondAttribute="trailing" id="XyQ-TT-qfI"/>
+                                                    <constraint firstAttribute="height" constant="70" id="an8-ow-RKe"/>
+                                                    <constraint firstItem="OxW-G8-BJJ" firstAttribute="leading" secondItem="ebV-4c-hP3" secondAttribute="leading" id="mM0-ZT-MTb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="appBorder"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address line 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpI-nb-9t5" customClass="CustomLabel" customModule="ClearAsset" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="310.5" width="105" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -754,35 +783,6 @@ Lorem Ipsum has </string>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isOrangeColor" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebV-4c-hP3">
-                                                <rect key="frame" x="16" y="228.5" width="382" height="70"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+1 123 15662 5 2651" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxW-G8-BJJ" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="70"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
-                                                    </textField>
-                                                </subviews>
-                                                <color key="backgroundColor" name="appTextfieldBG"/>
-                                                <constraints>
-                                                    <constraint firstItem="OxW-G8-BJJ" firstAttribute="top" secondItem="ebV-4c-hP3" secondAttribute="top" id="2zS-gM-Dl2"/>
-                                                    <constraint firstAttribute="bottom" secondItem="OxW-G8-BJJ" secondAttribute="bottom" id="Tol-R7-edA"/>
-                                                    <constraint firstAttribute="trailing" secondItem="OxW-G8-BJJ" secondAttribute="trailing" id="XyQ-TT-qfI"/>
-                                                    <constraint firstAttribute="height" constant="70" id="an8-ow-RKe"/>
-                                                    <constraint firstItem="OxW-G8-BJJ" firstAttribute="leading" secondItem="ebV-4c-hP3" secondAttribute="leading" id="mM0-ZT-MTb"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="appBorder"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -873,12 +873,18 @@ Lorem Ipsum has </string>
                     <navigationItem key="navigationItem" id="pom-nz-yii"/>
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
+                        <outlet property="addressLine1TF" destination="81O-vP-nKr" id="77I-3v-Yz7"/>
+                        <outlet property="addressLine2TF" destination="YU7-M3-BOC" id="nZb-QF-79h"/>
+                        <outlet property="cityTF" destination="0kt-cz-jbe" id="xSn-yr-KO0"/>
                         <outlet property="countryMenu" destination="UBQ-vp-RWm" id="s2H-C7-Idd"/>
                         <outlet property="industryLabel" destination="gjc-4L-tTz" id="Mbe-aw-PMb"/>
                         <outlet property="industryMenu" destination="iai-iu-ig9" id="CJE-PI-jkc"/>
                         <outlet property="interestedMenu" destination="wD7-DN-GrF" id="gsu-kC-faS"/>
                         <outlet property="nextBtn" destination="b9W-t7-OKF" id="UNz-ys-Hg7"/>
                         <outlet property="phoneNumberTextField" destination="OxW-G8-BJJ" id="7gt-FO-bgm"/>
+                        <outlet property="phoneNumberVIew" destination="ebV-4c-hP3" id="4AF-Xe-OKk"/>
+                        <outlet property="stateTF" destination="F7g-lQ-IFC" id="CZB-aX-yhy"/>
+                        <outlet property="zipTF" destination="eRP-p4-UPV" id="9Iv-Aw-MgV"/>
                         <segue destination="pO5-5P-LtI" kind="show" id="5nL-mW-C90"/>
                     </connections>
                 </viewController>

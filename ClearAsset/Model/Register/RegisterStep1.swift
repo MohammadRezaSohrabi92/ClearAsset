@@ -39,11 +39,11 @@ enum registerStep1Error: Int, CustomStringConvertible {
     var description: String {
         switch self {
         case .email:
-            return "Email is not valid"
+            return "email".getString()
         case .password:
-            return "Password is not valid"
+            return "password".getString()
         case .rePassword:
-            return "Re-Password is not valid"
+            return "rePassword".getString()
         }
     }
 }
