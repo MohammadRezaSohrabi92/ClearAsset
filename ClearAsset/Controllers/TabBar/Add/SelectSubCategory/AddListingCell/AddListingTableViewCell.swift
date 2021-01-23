@@ -8,7 +8,10 @@
 import UIKit
 
 class AddListingTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var subCategoryImageVIew: UIImageView!
+    @IBOutlet weak var subCategoryTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

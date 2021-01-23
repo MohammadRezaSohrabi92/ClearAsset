@@ -101,6 +101,14 @@
 		839BCA3E25820643008F3DAE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BCA3D25820643008F3DAE /* UIViewController.swift */; };
 		839BEB31257F86F500B24C76 /* CustomButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BEB30257F86F500B24C76 /* CustomButtom.swift */; };
 		839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BEB33257F8FC300B24C76 /* UIColor.swift */; };
+		839EDC6E25BC0DC20000626C /* GetCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EDC6D25BC0DC20000626C /* GetCategories.swift */; };
+		839EDC7325BC12B20000626C /* CategoryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EDC7225BC12B20000626C /* CategoryApi.swift */; };
+		839EDCAF25BC19B20000626C /* GetCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EDCAE25BC19B20000626C /* GetCategoryViewModel.swift */; };
+		839EDCCF25BC4D040000626C /* GetSubCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EDCCE25BC4D040000626C /* GetSubCategoryViewModel.swift */; };
+		839EDCD325BC4D9F0000626C /* SubCategoryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EDCD225BC4D9F0000626C /* SubCategoryApi.swift */; };
+		839EDCD625BC60E60000626C /* GetBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EDCD525BC60E60000626C /* GetBrand.swift */; };
+		839EDCD925BC61670000626C /* BrandApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EDCD825BC61670000626C /* BrandApi.swift */; };
+		839EDCDC25BC67F20000626C /* GetBrandListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EDCDB25BC67F20000626C /* GetBrandListViewModel.swift */; };
 		83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9DC5F258F61FA00B3DCAB /* TabBarViewController.swift */; };
 		83A9DC64258F623100B3DCAB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A9DC63258F623100B3DCAB /* TabBar.storyboard */; };
 		83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */; };
@@ -271,6 +279,14 @@
 		839BCA3D25820643008F3DAE /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		839BEB30257F86F500B24C76 /* CustomButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtom.swift; sourceTree = "<group>"; };
 		839BEB33257F8FC300B24C76 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		839EDC6D25BC0DC20000626C /* GetCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategories.swift; sourceTree = "<group>"; };
+		839EDC7225BC12B20000626C /* CategoryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryApi.swift; sourceTree = "<group>"; };
+		839EDCAE25BC19B20000626C /* GetCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoryViewModel.swift; sourceTree = "<group>"; };
+		839EDCCE25BC4D040000626C /* GetSubCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSubCategoryViewModel.swift; sourceTree = "<group>"; };
+		839EDCD225BC4D9F0000626C /* SubCategoryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryApi.swift; sourceTree = "<group>"; };
+		839EDCD525BC60E60000626C /* GetBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBrand.swift; sourceTree = "<group>"; };
+		839EDCD825BC61670000626C /* BrandApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandApi.swift; sourceTree = "<group>"; };
+		839EDCDB25BC67F20000626C /* GetBrandListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBrandListViewModel.swift; sourceTree = "<group>"; };
 		83A9DC5F258F61FA00B3DCAB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		83A9DC63258F623100B3DCAB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		83A9DC67258F6E5500B3DCAB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -830,6 +846,35 @@
 			path = CustomUI;
 			sourceTree = "<group>";
 		};
+		839EDC6C25BC0DAC0000626C /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				839EDC6D25BC0DC20000626C /* GetCategories.swift */,
+				839EDCD525BC60E60000626C /* GetBrand.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		839EDC7125BC12750000626C /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				839EDC7225BC12B20000626C /* CategoryApi.swift */,
+				839EDCD225BC4D9F0000626C /* SubCategoryApi.swift */,
+				839EDCD825BC61670000626C /* BrandApi.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		839EDCAD25BC19770000626C /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				839EDCAE25BC19B20000626C /* GetCategoryViewModel.swift */,
+				839EDCCE25BC4D040000626C /* GetSubCategoryViewModel.swift */,
+				839EDCDB25BC67F20000626C /* GetBrandListViewModel.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
 		83A9DC5E258F61D900B3DCAB /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -857,6 +902,7 @@
 		83AE0D0025A9B2C400E76F34 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				839EDC7125BC12750000626C /* Listing */,
 				83886CAC25B5AFED00BA2D99 /* Login */,
 				E4C18E2625AF47FA00BB403E /* Register */,
 			);
@@ -866,6 +912,7 @@
 		83AE0D0125A9B2DF00E76F34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				839EDC6C25BC0DAC0000626C /* Listing */,
 				83886C7C25B5AD4F00BA2D99 /* Login */,
 				83421E8D25AD829600640E03 /* Base */,
 				832CA16725AC5FE80054B91B /* Register */,
@@ -876,6 +923,7 @@
 		83AE0D0225A9B2E300E76F34 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				839EDCAD25BC19770000626C /* Listing */,
 				83886CB425B5B52000BA2D99 /* Login */,
 				833E798E25AB2D8000AD7B59 /* Register */,
 			);
@@ -1340,6 +1388,7 @@
 				832CA16A25AC60070054B91B /* Currency.swift in Sources */,
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
 				830E0DA825A05359001FFCD0 /* AuctionTableViewCell.swift in Sources */,
+				839EDCAF25BC19B20000626C /* GetCategoryViewModel.swift in Sources */,
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
 				83310A1825A19A7200424B9F /* SortTableViewCell.swift in Sources */,
 				E4C18E2D25AF4A1C00BB403E /* GetCountryViewModel.swift in Sources */,
@@ -1354,6 +1403,7 @@
 				83886CB625B5B52D00BA2D99 /* LoginViewModel.swift in Sources */,
 				83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */,
 				834D4D3F25AADED200987FC7 /* RegisterStep1ViewModel.swift in Sources */,
+				839EDCD925BC61670000626C /* BrandApi.swift in Sources */,
 				E4C18E4D25AF621600BB403E /* GetPrimaryViewModel.swift in Sources */,
 				83B476C92584A40A009DD837 /* CustomLabel.swift in Sources */,
 				8392FABA259C916F005E69FC /* WatchListViewController.swift in Sources */,
@@ -1392,13 +1442,17 @@
 				8382258225B2D95000147A8D /* RegisterStep3.swift in Sources */,
 				83023E8A25971F06000F910F /* SelectSubCategoryViewController.swift in Sources */,
 				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
+				839EDCCF25BC4D040000626C /* GetSubCategoryViewModel.swift in Sources */,
+				839EDCDC25BC67F20000626C /* GetBrandListViewModel.swift in Sources */,
 				8307B18425A9F3D8003FD9AE /* ErrorModel.swift in Sources */,
 				839A2F94258621DC009BBFA1 /* CustomDropDownMenu.swift in Sources */,
 				83B779AB2587ACC300018EBA /* MyAccountCell.swift in Sources */,
+				839EDC6E25BC0DC20000626C /* GetCategories.swift in Sources */,
 				83E895E2257E4A6100D66424 /* AppDelegate.swift in Sources */,
 				83B4770A2584DB27009DD837 /* RegisterAboutYourselfViewController.swift in Sources */,
 				8396FBB2258786C400FD3C16 /* RegisterCheckEmailViewController.swift in Sources */,
 				831E75D52598732F000046E5 /* CustomAddTextFeild.swift in Sources */,
+				839EDC7325BC12B20000626C /* CategoryApi.swift in Sources */,
 				839BEB34257F8FC300B24C76 /* UIColor.swift in Sources */,
 				83A9DC68258F6E5500B3DCAB /* HomeViewController.swift in Sources */,
 				83AF23CE25978AE500B64D49 /* AddListingTableViewCell.swift in Sources */,
@@ -1410,7 +1464,9 @@
 				835A09E9259B6E7600D32DC9 /* DetailTableViewCell.swift in Sources */,
 				E4C18E3C25AF602D00BB403E /* PrimaryInductry.swift in Sources */,
 				8396FB982587453E00FD3C16 /* LeftPadedTextField.swift in Sources */,
+				839EDCD325BC4D9F0000626C /* SubCategoryApi.swift in Sources */,
 				83E89D8A258F2E8B00BB1C26 /* CustomScrollView.swift in Sources */,
+				839EDCD625BC60E60000626C /* GetBrand.swift in Sources */,
 				E4C18E2825AF481600BB403E /* CountryApi.swift in Sources */,
 				8307B17D25A9E347003FD9AE /* DictionaryEncodable.swift in Sources */,
 				83B779B12587ACE100018EBA /* SignInInfoCell.swift in Sources */,

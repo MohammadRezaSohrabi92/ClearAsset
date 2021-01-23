@@ -27,7 +27,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svp-Ju-NQA">
                         <rect key="frame" x="8" y="8" width="357" height="68"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OilGasBack" translatesAutoresizingMaskIntoConstraints="NO" id="rl0-eb-yBc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rl0-eb-yBc">
                                 <rect key="frame" x="8" y="8" width="52" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rl0-eb-yBc" secondAttribute="height" multiplier="1:1" id="hAK-zA-vXS"/>
@@ -74,11 +74,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryimage" destination="rl0-eb-yBc" id="GuJ-4b-yKO"/>
+                <outlet property="title" destination="aKa-Pw-b9z" id="qgy-SI-uzB"/>
+            </connections>
             <point key="canvasLocation" x="174.63768115942031" y="138.61607142857142"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="OilGasBack" width="190" height="97"/>
         <namedColor name="appAddTitle">
             <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

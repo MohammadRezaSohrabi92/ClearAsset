@@ -69,6 +69,10 @@ class Utility {
         return storedObject
     }
     
+    func getToken() -> String {
+        return reteriveData(inUserDefulat: "token") as! String
+    }
+    
 }
 
 enum AppStoryboard: String {

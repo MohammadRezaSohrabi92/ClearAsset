@@ -44,6 +44,19 @@ class NetworkingClient {
         }
     }
     
+    func getRequest(_ url: URLConvertible, headers : HTTPHeaders? = nil, completion: @escaping getResponse) {
+        AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers, interceptor: nil).validate().responseData { (response) in
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)")
+            }
+            if let error = response.error {
+                completion(nil, error)
+            } else if let data = response.data {
+                completion(data, nil)
+            }
+        }
+    }
+    
     func postRequest(_ url: URLConvertible, parameters: [String : Any]? = nil, headers: HTTPHeaders? = nil, completion: @escaping postResponse) {
         AF.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: headers, interceptor: nil) { (urlRequest) in
             urlRequest.timeoutInterval = 5

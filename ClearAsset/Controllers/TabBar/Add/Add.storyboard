@@ -82,13 +82,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8w-Yf-jpZ">
-                                        <rect key="frame" x="164" y="8" width="86" height="20"/>
+                                        <rect key="frame" x="161.5" y="8" width="91" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appAddTitle"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your sub category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inF-81-jft">
-                                        <rect key="frame" x="8" y="87.5" width="190" height="20"/>
+                                        <rect key="frame" x="8" y="84" width="195.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appSubTitle"/>
                                         <nil key="highlightedColor"/>
@@ -557,7 +557,7 @@
             </objects>
             <point key="canvasLocation" x="-217.39130434782609" y="160.71428571428569"/>
         </scene>
-        <!--Item-->
+        <!--Add-->
         <scene sceneID="EkJ-k0-sx6">
             <objects>
                 <viewController storyboardIdentifier="SelectListingCategoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fYi-VO-5KA" customClass="SelectListingCategoryViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
@@ -613,13 +613,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgT-6F-f1n">
-                                        <rect key="frame" x="164" y="8" width="86" height="20"/>
+                                        <rect key="frame" x="161.5" y="8" width="91" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appAddTitle"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsC-t4-flE">
-                                        <rect key="frame" x="8" y="87.5" width="157" height="20"/>
+                                        <rect key="frame" x="8" y="84" width="162.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appSubTitle"/>
                                         <nil key="highlightedColor"/>
@@ -662,7 +662,7 @@
                             <constraint firstItem="VJc-Q0-O8K" firstAttribute="leading" secondItem="j4S-go-X2X" secondAttribute="leading" id="zQo-qy-3td"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="plus-1" id="4Fq-2E-r20"/>
+                    <tabBarItem key="tabBarItem" title="Add" image="plus-1" id="4Fq-2E-r20"/>
                     <navigationItem key="navigationItem" id="iyi-zo-mb1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
