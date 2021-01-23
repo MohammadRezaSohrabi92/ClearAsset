@@ -15,6 +15,6 @@ pod 'GrowingTextView', '0.7.2'
 pod 'BEMCheckBox'
 pod 'Alamofire', '~> 5.2'
 pod 'PhoneNumberKit', '~> 3.3'
-pod 'CountryPickerView'
+pod 'lottie-ios'
 
 end

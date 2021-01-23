@@ -7,9 +7,9 @@
 
 import Foundation
 
-typealias RegisterStep1Completion = ([[String : Any]]?, ErrorStep3?) -> Void
+typealias RegisterStep1Completion = ([[String : Any]]?, DataRegisterStep3Error?) -> Void
 typealias RegisterStep2Completion = (TopLevelDataForStep2?, Error?) -> Void
-typealias RegisterStep3Completion = (TokenModel?, ErrorStep3?) -> Void
+typealias RegisterStep3Completion = (TokenModel?, DataRegisterStep3Error?) -> Void
 
 protocol RegisterStep3Protocol {
     func register(parameter: Codable, completion: @escaping RegisterStep3Completion)
@@ -38,7 +38,7 @@ extension RegisterApi: RegisterStep1Protocol {
             } else {
                 do {
                     if let mData = response {
-                        let decoded = try self.decoder.decode(ErrorStep3.self, from: mData)
+                        let decoded = try self.decoder.decode(DataRegisterStep3Error.self, from: mData)
                         completion(nil, decoded)
                         return
                     }
@@ -89,7 +89,7 @@ extension RegisterApi: RegisterStep3Protocol {
             } else {
                 do {
                     if let mData = data {
-                        let decoded = try self.decoder.decode(ErrorStep3.self, from: mData)
+                        let decoded = try self.decoder.decode(DataRegisterStep3Error.self, from: mData)
                         completion(nil, decoded)
                         return
                     }

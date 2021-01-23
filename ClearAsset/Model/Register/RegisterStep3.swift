@@ -63,7 +63,7 @@ enum Interested: String, Codable {
     case selling = "seling"
 }
 
-enum RegisterStep3Error:Int, CustomStringConvertible {
+enum RegisterStep3LocalError:Int, CustomStringConvertible {
     case phoneNumber = 2000, addressLine1, city, state, zip
     
     var description: String {
@@ -82,15 +82,15 @@ enum RegisterStep3Error:Int, CustomStringConvertible {
     }
 }
 
-struct ErrorStep3: Codable {
-    let data: DataErrorStep3
+struct DataRegisterStep3Error: Codable {
+    let data: RegisterErrorList
 }
 
-struct DataErrorStep3: Codable {
-    let errors: Errors
+struct RegisterErrorList: Codable {
+    let errors: RegisterError
 }
 
-struct Errors: Codable {
+struct RegisterError: Codable {
     let email, mobile: [String]
     
     init(from decoder: Decoder) throws {

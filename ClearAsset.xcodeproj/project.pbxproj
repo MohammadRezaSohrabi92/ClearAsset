@@ -48,6 +48,9 @@
 		8327B38B25A0A2BF002ED7EE /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327B38A25A0A2BF002ED7EE /* FilterViewController.swift */; };
 		8327B39025A0A7F0002ED7EE /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327B38E25A0A7F0002ED7EE /* FilterTableViewCell.swift */; };
 		8327B39125A0A7F0002ED7EE /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327B38F25A0A7F0002ED7EE /* FilterTableViewCell.xib */; };
+		832BE48E25B59BFA0042A3AA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832BE48D25B59BFA0042A3AA /* SplashViewController.swift */; };
+		832BE49225B59C010042A3AA /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832BE49125B59C010042A3AA /* Splash.storyboard */; };
+		832BE4BC25B59E310042A3AA /* Json 2 in Resources */ = {isa = PBXBuildFile; fileRef = 832BE4BB25B59E310042A3AA /* Json 2 */; };
 		832CA16A25AC60070054B91B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CA16925AC60070054B91B /* Currency.swift */; };
 		832CA16E25AC62FF0054B91B /* RegisterStep2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CA16D25AC62FF0054B91B /* RegisterStep2ViewModel.swift */; };
 		83310A0F25A194FC00424B9F /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83310A0E25A194FC00424B9F /* SortViewController.swift */; };
@@ -73,6 +76,12 @@
 		8382257F25B2D87900147A8D /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382257E25B2D87900147A8D /* TokenModel.swift */; };
 		8382258225B2D95000147A8D /* RegisterStep3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382258125B2D95000147A8D /* RegisterStep3.swift */; };
 		8382258725B2E9F800147A8D /* RegisterStep3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382258625B2E9F800147A8D /* RegisterStep3ViewModel.swift */; };
+		83886C7525B5A40900BA2D99 /* 44373-girl-cycling.json in Resources */ = {isa = PBXBuildFile; fileRef = 83886C7425B5A40900BA2D99 /* 44373-girl-cycling.json */; };
+		83886C7E25B5AD5B00BA2D99 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886C7D25B5AD5B00BA2D99 /* Login.swift */; };
+		83886C8325B5AE9300BA2D99 /* GetLoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886C8225B5AE9300BA2D99 /* GetLoginInfo.swift */; };
+		83886CAE25B5AFFC00BA2D99 /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886CAD25B5AFFC00BA2D99 /* LoginApi.swift */; };
+		83886CB225B5B07700BA2D99 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886CB125B5B07700BA2D99 /* LoginError.swift */; };
+		83886CB625B5B52D00BA2D99 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886CB525B5B52D00BA2D99 /* LoginViewModel.swift */; };
 		838EA8E62590B5DE00E97933 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EA8E52590B5DE00E97933 /* String.swift */; };
 		838EA8E82590B60800E97933 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 838EA8EA2590B60800E97933 /* Localizable.strings */; };
 		8390B28725A1A37D001DD7F9 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390B28525A1A37D001DD7F9 /* ProductListTableViewCell.swift */; };
@@ -208,6 +217,9 @@
 		8327B38A25A0A2BF002ED7EE /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		8327B38E25A0A7F0002ED7EE /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		8327B38F25A0A7F0002ED7EE /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
+		832BE48D25B59BFA0042A3AA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		832BE49125B59C010042A3AA /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		832BE4BB25B59E310042A3AA /* Json 2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Json 2"; sourceTree = "<group>"; };
 		832CA16925AC60070054B91B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		832CA16D25AC62FF0054B91B /* RegisterStep2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep2ViewModel.swift; sourceTree = "<group>"; };
 		83310A0E25A194FC00424B9F /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +245,13 @@
 		8382257E25B2D87900147A8D /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		8382258125B2D95000147A8D /* RegisterStep3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep3.swift; sourceTree = "<group>"; };
 		8382258625B2E9F800147A8D /* RegisterStep3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep3ViewModel.swift; sourceTree = "<group>"; };
+		83886C7425B5A40900BA2D99 /* 44373-girl-cycling.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "44373-girl-cycling.json"; sourceTree = "<group>"; };
+		83886C7725B5A71900BA2D99 /* clear_asset.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clear_asset.json; sourceTree = "<group>"; };
+		83886C7D25B5AD5B00BA2D99 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		83886C8225B5AE9300BA2D99 /* GetLoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLoginInfo.swift; sourceTree = "<group>"; };
+		83886CAD25B5AFFC00BA2D99 /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
+		83886CB125B5B07700BA2D99 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		83886CB525B5B52D00BA2D99 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		838EA8E52590B5DE00E97933 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		838EA8E92590B60800E97933 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8390B28525A1A37D001DD7F9 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
@@ -554,6 +573,25 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		832BE48C25B59BE40042A3AA /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				832BE48D25B59BFA0042A3AA /* SplashViewController.swift */,
+				832BE49125B59C010042A3AA /* Splash.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		832BE4AF25B59CCF0042A3AA /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				83886C7725B5A71900BA2D99 /* clear_asset.json */,
+				83886C7425B5A40900BA2D99 /* 44373-girl-cycling.json */,
+				832BE4BB25B59E310042A3AA /* Json 2 */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
 		832CA16725AC5FE80054B91B /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,6 +676,7 @@
 		8351C5A6257FB8B60034FA65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				832BE48C25B59BE40042A3AA /* Splash */,
 				83A9DC5E258F61D900B3DCAB /* TabBar */,
 				83E89D8E258F43E000BB1C26 /* Menu */,
 				8396FBB42587914900FD3C16 /* Profile */,
@@ -693,6 +732,32 @@
 				831E75D7259889FD000046E5 /* Cell */,
 			);
 			path = AddListingDetail;
+			sourceTree = "<group>";
+		};
+		83886C7C25B5AD4F00BA2D99 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				83886C7D25B5AD5B00BA2D99 /* Login.swift */,
+				83886C8225B5AE9300BA2D99 /* GetLoginInfo.swift */,
+				83886CB125B5B07700BA2D99 /* LoginError.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		83886CAC25B5AFED00BA2D99 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				83886CAD25B5AFFC00BA2D99 /* LoginApi.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		83886CB425B5B52000BA2D99 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				83886CB525B5B52D00BA2D99 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		8390B28325A1A35C001DD7F9 /* Cell */ = {
@@ -792,6 +857,7 @@
 		83AE0D0025A9B2C400E76F34 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				83886CAC25B5AFED00BA2D99 /* Login */,
 				E4C18E2625AF47FA00BB403E /* Register */,
 			);
 			path = Api;
@@ -800,6 +866,7 @@
 		83AE0D0125A9B2DF00E76F34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				83886C7C25B5AD4F00BA2D99 /* Login */,
 				83421E8D25AD829600640E03 /* Base */,
 				832CA16725AC5FE80054B91B /* Register */,
 			);
@@ -809,6 +876,7 @@
 		83AE0D0225A9B2E300E76F34 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				83886CB425B5B52000BA2D99 /* Login */,
 				833E798E25AB2D8000AD7B59 /* Register */,
 			);
 			path = ViewModel;
@@ -934,6 +1002,7 @@
 		83E89601257E613200D66424 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				832BE4AF25B59CCF0042A3AA /* splash */,
 				83E895EA257E4A6200D66424 /* Assets.xcassets */,
 				838EA8EA2590B60800E97933 /* Localizable.strings */,
 				83E89602257E614800D66424 /* Custom-Fonts */,
@@ -1168,6 +1237,7 @@
 				83A9DC64258F623100B3DCAB /* TabBar.storyboard in Resources */,
 				E40EAE8925921BEB00E9AD35 /* BottomTableViewCell.xib in Resources */,
 				8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */,
+				83886C7525B5A40900BA2D99 /* 44373-girl-cycling.json in Resources */,
 				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
 				830E0DCB25A09798001FFCD0 /* ProductList.storyboard in Resources */,
 				831F9BD6259A092600A03D50 /* ServiceCommentCell.xib in Resources */,
@@ -1179,6 +1249,7 @@
 				83E89D90258F43EB00BB1C26 /* Menu.storyboard in Resources */,
 				83BAB39C25A1B23600D57B93 /* Product.storyboard in Resources */,
 				83B779B72587ACFA00018EBA /* ManageAccount.xib in Resources */,
+				832BE49225B59C010042A3AA /* Splash.storyboard in Resources */,
 				83E89620257E61E700D66424 /* Nunito-ExtraLight.ttf in Resources */,
 				83E89617257E61E700D66424 /* Nunito-BoldItalic.ttf in Resources */,
 				83023E8025971EB9000F910F /* Category.storyboard in Resources */,
@@ -1202,6 +1273,7 @@
 				834075E02598B20A00987840 /* ServiceCategoryCVCell.xib in Resources */,
 				8392FABE259C917F005E69FC /* WatchList.storyboard in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
+				832BE4BC25B59E310042A3AA /* Json 2 in Resources */,
 				835A09EA259B6E7600D32DC9 /* DetailTableViewCell.xib in Resources */,
 				8392FAC6259CA6F8005E69FC /* SaleTableViewCell.xib in Resources */,
 				83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */,
@@ -1259,6 +1331,7 @@
 			files = (
 				83B477072584BB5A009DD837 /* CustomTextField.swift in Sources */,
 				E40EAE8D25921BFF00E9AD35 /* BottomCollectionViewCell.swift in Sources */,
+				83886C8325B5AE9300BA2D99 /* GetLoginInfo.swift in Sources */,
 				836EB4F625AC6D6F00EA5D03 /* GetCurrencyViewModel.swift in Sources */,
 				83023E9125971F39000F910F /* ServicesCategoryViewController.swift in Sources */,
 				83812E3B257FBEE500D217AE /* LoginViewController.swift in Sources */,
@@ -1270,12 +1343,15 @@
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
 				83310A1825A19A7200424B9F /* SortTableViewCell.swift in Sources */,
 				E4C18E2D25AF4A1C00BB403E /* GetCountryViewModel.swift in Sources */,
+				83886CB225B5B07700BA2D99 /* LoginError.swift in Sources */,
+				83886C7E25B5AD5B00BA2D99 /* Login.swift in Sources */,
 				E40EAE8825921BEB00E9AD35 /* BottomTableViewCell.swift in Sources */,
 				83AE0D0D25A9C55000E76F34 /* BaseSDK.swift in Sources */,
 				8382257F25B2D87900147A8D /* TokenModel.swift in Sources */,
 				83310A0F25A194FC00424B9F /* SortViewController.swift in Sources */,
 				831E75D225986F43000046E5 /* CustomAddTitle.swift in Sources */,
 				836FC7522598681600F958AC /* AddListingDetailViewController.swift in Sources */,
+				83886CB625B5B52D00BA2D99 /* LoginViewModel.swift in Sources */,
 				83A9DC60258F61FA00B3DCAB /* TabBarViewController.swift in Sources */,
 				834D4D3F25AADED200987FC7 /* RegisterStep1ViewModel.swift in Sources */,
 				E4C18E4D25AF621600BB403E /* GetPrimaryViewModel.swift in Sources */,
@@ -1308,6 +1384,7 @@
 				838EA8E62590B5DE00E97933 /* String.swift in Sources */,
 				83023E8325971ED7000F910F /* CategoryViewController.swift in Sources */,
 				8396FB9B258749C400FD3C16 /* UITextField.swift in Sources */,
+				832BE48E25B59BFA0042A3AA /* SplashViewController.swift in Sources */,
 				831F9BC12599D24D00A03D50 /* ServiceDetailViewController.swift in Sources */,
 				8361C9E625A5D22C00594F82 /* NetworkingClient.swift in Sources */,
 				E4E70069259205B500B8C0E4 /* MiddleCollectionViewCell.swift in Sources */,
@@ -1328,6 +1405,7 @@
 				E4E7006E25920EA600B8C0E4 /* MiddleTableViewCell.swift in Sources */,
 				835A09DA259B583800D32DC9 /* SelectListingCategoryViewController.swift in Sources */,
 				83E89D9A258F4CB800BB1C26 /* MenuViewController.swift in Sources */,
+				83886CAE25B5AFFC00BA2D99 /* LoginApi.swift in Sources */,
 				836EB4F225AC6BD000EA5D03 /* CurrencyApi.swift in Sources */,
 				835A09E9259B6E7600D32DC9 /* DetailTableViewCell.swift in Sources */,
 				E4C18E3C25AF602D00BB403E /* PrimaryInductry.swift in Sources */,

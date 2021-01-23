@@ -8,7 +8,7 @@
 import Foundation
 
 typealias RegisterStep3ServiceCompletion = (TokenModel?, ErrorMessageModel?) -> Void
-typealias RegisterStep3ErrorsCompletion = (RegisterStep3Error?) -> Void
+typealias RegisterStep3ErrorsCompletion = (RegisterStep3LocalError?) -> Void
 
 protocol RegisterStep3ServiceProtocol {
     func register(email: String?, password: String?, rePassword: String?, accountType: String?, currency: String?, fullName: String?, birthday: String?, country: String?, mobile: String?, addressOne: String?, addressTwo: String?, city: String?, state: String?, zip: String?, interested: String?, primary: String?, completion: @escaping RegisterStep3ServiceCompletion)
@@ -68,32 +68,32 @@ extension RegisterStep3ViewModel: RegisterStep3ServiceProtocol {
     func checkValidity(phoneNumber: String?, addressOne: String?, addressTwo: String?, city: String?, state: String?, zip: String?, completion: @escaping RegisterStep3ErrorsCompletion) {
         
         guard let phone = phoneNumber, !phone.isEmpty else {
-            completion(RegisterStep3Error.phoneNumber)
+            completion(RegisterStep3LocalError.phoneNumber)
             return
         }
         
         if Utility().validatePhoneNumber(value: phone) {
-            completion(RegisterStep3Error.phoneNumber)
+            completion(RegisterStep3LocalError.phoneNumber)
             return
         }
         
         guard let addressLine1 = addressOne, !addressLine1.isEmpty, addressLine1.count > 3 else {
-            completion(RegisterStep3Error.addressLine1)
+            completion(RegisterStep3LocalError.addressLine1)
             return
         }
         
         guard let city = city, !city.isEmpty ,city.count > 3 else {
-            completion(RegisterStep3Error.city)
+            completion(RegisterStep3LocalError.city)
             return
         }
         
         guard let state = state, !state.isEmpty, state.count > 3 else {
-            completion(RegisterStep3Error.state)
+            completion(RegisterStep3LocalError.state)
             return
         }
         
         guard let zip = zip, !zip.isEmpty, zip.count > 3 else{
-            completion(RegisterStep3Error.zip)
+            completion(RegisterStep3LocalError.zip)
             return
         }
         completion(nil)
