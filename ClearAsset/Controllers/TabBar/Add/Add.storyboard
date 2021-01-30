@@ -82,13 +82,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8w-Yf-jpZ">
-                                        <rect key="frame" x="161.5" y="8" width="91" height="23.5"/>
+                                        <rect key="frame" x="164" y="8" width="86" height="20"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appAddTitle"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your sub category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inF-81-jft">
-                                        <rect key="frame" x="8" y="84" width="195.5" height="23.5"/>
+                                        <rect key="frame" x="8" y="87.5" width="190" height="20"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appSubTitle"/>
                                         <nil key="highlightedColor"/>
@@ -531,9 +531,20 @@
                     <size key="freeformSize" width="414" height="1750"/>
                     <connections>
                         <outlet property="addMoreDetailButton" destination="wCM-1N-Afe" id="rkT-8f-bKC"/>
+                        <outlet property="assetTypeTF" destination="5Se-cO-TzA" id="eOY-LL-1Ug"/>
+                        <outlet property="brandsMenu" destination="9yD-8C-A3D" id="VXo-Kz-S2B"/>
+                        <outlet property="checkBox" destination="Dev-yn-tZg" id="fAk-4d-dLW"/>
                         <outlet property="contentViewHeightConstraint" destination="cA9-86-z97" id="zHy-5h-Yvb"/>
+                        <outlet property="inYardMenu" destination="dUf-Yk-Hyn" id="4bW-fd-oVc"/>
+                        <outlet property="locationTF" destination="PWk-NK-SJs" id="fMo-zQ-Xlc"/>
                         <outlet property="mainTable" destination="Hdp-5o-ltw" id="83q-wK-Agr"/>
                         <outlet property="mainTableHeightConstraint" destination="G8A-IB-ATO" id="YRf-d4-fvv"/>
+                        <outlet property="modelSeriesTF" destination="HOi-mT-IBo" id="1gA-qp-po6"/>
+                        <outlet property="modelsMenu" destination="yHa-Dq-U0b" id="MGl-V5-qRC"/>
+                        <outlet property="nameTF" destination="zhV-3v-V9O" id="07c-21-qAw"/>
+                        <outlet property="serialNumberTF" destination="1ST-Xn-vb9" id="jk2-ZV-kLx"/>
+                        <outlet property="submitBtn" destination="ciD-qr-4U3" id="E9P-N5-Y5c"/>
+                        <outlet property="termsAndConditionBtn" destination="rig-5Z-6g3" id="7Wt-Xe-eUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCy-nA-Zaa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -613,13 +624,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgT-6F-f1n">
-                                        <rect key="frame" x="161.5" y="8" width="91" height="23.5"/>
+                                        <rect key="frame" x="164" y="8" width="86" height="20"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appAddTitle"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsC-t4-flE">
-                                        <rect key="frame" x="8" y="84" width="162.5" height="23.5"/>
+                                        <rect key="frame" x="8" y="87.5" width="157" height="20"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                         <color key="textColor" name="appSubTitle"/>
                                         <nil key="highlightedColor"/>

@@ -22,6 +22,9 @@ class SelectListingCategoryViewController: UIViewController {
     var categories : Categories!
     var allCategories: [Category]!
     
+    var subCategoryViewModel: GetSubCategoryViewModel!
+    var subCategories: [Category]!
+    
 //MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,7 @@ class SelectListingCategoryViewController: UIViewController {
         initMenu()
         getCategoryViewModel = GetCategoryViewModel()
         getCategories()
+        subCategoryViewModel = GetSubCategoryViewModel()
     }
     
     func initMenu() {
@@ -51,6 +55,18 @@ class SelectListingCategoryViewController: UIViewController {
         guard let allCategories = categories.categories, !allCategories.isEmpty else {return}
         self.allCategories = allCategories
         mainTable.reloadData()
+    }
+    
+    func goToSubcategoryPage(row: Int) {
+        let selectSubCategoryVC = AppStoryboard.Add.viewController(viewControllerClass: SelectSubCategoryViewController.self)
+        selectSubCategoryVC.id = ("\(allCategories[row].id!)")
+        self.navigationController?.pushViewController(selectSubCategoryVC, animated: true)
+    }
+    
+    func goToAddDetailPage(row: Int) {
+        let addDetailVC = AppStoryboard.Add.viewController(viewControllerClass: AddListingDetailViewController.self)
+        addDetailVC.categoryId = ("\(allCategories[row].id!)")
+        self.navigationController?.pushViewController(addDetailVC, animated: true)
     }
     
 //MARK:- actions
@@ -75,10 +91,27 @@ class SelectListingCategoryViewController: UIViewController {
         }
     }
     
+    func getSubCategory(row: Int) {
+        Utility.showHudLoading()
+        subCategoryViewModel.getSubCategory(id: "\(allCategories[row].id!)") { (categories, error) in
+            if error == nil {
+                Utility.hideHudLoading()
+                if let subCats = categories?.categories, !subCats.isEmpty {
+                    self.subCategories = subCats
+                    self.goToSubcategoryPage(row: row)
+                } else {
+                    self.goToAddDetailPage(row: row)
+                }
+            } else {
+                Utility.hideHudLoading()
+                self.showActionSheet(title: "error".getString(), message: error!.localizedDescription, style: .alert, actions: [self.actionMessageClose()])
+            }
+        }
+    }
+    
 } //end class
 
 //MARK:- extensions
-
 extension SelectListingCategoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let allCategories = self.allCategories, !allCategories.isEmpty {
@@ -101,9 +134,6 @@ extension SelectListingCategoryViewController: UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectSubCategoryVC = AppStoryboard.Add.viewController(viewControllerClass: SelectSubCategoryViewController.self)
-        selectSubCategoryVC.id = ("\(allCategories[indexPath.row].id!)")
-        self.navigationController?.pushViewController(selectSubCategoryVC, animated: true)
+        getSubCategory(row: indexPath.row)
     }
-
 }

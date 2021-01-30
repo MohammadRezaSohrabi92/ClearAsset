@@ -53,7 +53,7 @@ class SelectSubCategoryViewController: BaseViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-//MARK: Api call
+//MARK:- Api call
     fileprivate func getSubCategories() {
         Utility.showHudLoading()
         guard let id = id else {
@@ -73,7 +73,7 @@ class SelectSubCategoryViewController: BaseViewController {
     }
     
 }
-    //MARK:- tableView delegate and data source
+//MARK:- tableView delegate and data source
 extension SelectSubCategoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let allSubCategories = allSubCategories, !allSubCategories.isEmpty {
@@ -83,7 +83,9 @@ extension SelectSubCategoryViewController: UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(AppStoryboard.Add.viewController(viewControllerClass: AddListingDetailViewController.self), animated: true)
+        let addDetailVC = AppStoryboard.Add.viewController(viewControllerClass: AddListingDetailViewController.self)
+        addDetailVC.categoryId = id
+        self.navigationController?.pushViewController(addDetailVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

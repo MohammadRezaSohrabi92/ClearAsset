@@ -25,6 +25,9 @@
 		8305CCD22598C70D001C61A6 /* ServicePreviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8305CCD02598C70D001C61A6 /* ServicePreviewTableViewCell.xib */; };
 		8307B17D25A9E347003FD9AE /* DictionaryEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307B17C25A9E347003FD9AE /* DictionaryEncodable.swift */; };
 		8307B18425A9F3D8003FD9AE /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307B18325A9F3D8003FD9AE /* ErrorModel.swift */; };
+		830A144925C556A2003D3F51 /* GetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A144825C556A2003D3F51 /* GetModels.swift */; };
+		830A144C25C557A7003D3F51 /* ModelApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A144B25C557A7003D3F51 /* ModelApi.swift */; };
+		830A144F25C56268003D3F51 /* GetModelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A144E25C56268003D3F51 /* GetModelListViewModel.swift */; };
 		830E0DA825A05359001FFCD0 /* AuctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E0DA625A05359001FFCD0 /* AuctionTableViewCell.swift */; };
 		830E0DA925A05359001FFCD0 /* AuctionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830E0DA725A05359001FFCD0 /* AuctionTableViewCell.xib */; };
 		830E0DAE25A08098001FFCD0 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830E0DAD25A08098001FFCD0 /* Notification.storyboard */; };
@@ -202,6 +205,9 @@
 		8305CCD02598C70D001C61A6 /* ServicePreviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicePreviewTableViewCell.xib; sourceTree = "<group>"; };
 		8307B17C25A9E347003FD9AE /* DictionaryEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncodable.swift; sourceTree = "<group>"; };
 		8307B18325A9F3D8003FD9AE /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		830A144825C556A2003D3F51 /* GetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetModels.swift; sourceTree = "<group>"; };
+		830A144B25C557A7003D3F51 /* ModelApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelApi.swift; sourceTree = "<group>"; };
+		830A144E25C56268003D3F51 /* GetModelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetModelListViewModel.swift; sourceTree = "<group>"; };
 		830E0DA625A05359001FFCD0 /* AuctionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionTableViewCell.swift; sourceTree = "<group>"; };
 		830E0DA725A05359001FFCD0 /* AuctionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuctionTableViewCell.xib; sourceTree = "<group>"; };
 		830E0DAD25A08098001FFCD0 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
@@ -851,6 +857,7 @@
 			children = (
 				839EDC6D25BC0DC20000626C /* GetCategories.swift */,
 				839EDCD525BC60E60000626C /* GetBrand.swift */,
+				830A144825C556A2003D3F51 /* GetModels.swift */,
 			);
 			path = Listing;
 			sourceTree = "<group>";
@@ -861,6 +868,7 @@
 				839EDC7225BC12B20000626C /* CategoryApi.swift */,
 				839EDCD225BC4D9F0000626C /* SubCategoryApi.swift */,
 				839EDCD825BC61670000626C /* BrandApi.swift */,
+				830A144B25C557A7003D3F51 /* ModelApi.swift */,
 			);
 			path = Listing;
 			sourceTree = "<group>";
@@ -871,6 +879,7 @@
 				839EDCAE25BC19B20000626C /* GetCategoryViewModel.swift */,
 				839EDCCE25BC4D040000626C /* GetSubCategoryViewModel.swift */,
 				839EDCDB25BC67F20000626C /* GetBrandListViewModel.swift */,
+				830A144E25C56268003D3F51 /* GetModelListViewModel.swift */,
 			);
 			path = Listing;
 			sourceTree = "<group>";
@@ -1389,12 +1398,14 @@
 				83E8962D257E6D9200D66424 /* UIView.swift in Sources */,
 				830E0DA825A05359001FFCD0 /* AuctionTableViewCell.swift in Sources */,
 				839EDCAF25BC19B20000626C /* GetCategoryViewModel.swift in Sources */,
+				830A144925C556A2003D3F51 /* GetModels.swift in Sources */,
 				83B4770D2584FF6D009DD837 /* RegisterMailingInfoViewController.swift in Sources */,
 				83310A1825A19A7200424B9F /* SortTableViewCell.swift in Sources */,
 				E4C18E2D25AF4A1C00BB403E /* GetCountryViewModel.swift in Sources */,
 				83886CB225B5B07700BA2D99 /* LoginError.swift in Sources */,
 				83886C7E25B5AD5B00BA2D99 /* Login.swift in Sources */,
 				E40EAE8825921BEB00E9AD35 /* BottomTableViewCell.swift in Sources */,
+				830A144C25C557A7003D3F51 /* ModelApi.swift in Sources */,
 				83AE0D0D25A9C55000E76F34 /* BaseSDK.swift in Sources */,
 				8382257F25B2D87900147A8D /* TokenModel.swift in Sources */,
 				83310A0F25A194FC00424B9F /* SortViewController.swift in Sources */,
@@ -1442,6 +1453,7 @@
 				8382258225B2D95000147A8D /* RegisterStep3.swift in Sources */,
 				83023E8A25971F06000F910F /* SelectSubCategoryViewController.swift in Sources */,
 				83E89627257E671C00D66424 /* StartViewController.swift in Sources */,
+				830A144F25C56268003D3F51 /* GetModelListViewModel.swift in Sources */,
 				839EDCCF25BC4D040000626C /* GetSubCategoryViewModel.swift in Sources */,
 				839EDCDC25BC67F20000626C /* GetBrandListViewModel.swift in Sources */,
 				8307B18425A9F3D8003FD9AE /* ErrorModel.swift in Sources */,
