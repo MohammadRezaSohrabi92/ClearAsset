@@ -15,14 +15,13 @@ protocol GetCategoryServiceProtocol {
 }
 
 class CategoryApi: BaseSDK {
-    let getCategoryURL = "listing/get/categories"
-    let decoder = JSONDecoder()
+    let getCategoryURL = "listing/get/categories"    
 }
 
 extension CategoryApi: GetCategoryServiceProtocol {
     func getCategory(completion: @escaping GetCategoryServiceCompletion) {
         let headers : HTTPHeaders = [.accept("application/json"), .authorization(bearerToken: Utility().getToken())]
-        NetworkingClient.shared.getRequest(getURL(url: getCategoryURL), headers: headers) { (data, error) in
+        NetworkingClient.shared.getRequest(makeURL(url: getCategoryURL), headers: headers) { (data, error) in
             if error == nil {
                 do {
                     if let mData = data {

@@ -15,12 +15,11 @@ protocol LoginServiceProtocol {
 
 class LoginApi: BaseSDK {
     let loginURL = "user/login"
-    var decoder = JSONDecoder()
 }
 
 extension LoginApi: LoginServiceProtocol {
     func login(parameter: Codable, completion: @escaping LoginServiceCompletionHandlar) {
-        NetworkingClient.shared.postRequest(getURL(url: loginURL), parameters: parameter.dictionary()) { (data, error) in
+        NetworkingClient.shared.postRequest(makeURL(url: loginURL), parameters: parameter.dictionary()) { (data, error) in
             if error == nil {
                 do {
                     if let mData = data {

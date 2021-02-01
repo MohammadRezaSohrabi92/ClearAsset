@@ -84,6 +84,7 @@ extension SelectSubCategoryViewController: UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let addDetailVC = AppStoryboard.Add.viewController(viewControllerClass: AddListingDetailViewController.self)
+        addDetailVC.hidesBottomBarWhenPushed = true
         addDetailVC.categoryId = id
         self.navigationController?.pushViewController(addDetailVC, animated: true)
     }

@@ -14,13 +14,12 @@ protocol GetCurrencyProtocol {
 }
 
 class CurrencyApi: BaseSDK {
-    let decoder = JSONDecoder()
     let getCurrencyURL = "user/get/currency"
 }
 
 extension CurrencyApi: GetCurrencyProtocol {
     func getCurrency(completion: @escaping GetCurrencyCompletion) {
-        NetworkingClient.shared.getRequest(getURL(url: getCurrencyURL)) { (data, error) in
+        NetworkingClient.shared.getRequest(makeURL(url: getCurrencyURL)) { (data, error) in
             if error == nil {
                 do {
                     if let mData = data {

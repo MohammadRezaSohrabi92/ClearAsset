@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0BP-4x-TOS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Bottom Sheet View Controller-->
+        <scene sceneID="91R-qf-We6">
+            <objects>
+                <viewController storyboardIdentifier="CustomBottomSheetViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0BP-4x-TOS" customClass="CustomBottomSheetViewController" customModule="ClearAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bL-kV-cwu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvS-kR-NKY">
+                                <rect key="frame" x="16" y="646" width="382" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPt-I8-WDB">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="216"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yv-DB-ioe">
+                                                <rect key="frame" x="20" y="16" width="33" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="appGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OSk-GL-IsK">
+                                                <rect key="frame" x="8" y="58" width="366" height="150"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="17O-x7-go6"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="0BP-4x-TOS" id="maK-hn-XeM"/>
+                                                    <outlet property="delegate" destination="0BP-4x-TOS" id="eg1-83-hrs"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="OSk-GL-IsK" secondAttribute="trailing" constant="8" id="2hu-c1-K6R"/>
+                                            <constraint firstItem="OSk-GL-IsK" firstAttribute="leading" secondItem="fPt-I8-WDB" secondAttribute="leading" constant="8" id="7qj-TJ-nr3"/>
+                                            <constraint firstItem="2yv-DB-ioe" firstAttribute="top" secondItem="fPt-I8-WDB" secondAttribute="top" constant="16" id="9yp-Tu-e4q"/>
+                                            <constraint firstItem="OSk-GL-IsK" firstAttribute="top" secondItem="2yv-DB-ioe" secondAttribute="bottom" constant="10" id="CTG-pS-1bu"/>
+                                            <constraint firstItem="2yv-DB-ioe" firstAttribute="leading" secondItem="fPt-I8-WDB" secondAttribute="leading" constant="20" id="Cba-BT-EXU"/>
+                                            <constraint firstAttribute="bottom" secondItem="OSk-GL-IsK" secondAttribute="bottom" constant="8" id="jd0-8g-Gx1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="3EA-NU-rsN"/>
+                                    <constraint firstItem="fPt-I8-WDB" firstAttribute="leading" secondItem="cvS-kR-NKY" secondAttribute="leading" id="Rpp-0y-b8w"/>
+                                    <constraint firstItem="fPt-I8-WDB" firstAttribute="top" secondItem="cvS-kR-NKY" secondAttribute="top" id="qf7-TO-tQX"/>
+                                    <constraint firstAttribute="trailing" secondItem="fPt-I8-WDB" secondAttribute="trailing" id="sHL-Kv-vFL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray6Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Qe-fB-8Of"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Qe-fB-8Of" firstAttribute="trailing" secondItem="cvS-kR-NKY" secondAttribute="trailing" constant="16" id="IAp-Fd-lj4"/>
+                            <constraint firstAttribute="bottom" secondItem="cvS-kR-NKY" secondAttribute="bottom" id="b9l-O0-BuV"/>
+                            <constraint firstItem="cvS-kR-NKY" firstAttribute="leading" secondItem="9Qe-fB-8Of" secondAttribute="leading" constant="16" id="m2n-EO-SjS"/>
+                            <constraint firstItem="9Qe-fB-8Of" firstAttribute="bottom" secondItem="fPt-I8-WDB" secondAttribute="bottom" id="uBi-f3-kRw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="cvS-kR-NKY" id="bk9-HT-rXN"/>
+                        <outlet property="backViewHeightConstraint" destination="3EA-NU-rsN" id="MKl-87-rYX"/>
+                        <outlet property="contentView" destination="fPt-I8-WDB" id="V9F-t5-8cx"/>
+                        <outlet property="mainTable" destination="OSk-GL-IsK" id="ZqS-lB-OcC"/>
+                        <outlet property="mainTableHeightConstraint" destination="17O-x7-go6" id="5W4-xs-ehh"/>
+                        <outlet property="titleLabel" destination="2yv-DB-ioe" id="hNw-kg-nta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4YE-eo-aEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="appGray">
+            <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

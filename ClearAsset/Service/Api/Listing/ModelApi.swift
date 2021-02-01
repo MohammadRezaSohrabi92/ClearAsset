@@ -16,13 +16,12 @@ protocol GetModelServiceProtocol {
 
 class ModelApi: BaseSDK {
     let getModelURL = "listing/get/models"
-    let decoder = JSONDecoder()
 }
 
 extension ModelApi: GetModelServiceProtocol {
     func getModel(parameter: [String: Any], completion: @escaping GetModelsServiceCompletion) {
         let headers : HTTPHeaders = [.accept("application/json"), .authorization(bearerToken: Utility().getToken())]
-        NetworkingClient.shared.postRequest(getURL(url: getModelURL), parameters: parameter, headers: headers) { (data, error) in
+        NetworkingClient.shared.postRequest(makeURL(url: getModelURL), parameters: parameter, headers: headers) { (data, error) in
             if error == nil {
                 do {
                     if let mData = data {

@@ -20,7 +20,7 @@ class PrimaryIndustryApi: BaseSDK {
 
 extension PrimaryIndustryApi: GetPrimaryIndustryServiceProtocol {
     func getPrimary(completion: @escaping GetPrimaryIndusturyServiceCompletionHandlar) {
-        NetworkingClient.shared.getRequest(getURL(url: primaryURL)) { (data, error) in
+        NetworkingClient.shared.getRequest(makeURL(url: primaryURL)) { (data, error) in
             if error == nil {
                 do {
                     if let mData = data {

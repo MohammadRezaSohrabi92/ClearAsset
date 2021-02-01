@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailAddressTF: CustomTextField!
     @IBOutlet weak var passwordTF: CustomTextField!
     @IBOutlet weak var LoginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
     
 //init var
     var loginViewModel: LoginViewModel!
@@ -73,4 +74,9 @@ class LoginViewController: UIViewController {
     @IBAction func didTapOnLoginButton(_ sender: Any) {
         login()
     }
+    
+    @IBAction func didTapOnSignUpButton(_ sender: Any) {
+        self.navigationController?.pushViewController(AppStoryboard.Register.viewController(viewControllerClass: RegisterEmailPassViewController.self), animated: true)
+    }
+    
 }

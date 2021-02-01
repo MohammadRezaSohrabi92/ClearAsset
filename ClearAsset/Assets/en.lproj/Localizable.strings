@@ -21,3 +21,10 @@
 "zip" = "Zip/Postal code is not valid";
 "token" = "Something went wrong - 'token'";
 "unknown" = "unknown error";
+"server" = "Server error";
+"uploadLocal" = "Upload failed please try again";
+"selectPhoto" = "Select Photo";
+"uploadImage" = "Upload your product image";
+"photoLibrary" = "Photo Library";
+"camera" = "Camera";
+"failedJson" = "Failed to decode json";

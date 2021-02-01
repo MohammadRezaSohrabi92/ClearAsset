@@ -20,7 +20,7 @@ class CountryApi: BaseSDK {
 
 extension CountryApi: GetCountryServiceProtocol {
     func getCountry(completion: @escaping GetCountryServiceCompletionHandlar) {
-        NetworkingClient.shared.getRequest(getURL(url: getCountryURL)) { (data, error) in
+        NetworkingClient.shared.getRequest(makeURL(url: getCountryURL)) { (data, error) in
             if error == nil {
                 do {
                     if let mData = data {

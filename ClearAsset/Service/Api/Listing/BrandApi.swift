@@ -16,13 +16,12 @@ protocol GetBrandListServiceProtocol {
 
 class BrandApi: BaseSDK {
     let getBrandURL = "listing/get/brands"
-    let decoder = JSONDecoder()
 }
 
 extension BrandApi: GetBrandListServiceProtocol {
     func getBrand(parameter: [String: Any], completion: @escaping GetBrandListServiceCompletion) {
         let headers : HTTPHeaders = [.accept("application/json"), .authorization(bearerToken: Utility().getToken())]
-        NetworkingClient.shared.postRequest(getURL(url: getBrandURL), parameters: parameter, headers: headers) { (data, error) in
+        NetworkingClient.shared.postRequest(makeURL(url: getBrandURL), parameters: parameter, headers: headers) { (data, error) in
             if error == nil {
                 do {
                     if let mData = data {

@@ -10,7 +10,7 @@ import UIKit
 import PKHUD
 import SystemConfiguration
 
-class Utility {
+class Utility : UIViewController {
     
     struct appFont {
         static let regularFont = "Nunito-Regular"
@@ -29,6 +29,10 @@ class Utility {
     }
     class func hideHudLoading() {
         HUD.hide()
+    }
+    
+    class func showProgress() {
+        HUD.flash(.progress, delay: 1.0)
     }
     
     func validatePhoneNumber(value: String) -> Bool {
@@ -73,10 +77,44 @@ class Utility {
         return reteriveData(inUserDefulat: "token") as! String
     }
     
+    //image
+    var imagePicker : UIImagePickerController!
+    
+    func setDelegateForImagePicker(delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = delegate
+    }
+    
+    @objc func getImage(_ sender: UITapGestureRecognizer) {
+        let camera = UIAlertAction(title: "Camera", style: .default) { (_) in
+            self.getImageFromCamera()
+        }
+        let library = UIAlertAction(title: "Photo Library", style: .default) { (_) in
+            self.getImageFromLibrary()
+        }
+        self.showActionSheet(title: "Select Photo", message: "Upload your profile image", style: .actionSheet, actions: [camera, library, actionMessageCancel()])
+    }
+    func getImageFromLibrary() {
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
+            imagePicker.sourceType = .savedPhotosAlbum
+            imagePicker.allowsEditing = true
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    func getImageFromCamera() {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = true
+            imagePicker.cameraDevice = .front
+            imagePicker.showsCameraControls = true
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
 }
 
 enum AppStoryboard: String {
-    case Start, Login, Register, Profile, Menu, TabBar, Services, Add, WatchList, Notification, Filter, ProductList, Sort, Product
+    case Start, Login, Register, Profile, Menu, TabBar, Services, Add, WatchList, Notification, Filter, ProductList, Sort, Product, BottomSheet
     
     var instance: UIStoryboard {
       return UIStoryboard(name: self.rawValue, bundle: Bundle.main)

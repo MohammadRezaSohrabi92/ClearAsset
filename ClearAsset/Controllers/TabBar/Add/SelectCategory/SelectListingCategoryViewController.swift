@@ -33,13 +33,17 @@ class SelectListingCategoryViewController: UIViewController {
         initViews()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getCategories()
+    }
+    
 //MARK:- Other methods
 
     func initViews() {
         mainTable.register(UINib(nibName: "SelectCategoryTableViewCell", bundle: nil), forCellReuseIdentifier: selectCategoryCellIdentifier)
         initMenu()
-        getCategoryViewModel = GetCategoryViewModel()
-        getCategories()
+        getCategoryViewModel = GetCategoryViewModel()        
         subCategoryViewModel = GetSubCategoryViewModel()
     }
     
@@ -60,12 +64,14 @@ class SelectListingCategoryViewController: UIViewController {
     func goToSubcategoryPage(row: Int) {
         let selectSubCategoryVC = AppStoryboard.Add.viewController(viewControllerClass: SelectSubCategoryViewController.self)
         selectSubCategoryVC.id = ("\(allCategories[row].id!)")
+        selectSubCategoryVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(selectSubCategoryVC, animated: true)
     }
     
     func goToAddDetailPage(row: Int) {
         let addDetailVC = AppStoryboard.Add.viewController(viewControllerClass: AddListingDetailViewController.self)
         addDetailVC.categoryId = ("\(allCategories[row].id!)")
+        addDetailVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(addDetailVC, animated: true)
     }
     

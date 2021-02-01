@@ -26,13 +26,12 @@ protocol RegisterStep1Protocol {
 class RegisterApi: BaseSDK {
     let step1URL = "user/register/validate/step/1"
     let step2URL = "user/register/validate/step/2"
-    let step3URL = "user/register"
-    var decoder = JSONDecoder()
+    let step3URL = "user/register"    
 }
 
 extension RegisterApi: RegisterStep1Protocol {
     func register(parameter: Codable, completion: @escaping RegisterStep1Completion) {
-        NetworkingClient.shared.postRequest(getURL(url: step1URL), parameters: parameter.dictionary()) { (response, error) in
+        NetworkingClient.shared.postRequest(makeURL(url: step1URL), parameters: parameter.dictionary()) { (response, error) in
             if error == nil {
                 completion(nil, nil)
             } else {
@@ -53,7 +52,7 @@ extension RegisterApi: RegisterStep1Protocol {
 
 extension RegisterApi: RegisterStep2Protocol {
     func Register(parameter: Codable, completion: @escaping RegisterStep2Completion) {
-        NetworkingClient.shared.postRequest(getURL(url: step2URL), parameters: parameter.dictionary()) { (data, error) in
+        NetworkingClient.shared.postRequest(makeURL(url: step2URL), parameters: parameter.dictionary()) { (data, error) in
             if error == nil {
                 completion(nil, nil)
             } else {
@@ -74,7 +73,7 @@ extension RegisterApi: RegisterStep2Protocol {
 
 extension RegisterApi: RegisterStep3Protocol {
     func register(parameter: Codable, completion: @escaping RegisterStep3Completion) {
-        NetworkingClient.shared.postRequest(getURL(url: step3URL), parameters: parameter.dictionary()) { (data, error) in
+        NetworkingClient.shared.postRequest(makeURL(url: step3URL), parameters: parameter.dictionary()) { (data, error) in
             if error == nil {
                 do {
                     if let mData = data {
