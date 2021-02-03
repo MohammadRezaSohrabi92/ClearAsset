@@ -37,7 +37,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLr-u1-03m">
-                                <rect key="frame" x="363" y="8" width="40" height="40"/>
+                                <rect key="frame" x="323" y="8" width="40" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-add" translatesAutoresizingMaskIntoConstraints="NO" id="usQ-Ih-h4Z">
                                         <rect key="frame" x="10" y="10" width="20" height="20"/>
@@ -127,6 +127,30 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJe-oJ-EkY">
+                                <rect key="frame" x="371" y="8" width="40" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete" translatesAutoresizingMaskIntoConstraints="NO" id="1Np-pp-2FY">
+                                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1Np-pp-2FY" secondAttribute="height" multiplier="1:1" id="vYj-RC-bZD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1Np-pp-2FY" firstAttribute="centerX" secondItem="FJe-oJ-EkY" secondAttribute="centerX" id="2Gv-JO-crh"/>
+                                    <constraint firstAttribute="width" constant="40" id="3lc-Mm-YaX"/>
+                                    <constraint firstItem="1Np-pp-2FY" firstAttribute="height" secondItem="FJe-oJ-EkY" secondAttribute="height" multiplier="0.5" id="e4f-au-OGn"/>
+                                    <constraint firstAttribute="height" constant="40" id="nOT-n2-yv7"/>
+                                    <constraint firstItem="1Np-pp-2FY" firstAttribute="centerY" secondItem="FJe-oJ-EkY" secondAttribute="centerY" id="px5-VU-OG3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="appBorder"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -136,17 +160,19 @@
                             <constraint firstItem="X1N-1z-tVq" firstAttribute="top" secondItem="AAC-ch-0if" secondAttribute="bottom" constant="8" id="6lM-b7-f3g"/>
                             <constraint firstItem="oNe-Jb-fue" firstAttribute="top" secondItem="5Hc-nQ-h9d" secondAttribute="bottom" constant="8" id="70C-Xf-WpQ"/>
                             <constraint firstItem="5Hc-nQ-h9d" firstAttribute="leading" secondItem="4oB-RE-jpH" secondAttribute="leading" constant="16" id="93B-Rt-Irs"/>
+                            <constraint firstAttribute="trailing" secondItem="FJe-oJ-EkY" secondAttribute="trailing" constant="8" id="ByC-QP-pOA"/>
                             <constraint firstItem="69K-mC-ysp" firstAttribute="leading" secondItem="4oB-RE-jpH" secondAttribute="leading" constant="20" id="CTH-0T-sqT"/>
                             <constraint firstItem="tLr-u1-03m" firstAttribute="top" secondItem="4oB-RE-jpH" secondAttribute="top" constant="8" id="Cep-oI-hSb"/>
                             <constraint firstItem="AAC-ch-0if" firstAttribute="leading" secondItem="4oB-RE-jpH" secondAttribute="leading" constant="16" id="Et1-0V-nQQ"/>
                             <constraint firstAttribute="trailing" secondItem="oNe-Jb-fue" secondAttribute="trailing" id="IOE-uA-2OQ"/>
+                            <constraint firstItem="FJe-oJ-EkY" firstAttribute="leading" secondItem="tLr-u1-03m" secondAttribute="trailing" constant="8" id="Jai-Mh-hrx"/>
+                            <constraint firstItem="FJe-oJ-EkY" firstAttribute="top" secondItem="4oB-RE-jpH" secondAttribute="top" constant="8" id="ZEn-tz-pm8"/>
                             <constraint firstAttribute="bottom" secondItem="X1N-1z-tVq" secondAttribute="bottom" constant="8" id="ZLx-co-BwF"/>
                             <constraint firstItem="5Hc-nQ-h9d" firstAttribute="top" secondItem="4oB-RE-jpH" secondAttribute="top" constant="8" id="bDX-2c-N5x"/>
                             <constraint firstAttribute="trailing" secondItem="X1N-1z-tVq" secondAttribute="trailing" constant="20" id="eqS-Mk-Xwx"/>
                             <constraint firstItem="1hJ-Gg-MlO" firstAttribute="leading" secondItem="4oB-RE-jpH" secondAttribute="leading" constant="16" id="fH7-35-4Pn"/>
                             <constraint firstItem="69K-mC-ysp" firstAttribute="top" secondItem="1hJ-Gg-MlO" secondAttribute="bottom" constant="8" id="hGl-Yy-zP1"/>
                             <constraint firstItem="X1N-1z-tVq" firstAttribute="leading" secondItem="4oB-RE-jpH" secondAttribute="leading" constant="20" id="nAf-Bm-yoU"/>
-                            <constraint firstAttribute="trailing" secondItem="tLr-u1-03m" secondAttribute="trailing" constant="16" id="q7h-M0-hiK"/>
                             <constraint firstItem="AAC-ch-0if" firstAttribute="top" secondItem="69K-mC-ysp" secondAttribute="bottom" constant="12" id="xAZ-VI-C36"/>
                             <constraint firstItem="1hJ-Gg-MlO" firstAttribute="top" secondItem="oNe-Jb-fue" secondAttribute="bottom" constant="8" id="xMk-Bb-XFb"/>
                         </constraints>
@@ -161,14 +187,19 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="addImageButtonView" destination="tLr-u1-03m" id="jgS-YH-BCb"/>
                 <outlet property="collectionView" destination="oNe-Jb-fue" id="dD1-aV-AAF"/>
+                <outlet property="deleteImageView" destination="FJe-oJ-EkY" id="Hey-gf-DJc"/>
+                <outlet property="descriptionTV" destination="X1N-1z-tVq" id="ZsE-lz-oLy"/>
                 <outlet property="mainTitleLabel" destination="5Hc-nQ-h9d" id="QaJ-eb-463"/>
+                <outlet property="titleTF" destination="69K-mC-ysp" id="m3e-5A-CSV"/>
             </connections>
             <point key="canvasLocation" x="207.97101449275365" y="134.93303571428569"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="camera-add" width="23.5" height="19.5"/>
+        <image name="delete" width="56" height="62"/>
         <namedColor name="appBorder">
             <color red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="0.52999997138977051" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

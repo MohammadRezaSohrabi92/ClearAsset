@@ -15,12 +15,14 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         // Do any additional setup after loading the view.
         tabBarController?.tabBar.tintColor = UIColor.appOrangeColor
         self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.appBlueColor
+        
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //self.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
+        self.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
+        navigationController?.setNavigationBarHidden(true, animated: animated)        
     }
 
     /*

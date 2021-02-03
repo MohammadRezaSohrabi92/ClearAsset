@@ -6,4 +6,29 @@
   
 */
 
+"error" = "Error";
+"personal" = "Personal";
+"business" = "Business";
 
+"fullName" = "Full name is required";
+"email" = "Email is not valid";
+"password" = "Password is not valid";
+"rePassword" = "Re-Password is not valid";
+"phoneNumber" = "Phone number is not valid";
+"addressLine1" = "Address line 1 is not valid";
+"city" = "City is not valid";
+"state" = "State is not valid";
+"zip" = "Zip/Postal code is not valid";
+"token" = "Something went wrong - 'token'";
+"unknown" = "unknown error";
+"server" = "Server error";
+"uploadLocal" = "Upload failed please try again";
+"selectPhoto" = "Select Photo";
+"uploadImage" = "Upload your product image";
+"photoLibrary" = "Photo Library";
+"camera" = "Camera";
+"failedJson" = "Failed to decode json";
+"addDetailRow" = "You can not add more detail";
+"addAnotherDetail" = "You can not choose same option";
+"logOut" = "Log out";
+"logOutMessage" = "Do you want to log out";
