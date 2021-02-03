@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
         
         return true
     }
+    
 
     // MARK: UISceneSession Lifecycle
 

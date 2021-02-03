@@ -8,7 +8,7 @@
 import UIKit
 
 protocol GetSelectedDescription {
-    func getSelectedText(text: String)
+    func getSelectedText(text: String)    
 }
 
 class CustomBottomSheetViewController: UIViewController {
@@ -22,8 +22,8 @@ class CustomBottomSheetViewController: UIViewController {
     @IBOutlet weak var mainTableHeightConstraint: NSLayoutConstraint!
     
 //init var
-    let backViewHeight: CGFloat = 250
-    let mainTableHeight: CGFloat = 150
+    let backViewHeight: CGFloat = 150
+    let mainTableHeight: CGFloat = 50
     let cellIdentifier = "BottomSheetCellIdentifier"
     var descList : [String]?
     var titleLabelText : String?
@@ -78,8 +78,8 @@ extension CustomBottomSheetViewController: UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedDesc = descList![indexPath.row]
         if let text = selectedDesc {
+            self.dismiss(animated: true, completion: nil)
             delegate.getSelectedText(text: text)
         }
-        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -62,7 +62,6 @@
 		8327B39125A0A7F0002ED7EE /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327B38F25A0A7F0002ED7EE /* FilterTableViewCell.xib */; };
 		832BE48E25B59BFA0042A3AA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832BE48D25B59BFA0042A3AA /* SplashViewController.swift */; };
 		832BE49225B59C010042A3AA /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832BE49125B59C010042A3AA /* Splash.storyboard */; };
-		832BE4BC25B59E310042A3AA /* Json 2 in Resources */ = {isa = PBXBuildFile; fileRef = 832BE4BB25B59E310042A3AA /* Json 2 */; };
 		832CA16A25AC60070054B91B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CA16925AC60070054B91B /* Currency.swift */; };
 		832CA16E25AC62FF0054B91B /* RegisterStep2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CA16D25AC62FF0054B91B /* RegisterStep2ViewModel.swift */; };
 		83310A0F25A194FC00424B9F /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83310A0E25A194FC00424B9F /* SortViewController.swift */; };
@@ -91,7 +90,6 @@
 		8382257F25B2D87900147A8D /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382257E25B2D87900147A8D /* TokenModel.swift */; };
 		8382258225B2D95000147A8D /* RegisterStep3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382258125B2D95000147A8D /* RegisterStep3.swift */; };
 		8382258725B2E9F800147A8D /* RegisterStep3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382258625B2E9F800147A8D /* RegisterStep3ViewModel.swift */; };
-		83886C7525B5A40900BA2D99 /* 44373-girl-cycling.json in Resources */ = {isa = PBXBuildFile; fileRef = 83886C7425B5A40900BA2D99 /* 44373-girl-cycling.json */; };
 		83886C7E25B5AD5B00BA2D99 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886C7D25B5AD5B00BA2D99 /* Login.swift */; };
 		83886C8325B5AE9300BA2D99 /* GetLoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886C8225B5AE9300BA2D99 /* GetLoginInfo.swift */; };
 		83886CAE25B5AFFC00BA2D99 /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886CAD25B5AFFC00BA2D99 /* LoginApi.swift */; };
@@ -152,6 +150,7 @@
 		83BAB39C25A1B23600D57B93 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BAB39B25A1B23600D57B93 /* Product.storyboard */; };
 		83BAF24B25C7F6A500B828FD /* SaveImageVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAF24A25C7F6A500B828FD /* SaveImageVIewModel.swift */; };
 		83BF868B25AD9A14003786C6 /* RegisterStep2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF868A25AD9A14003786C6 /* RegisterStep2.swift */; };
+		83C2F3A425CA75E10014A77D /* End.json in Resources */ = {isa = PBXBuildFile; fileRef = 83C2F3A325CA75E10014A77D /* End.json */; };
 		83C2F597257F6774008FC305 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2F596257F6774008FC305 /* Utility.swift */; };
 		83DFBBCE25C82C4E00A09A32 /* BottomSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83DFBBCD25C82C4E00A09A32 /* BottomSheet.storyboard */; };
 		83DFBBD125C82D7F00A09A32 /* CustomBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFBBD025C82D7F00A09A32 /* CustomBottomSheetViewController.swift */; };
@@ -259,7 +258,6 @@
 		8327B38F25A0A7F0002ED7EE /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
 		832BE48D25B59BFA0042A3AA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		832BE49125B59C010042A3AA /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
-		832BE4BB25B59E310042A3AA /* Json 2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Json 2"; sourceTree = "<group>"; };
 		832CA16925AC60070054B91B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		832CA16D25AC62FF0054B91B /* RegisterStep2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep2ViewModel.swift; sourceTree = "<group>"; };
 		83310A0E25A194FC00424B9F /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
@@ -288,8 +286,6 @@
 		8382257E25B2D87900147A8D /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		8382258125B2D95000147A8D /* RegisterStep3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep3.swift; sourceTree = "<group>"; };
 		8382258625B2E9F800147A8D /* RegisterStep3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep3ViewModel.swift; sourceTree = "<group>"; };
-		83886C7425B5A40900BA2D99 /* 44373-girl-cycling.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "44373-girl-cycling.json"; sourceTree = "<group>"; };
-		83886C7725B5A71900BA2D99 /* clear_asset.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clear_asset.json; sourceTree = "<group>"; };
 		83886C7D25B5AD5B00BA2D99 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		83886C8225B5AE9300BA2D99 /* GetLoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLoginInfo.swift; sourceTree = "<group>"; };
 		83886CAD25B5AFFC00BA2D99 /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
@@ -350,6 +346,7 @@
 		83BAB39B25A1B23600D57B93 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		83BAF24A25C7F6A500B828FD /* SaveImageVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImageVIewModel.swift; sourceTree = "<group>"; };
 		83BF868A25AD9A14003786C6 /* RegisterStep2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep2.swift; sourceTree = "<group>"; };
+		83C2F3A325CA75E10014A77D /* End.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = End.json; sourceTree = "<group>"; };
 		83C2F596257F6774008FC305 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		83DFBBCD25C82C4E00A09A32 /* BottomSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomSheet.storyboard; sourceTree = "<group>"; };
 		83DFBBD025C82D7F00A09A32 /* CustomBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomSheetViewController.swift; sourceTree = "<group>"; };
@@ -641,9 +638,7 @@
 		832BE4AF25B59CCF0042A3AA /* splash */ = {
 			isa = PBXGroup;
 			children = (
-				83886C7725B5A71900BA2D99 /* clear_asset.json */,
-				83886C7425B5A40900BA2D99 /* 44373-girl-cycling.json */,
-				832BE4BB25B59E310042A3AA /* Json 2 */,
+				83C2F3A325CA75E10014A77D /* End.json */,
 			);
 			path = splash;
 			sourceTree = "<group>";
@@ -1357,12 +1352,12 @@
 				83E895EE257E4A6200D66424 /* LaunchScreen.storyboard in Resources */,
 				83E8961C257E61E700D66424 /* Nunito-ExtraBold.ttf in Resources */,
 				8390B28825A1A37D001DD7F9 /* ProductListTableViewCell.xib in Resources */,
+				83C2F3A425CA75E10014A77D /* End.json in Resources */,
 				83DFBBCE25C82C4E00A09A32 /* BottomSheet.storyboard in Resources */,
 				83E8961E257E61E700D66424 /* Nunito-LightItalic.ttf in Resources */,
 				83A9DC64258F623100B3DCAB /* TabBar.storyboard in Resources */,
 				E40EAE8925921BEB00E9AD35 /* BottomTableViewCell.xib in Resources */,
 				8351C5A8257FB90A0034FA65 /* Login.storyboard in Resources */,
-				83886C7525B5A40900BA2D99 /* 44373-girl-cycling.json in Resources */,
 				83E89605257E61A800D66424 /* Republiko_PersonalUse.otf in Resources */,
 				830E0DCB25A09798001FFCD0 /* ProductList.storyboard in Resources */,
 				831F9BD6259A092600A03D50 /* ServiceCommentCell.xib in Resources */,
@@ -1399,7 +1394,6 @@
 				834075E02598B20A00987840 /* ServiceCategoryCVCell.xib in Resources */,
 				8392FABE259C917F005E69FC /* WatchList.storyboard in Resources */,
 				83E895E9257E4A6200D66424 /* Main.storyboard in Resources */,
-				832BE4BC25B59E310042A3AA /* Json 2 in Resources */,
 				835A09EA259B6E7600D32DC9 /* DetailTableViewCell.xib in Resources */,
 				8392FAC6259CA6F8005E69FC /* SaleTableViewCell.xib in Resources */,
 				83B779B22587ACE100018EBA /* SignInInfoCell.xib in Resources */,

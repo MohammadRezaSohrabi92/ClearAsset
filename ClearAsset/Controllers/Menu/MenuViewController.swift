@@ -33,6 +33,17 @@ class MenuViewController: UIViewController {
         profileView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnProfileView(_:))))
     }
     
+    fileprivate func showLogoutDialog() {
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { (_) in
+            Utility().saveData(inUserDefulat: false, keyOfUserDefault: "isLogined")
+            self.navigationController?.pushViewController(AppStoryboard.Login.viewController(viewControllerClass: LoginViewController.self), animated: true)
+        }
+        
+        let noAction = UIAlertAction(title: "No", style: .cancel) { (alertAction) in
+            //do nothing
+        }
+        showActionSheet(title: "logOut".getString(), message: "logOutMessage".getString(), style: .alert, actions: [yesAction, noAction])
+    }
     
     //MARK:- actions
     @objc func didTapOnProfileView(_ sender: UITapGestureRecognizer) {
@@ -66,6 +77,9 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             let notificationVC = AppStoryboard.Notification.viewController(viewControllerClass: NotificationViewController.self)
             notificationVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(notificationVC, animated: true)
+        }
+        if indexPath.row == 7 {
+            showLogoutDialog()            
         }
     }
     

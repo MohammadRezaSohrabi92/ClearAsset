@@ -9,6 +9,8 @@ import UIKit
 
 class AddTransmissionCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var itemImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

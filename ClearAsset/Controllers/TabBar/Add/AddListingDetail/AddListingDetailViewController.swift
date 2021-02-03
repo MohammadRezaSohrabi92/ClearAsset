@@ -12,7 +12,7 @@ import Alamofire
 
 class AddListingDetailViewController: BaseViewController, UINavigationControllerDelegate {
     
-//MARK:- Views    
+    //MARK:- Views
     @IBOutlet weak var mainScrollView: UIScrollView!
     @IBOutlet weak var mainTable: UITableView!
     @IBOutlet weak var mainTableHeightConstraint: NSLayoutConstraint!
@@ -39,7 +39,7 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
     @IBOutlet weak var arrowBottomIV: UIImageView!
     @IBOutlet weak var priceTF: CustomAddTextFeild!
     
-//init var
+    //init var
     let dropDownMenu = DropDown()
     let contentViewHeight: CGFloat = 2080
     let mainTableHeightConstant: CGFloat = 470
@@ -48,7 +48,6 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
     let detailTVcellIdentiifer = "detailTableViewCellIdentifier"
     let transmissionDetailCVIdentifier = "transmissionDetailCollectionViewIdentifier"
     let unitList = ["Hrs", "Mil", "Kms"]
-    
     var brandViewModel : GetBrandListViewModel!
     var brandList = [Brand]()
     var categoryId : String!
@@ -64,29 +63,37 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
     var imagePicker = UIImagePickerController()
     var saveImageViewModel: SaveImageViewModel!
     var deviceImageAddress : String?
-
-//MARK:- Life Cycle
+    var isUsage = false
+    var selectedDetails = [String]()
+    var addImageCell: DetailTableViewCell?
+    var isGetImageForDevice = true
+    var images = [[UIImage]]()
+    
+    //MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainTableHeightConstraint.constant = 0
-        contentViewHeightConstraint.constant = contentViewHeight - mainTableHeightConstant
+        
         viewWillLayoutSubviews()
         initViews()
     }
     
     override func viewWillLayoutSubviews() {
         super.updateViewConstraints()
-        self.mainTableHeightConstraint?.constant = self.mainTable.contentSize.height
-        contentViewHeightConstraint.constant = self.mainTable.contentSize.height > mainTableHeightConstant ? mainTableHeightConstraint.constant + contentViewHeight - mainTableHeightConstant : contentViewHeight
+        if numberOfRows == 0 {
+            mainTableHeightConstraint.constant = 0
+            contentViewHeightConstraint.constant = contentViewHeight - mainTableHeightConstant
+        } else {
+            mainTableHeightConstraint?.constant = mainTable.contentSize.height
+            contentViewHeightConstraint.constant = mainTable.contentSize.height > mainTableHeightConstant ? mainTableHeightConstraint.constant + contentViewHeight - mainTableHeightConstant : contentViewHeight
+        }
     }
     
-//MARK:- Other Methods
+    //MARK:- Other Methods
     func initViews() {
         self.initScrollView(mainScrollView)
         mainTable.register(UINib(nibName: "DetailTableViewCell", bundle: nil), forCellReuseIdentifier: detailTVcellIdentiifer)
         mainTable.rowHeight = UITableView.automaticDimension
         addMoreDetailButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnAddMoreDetailButton(_:))))
-        initDropDownMenu()
         brandViewModel = GetBrandListViewModel()
         getBrandsList()
         modelViewModel = GetModelListViewModel()
@@ -108,11 +115,11 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
     }
     
     func makeProductImageTouchable() {
-        deviceImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(getImage(_:))))
-        cameraImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(getImage(_:))))
+        deviceImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnAddImageForDevice(_:))))
+        cameraImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnAddImageForDevice(_:))))
     }
     
-    @objc func getImage(_ sender: UITapGestureRecognizer) {
+    func getImage() {
         let camera = UIAlertAction(title: "camera".getString(), style: .default) { (_) in
             self.getImageFromCamera()
         }
@@ -120,6 +127,11 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
             self.getImageFromLibrary()
         }
         self.showActionSheet(title: "selectPhoto".getString(), message: "uploadImage".getString(), style: .actionSheet, actions: [camera, library, actionMessageCancel()])
+    }
+    
+    @objc func didTapOnAddImageForDevice(_ sender: UITapGestureRecognizer) {
+        isGetImageForDevice = true
+        getImage()
     }
     func getImageFromLibrary() {
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
@@ -137,19 +149,6 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
             imagePicker.cameraDevice = .rear
             imagePicker.showsCameraControls = true
             present(imagePicker, animated: true, completion: nil)
-        }
-    }
-    
-    func initDropDownMenu() {
-        dropDownMenu.anchorView = addMoreDetailButton
-        dropDownMenu.dismissMode = .onTap
-        dropDownMenu.textFont = UIFont(name: Utility.appFont.semiBold, size: 15)!
-        dropDownMenu.cellNib = UINib(nibName: "MoreDetailCell", bundle: nil)
-        dropDownMenu.selectionAction = { [unowned self] (index: Int, item: String) in
-            numberOfRows += 1
-            detailTitle = item
-            mainTable.reloadData()
-            viewWillLayoutSubviews()
         }
     }
     
@@ -178,12 +177,6 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
         onSelectAssetType()
     }
     
-    func initSectionsMenu() {
-        self.sections.forEach { (value) in
-            self.dropDownMenu.dataSource.append(value.name)
-        }
-    }
-    
     func initStartYear() {
         let currentYear = Calendar.current.component(.year, from: Date())
         let startYear = Int(self.startYear!)!
@@ -195,7 +188,7 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
         onSelectYearMenu()
     }
     
-//MARK:- Api call
+    //MARK:- Api call
     func getBrandsList() {
         Utility.showHudLoading()
         brandViewModel.getBrandList(category: Int(categoryId)) { (brandList, error) in
@@ -250,8 +243,7 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
             if error == nil {
                 Utility.hideHudLoading()
                 if let sections = allSection {
-                    self.sections = sections
-                    self.initSectionsMenu()
+                    self.sections = sections                    
                 }
             } else {
                 Utility.hideHudLoading()
@@ -303,10 +295,22 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
         self.deviceImage.image = image
         self.cameraImage.isHidden = true
     }
-
-//MARK:- Actions
+    
+    //MARK:- Actions
     @objc func didTapOnAddMoreDetailButton(_ sender: UITapGestureRecognizer) {
-        dropDownMenu.show()
+        if numberOfRows >= self.sections.count {
+            self.showActionSheet(title: "error".getString(), message: "addDetailRow".getString(), style: .alert, actions: [self.actionMessageClose()])
+            return
+        }
+        isUsage = false
+        let bottomSheetVC = AppStoryboard.BottomSheet.viewController(viewControllerClass: CustomBottomSheetViewController.self)
+        bottomSheetVC.descList = [String]()
+        sections.forEach { (value) in
+            bottomSheetVC.descList?.append(value.name)
+        }
+        bottomSheetVC.delegate = self
+        bottomSheetVC.titleLabelText = "More Detail"
+        present(bottomSheetVC, animated: true, completion: nil)
     }
     
     @IBAction func didTapOnBackButton(_ sender: Any) {
@@ -314,6 +318,7 @@ class AddListingDetailViewController: BaseViewController, UINavigationController
     }
     
     @objc func didTapOnUsageUnitMenuButton(_ sender: UITapGestureRecognizer) {
+        isUsage = true
         let bottomSheetVC = AppStoryboard.BottomSheet.viewController(viewControllerClass: CustomBottomSheetViewController.self)
         bottomSheetVC.descList = unitList
         bottomSheetVC.delegate = self
@@ -363,6 +368,10 @@ extension AddListingDetailViewController: UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: detailTVcellIdentiifer, for: indexPath) as? DetailTableViewCell {
             cell.mainTitleLabel.text = detailTitle
+            cell.delegate = self
+            if !images.isEmpty {
+                cell.imageItems = images[indexPath.row]
+            }
             return cell
         }
         return UITableViewCell()
@@ -378,14 +387,18 @@ extension AddListingDetailViewController: UITableViewDelegate, UITableViewDataSo
     }
 }
 
-    //MARK:- CollectionView Delegate and Data Source
+//MARK:- CollectionView Delegate and Data Source
 extension AddListingDetailViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        if let items = addImageCell?.imageItems {
+            return items.count
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let item = collectionView.dequeueReusableCell(withReuseIdentifier: transmissionDetailCVIdentifier, for: indexPath) as? AddTransmissionCollectionViewCell {
+            item.itemImage.image = addImageCell?.imageItems[indexPath.row]
             return item
         }
         return UICollectionViewCell()
@@ -407,13 +420,65 @@ extension AddListingDetailViewController: UIImagePickerControllerDelegate {
         }
         
         if let imageData = image.jpegData(compressionQuality: 0.5) {
-            self.saveImage(imageData: imageData, image: image)
+            if isGetImageForDevice {
+                self.saveImage(imageData: imageData, image: image)
+            } else {
+                if let cell = addImageCell {
+                    if let indexPath = mainTable.indexPath(for: cell) {
+                        //images[indexPath.row].append(image)
+                        print(indexPath.row)
+                        images.append([image])
+                    }
+                    mainTable.reloadData()
+                }
+                //let indexPath = mainTable.indexPath(for: addImageCell!)
+                
+                
+            }
         }
     }
 }
 
 extension AddListingDetailViewController: GetSelectedDescription {
     func getSelectedText(text: String) {
-        self.usageUnitLabel.text = text
+        var canAdd = true
+        if isUsage {
+            self.usageUnitLabel.text = text
+        } else {
+            for detail in selectedDetails {
+                if detail.contains(text)  {
+                    canAdd = false
+                }
+            }
+            if canAdd {
+                selectedDetails.append(text)
+                numberOfRows += 1
+                detailTitle = text
+                let indexPath = IndexPath(row: numberOfRows - 1, section: 0)
+                mainTable.insertRows(at: [indexPath], with: .left)
+                mainTable.layoutIfNeeded()
+                viewWillLayoutSubviews()
+            } else {
+                showActionSheet(title: "error".getString(), message: "addAnotherDetail".getString(), style: .alert, actions: [self.actionMessageClose()])
+            }
+        }
+    }
+}
+
+extension AddListingDetailViewController: DeleteDetailRow {
+    func didTapOnDeleteButton(cell: DetailTableViewCell) {
+        if let targetIndexPath = mainTable.indexPath(for: cell) {
+            numberOfRows -= 1
+            mainTable.deleteRows(at: [targetIndexPath], with: .right)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                self.viewWillLayoutSubviews()
+            }
+        }
+    }
+    
+    func didTapOnAddButton(cell: DetailTableViewCell) {
+        isGetImageForDevice = false
+        self.addImageCell = cell
+        getImage()
     }
 }

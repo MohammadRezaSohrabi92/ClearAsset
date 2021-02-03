@@ -40,6 +40,10 @@ class LoginViewController: UIViewController {
         passwordTF.borderColor = UIColor.appBorderColor
     }
     
+    fileprivate func isFirstLaunch() {
+        Utility().saveData(inUserDefulat: true, keyOfUserDefault: "isLogined")
+    }
+    
     func showError(error: ErrorMessageModel) {
         switch error.code {
         case 1:
@@ -61,6 +65,7 @@ class LoginViewController: UIViewController {
         loginViewModel.login(byEmail: emailAddressTF.text, password: passwordTF.text) { (data, error) in
             if error == nil {
                 Utility.hideSuccessHudLoading()
+                self.isFirstLaunch()
                 self.goToNextPage()
             } else {
                 Utility.hideHudLoading()

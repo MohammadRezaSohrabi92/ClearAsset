@@ -28,3 +28,7 @@
 "photoLibrary" = "Photo Library";
 "camera" = "Camera";
 "failedJson" = "Failed to decode json";
+"addDetailRow" = "You can not add more detail";
+"addAnotherDetail" = "You can not choose same option";
+"logOut" = "Log out";
+"logOutMessage" = "Do you want to log out";
